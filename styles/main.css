@@ -2,18 +2,121 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #36431D;
-  padding-bottom: 5rem;
+html {
+  font-size: 10px;
 }
 
 .container {
-  background-color: white;
-  height: 100rem;
+  display: grid;
+  padding: 3em;
+  grid-gap: 1em;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 100px, 500px, 500px, 300px;
+}
+
+.grid1{
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: 1, 1fr;
+
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.navlogo{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  padding: 2em;
+}
+
+.menuoptions{
+  grid-column-start: 16;
+  grid-column-end: 21;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  padding: 3em;
+  text-align: left;
+
+
+}
+
+.navmenu {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  font-family: abel;
+  font-size: 24px;
   margin: 0 auto;
-  width: 50rem
+  padding: 1rem 0;
+}
+
+.projectsmenu {
+  grid-column:
+}
+
 }
 
 html {
   font-size: 10px;
+}
+
+
+.grid2 {
+  margin: 0 auto;
+  width: auto;
+  height: 85em;
+  grid-column-start:1;
+  grid-column-end: 6;
+
+  background-color: #36431D;
+
+  line-height: .7cm;
+  text-align: left;
+  padding:20rem;
+
+}
+
+.slogan {
+  text-align: left;
+  font-family: abel;
+  font-weight: light;
+  color: #FFFFFF;
+  font-size: 54pt;
+  line-height: 2cm;
+}
+
+.projects{
+  display: grid;
+  grid-template-columns: 2, minmax(100px, 1fr);
+  grid-gap: 10px;
+
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.project1{
+  padding: 20px;
+  grid-column: 1 / auto;
+
+}
+
+.project2{
+  padding: 20px;
+  grid-column: 2 / auto;
+
+}
+
+.footer-content{
+  text-align: center;
+
+
+}
+
+.section-line{
+
 }
