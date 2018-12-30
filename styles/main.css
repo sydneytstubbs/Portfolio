@@ -2,18 +2,238 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #36431D;
-  padding-bottom: 5rem;
+html {
+  font-size: 10px;
 }
 
+
 .container {
-  background-color: white;
-  height: 100rem;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(150px, 1fr));
+  grid-template-rows: auto, auto, auto, auto;
+
+  grid-template-areas:
+  'navigation navigation navigtion navigation navigation'
+  'hero       hero       hero      hero       hero'
+  'projects   projects   projects  projects   projects'
+  'footer     footer     footer    footer     footer'
+
+}
+
+/**navbar**/
+.grid1{
+  display: grid;
+  grid-template-columns: repeat(1fr 6fr 6fr 1fr);
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  height: 12em;
+}
+
+/**logo**/
+.navlogo{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  padding-left: 5em;
+  padding-top: 3em;
+}
+
+/**menubox**/
+.menuoptions{
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  padding-bottom: 4em;
+  text-align: center;
+}
+
+.name{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+
+.navmenu {
+  display: grid;
+  grid-template-columns: 5em 4em 5em;
+  grid-template-rows: 100px;
+  text-align: left;
+  font-family: oswald;
+  font-size: 24px;
+  padding: 1.5em;
+}
+
+.nav-title {
+  font-family: oswald;
+  font-size: 28px;
+  font-style: regular;
   margin: 0 auto;
-  width: 50rem
+  padding: 1rem 0;
+  color: #36431D;
+  text-align: center;
+  padding-left: .1fr;
+  padding-right: .2fr;
+
+}
+
+.nav-title:hover {
+  font-family: oswald;
+  font-size: 28px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  text-decoration: none;
+  color: #C87B84;
+  text-align: center;
+}
+
+.projectsmenu {
+  grid-column: 1 / 1;
+  text-align: center;
+}
+
+.aboutmenu {
+  grid-column: 2 / 2;
+
+  text-align: center;
+}
+
+.contactmenu {
+  grid-column: 3 / 3;
+
+  text-align: center;
+}
+
+a:link {
+  text-decoration: none;
+  color: #36431D;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #36431D;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #C87B84;
+
+}
+
+a:active {
+  text-decoration: none;
+  color: none;
 }
 
 html {
   font-size: 10px;
+}
+
+
+.grid2 {
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(1em, 1fr)
+    [main-start] minmax(0, 40em) [main-end]
+    minmax(1em, 1fr) [full-end];
+  margin: 0 auto;
+  width: auto;
+  height: 85em;
+  grid-column-start:1;
+  grid-column-end: 6;
+
+  background-color: #36431D;
+
+  line-height: .7cm;
+  text-align: left;
+  padding:20em;
+
+}
+
+.grid2 > * {
+  grid-column: main;
+}
+
+.slogan {
+
+  text-align: left;
+  font-family: abel;
+  font-weight: light;
+  color: #FFFFFF;
+  font-size: 54pt;
+  line-height: 2cm;
+  grid-column: full;
+}
+
+.projects{
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-template-columns: 2, 3fr;
+  grid-gap: 25px;
+
+}
+
+.project1{
+  grid-column: 1;
+  padding-left: 25px;
+  padding-top: 25px;
+  size: auto;
+}
+
+.project1 > img {
+  object-fit: cover;
+  width: 100%
+  max-height: 100%;
+}
+
+.project2{
+  grid-column: 2;
+  padding-right: 25px;
+  padding-top: 25px;
+  size: auto;
+}
+
+.project2 > img {
+  object-fit: cover;
+  width: 100%
+  max-height: 100%;
+}
+
+.footer-content{
+  display: grid;
+  text-align: center;
+  grid-template-columns:
+  grid-row-start: 4;
+  grid-row-end: 5;
+
+}
+
+.section-line{
+  align-items:center;
+  width: 1000px;
+}
+
+.footerpara {
+  font-family: "open sans", sans-serif;
+  font-size: 1.5em;
+}
+
+.contactmebutton {
+  size: 200%;
+}
+
+.linkedin{
+  align-items:center;
+}
+
+.github{
+  align-items:center;
 }

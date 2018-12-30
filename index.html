@@ -6,71 +6,60 @@
     <title>Sydney Stubbs | UX/UI Design Portfolio</title>
     <meta name="description" content="Sydney Stubbs is a Seattle based UX Designer. She solves problems with design to help people.">
     <meta name="author" content="Sydney Stubbs">
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
   </head>
 <!--Website-->
   <body>
     <div class="container">
-      <div class="grid1">
-        <div class="navbar">
-          <div class="grid1-2">
+      <div class="grid1"> <!--navigation-->
 <!-- Logo(begin navigation menu) -->
-              <div class="navlogo">
-                  <a href="index.html">"<img src="images/sydney-logo.png" alt="Sydney Stubbs Logo"></a>
-              </div>
+        <div class="navlogo">
+          <a href="index.html"><img src="images/index/nav-logo.svg" alt="Sydney Stubbs Logo"></a>
+        </div>
 <!-- Righthand Side Nav -->
-              <div class="row navbar-item">
-                <ul>
-                  <li><a href="index.html#projects"><h2 class="nav-title">Projects</h2></a></li>
-                  <li><a href="about.html"><h2 class="nav-title">About</h2></a></li>
-                  <li><a class="button" href="mailto:sydneytstubbs@gmail.com"><h2 class="nav-title">Contact</h2></a></li>
-                </ul>
-              </div>
+        <div class="menuoptions">
+          <div class=navmenu>
+            <div class=projectsmenu><a href="index.html#projects"><h2 class="nav-title">PROJECTS</h2></a></div>
+            <div class=aboutmenu><a href="about.html"><h2 class="nav-title">ABOUT</h2></a></div>
+            <div class=contactmenu><a class="button" href="mailto:sydneytstubbs@gmail.com"><h2 class="nav-title">CONTACT</h2></a></div>
           </div>
+        </div>
       </div>
-    </div>
-
 <!-- Hero Unit Begins -->
       <section class="grid2">
-        <h1 class="slogan">Hi, I'm Sydney. I'm a Seattle based UX Designer and I solve problems to help people.
+        <h1 class="slogan">Hi, I’m Sydney, a Seattle based UX Designer that solves problems to help people. I have a background in social work, and strive to make social impact through my work in design.
         </h1> <!-- slogan -->
         <div class=arrow> <!--arrow pointing down to projects -->
         </div>
       </section>
     <!-- projects -->
-      <section class="grid3">
-        <div class="FileWeave"> <!-- FileWeave:Project 1 -->
-          <div class="project-one-image">
-          </div>
+      <section class="projects">
+        <div class="project1">
+          <img class="FileWeave-Project" img src="images/index/fileweave-project.svg">
         </div>
-        <div class="project-2"><!-- Untitled:Project 2 -->
-          <div class="project-two-image">
-          </div>
+        <div class="project2">
+          <img class="FileWeave-Project" img src="images/index/language-project.svg">
         </div>
       </section>
-      <section class="grid2"><!--Footer-->
-        <div class="footer-content"><!--Footer-->
-          <hr class=section-line>
-          <div class="footer-text">
-              <p class="footer">I hope you enjoyed looking at my work, if you'd like to chat please contact me below!</p>
-            </div>
-            <ul>
-              <li>
-                <a href="http://www.linkedin.com/in/sydneytstubbs" target="_blank">
-                  <img src="imagesUpdated/iconsLogos/linkedinlogo.svg" alt="linkedin icon" width="24" height="24">
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/sydneytstubbs" target="_blank">
-                  <img src="imagesUpdated/iconsLogos/githublogo.svg" alt="github icon" width="24" height="24">
-                </a>
-              </li>
-              <li>
-                <a href="mailto:sydneytstubbs@gmail.com" target="_blank">
-                  <img src="imagesUpdated/iconsLogos/email.svg" alt="email icon" width="24" height="24">
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
+      <div class="footer-content"><!--Footer-->
+        <hr class=section-line></hr>
+        <p class="footerpara">I hope you enjoyed looking at my work, if you'd like to chat please contact me below!</p>
+        <div class=contactmebutton>
+          <a href="mailto:sydneytstubbs@gmail.com" target="_blank">
+            <img src="images/index/contactmebutton.svg" alt="linkedin icon" width="24" height="24">
+          </a>
+        </div>
+        <div class=linkedin>
+          <a href="http://www.linkedin.com/in/sydneytstubbs" target="_blank">
+            <img src="images/index/linkedinicon.svg" alt="linkedin icon" width="24" height="24">
+          </a>
+        </div>
+        <div class=github>
+          <a href="https://github.com/sydneytstubbs" target="_blank">
+            <img src="images/index/githubicon.svg" alt="github icon" width="24" height="24">
+          </a>
+        </div>
+      </div>
+    </div>
   </body>
-</html>
