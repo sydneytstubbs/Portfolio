@@ -1,0 +1,852 @@
+/** PAGE ESSENTIALS **/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+/**start navigation**/
+/**navbar**/
+.navgrid{
+  display: grid;
+  grid-area: nav;
+  background-color: #FFFFFF;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  width: 100%; /* Set the navbar to fixed position */
+  grid-template-columns: .5fr 1fr 1fr 1fr 1fr 1fr 1fr .5fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    ". logo logo logo logo menu menu ."
+}
+
+/**logo**/
+.navlogo{
+  grid-area: logo;
+  padding-top: 3em;
+}
+
+/**menubox**/
+.menuoptions{
+  grid-area: menu;
+}
+
+.name{
+  grid-area: logo;
+  font-family: oswald;
+  font-size: 24px;
+  color: #36431D;
+  padding-top: 1em;
+  padding-left: 2.3em;
+}
+
+
+.navmenu {
+  display: grid;
+  grid-template-columns: 5em 4em 5em;
+  font-size: 24px;
+  padding-top:1.5em;
+  padding-bottom:1.5em;
+}
+
+.nav-title {
+  font-family: oswald;
+  font-size: 24px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  color: #36431D;
+  text-align: center;
+
+}
+
+.nav-title:hover {
+  font-family: oswald;
+  font-size: 24px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  text-decoration: none;
+  color: #C87B84;
+  text-align: center;
+}
+
+.projectsmenu {
+  grid-column: 1 / 1;
+  text-align: center;
+}
+
+.aboutmenu {
+  grid-column: 2 / 2;
+  text-align: center;
+}
+
+.contactmenu {
+  grid-column: 3 / 3;
+  text-align: center;
+}
+
+a:link {
+  text-decoration: none;
+  color: #36431D;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #36431D;
+}
+
+
+a:active {
+  text-decoration: none;
+  color: none;
+}
+/**end navigation**/
+/** PAGE ESSENTIALS **/
+
+.wrapper{
+  display: grid;
+  grid-template-columns: .5fr repeat(6, 1fr) .5fr;
+  grid-template-rows: 150px repeat(11, auto);
+  justify-content: center;
+  grid-template-areas:
+    " nav nav nav nav nav nav nav nav "
+    ". hero hero hero hero hero hero ."
+    ". overview overview overview overview overview overview ."
+    ". problem problem problem problem problem problem ."
+    ". research research research research research research  ."
+    ". architecture architecture architecture architecture architecture architecture ."
+    ". branding branding branding branding branding branding ."
+    ". sketch sketch sketch sketch sketch sketch  ."
+    ". prototype prototype prototype prototype prototype prototype ."
+    ". hifi hifi hifi hifi hifi hifi  ."
+    ". conclusion conclusion conclusion conclusion conclusion conclusion   ."
+    ". footer footer footer footer footer footer  ."
+
+}
+
+/**type**/
+
+.subtitle{
+  grid-area: head;
+  text-align: left;
+  font-family: "open sans";
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.content{
+  text-align: center;
+  font-family: "open sans";
+  font-size: 1.8rem;
+  font-weight: regular;
+  grid-area: para;
+
+}
+
+.large-content{
+  text-align: center;
+  font-family: "open sans";
+  font-size: 2.6rem;
+  line-height: 3.6rem;
+  font-weight: regular;
+
+
+}
+
+.med-title{
+  text-align: center;
+  font-family: "open sans";
+  font-size: 3.2rem;
+  line-height: 4.3rem;
+  font-weight: semi-bold;
+
+
+}
+
+.roleicon{
+  height: 10em;
+  width: 10em;
+}
+
+/**type**/
+
+
+.hero{
+  grid-area: hero;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+  "main"
+  "main"
+  "main";
+}
+
+
+.hero-photo{
+  grid-area: main;
+  z-index:10;
+}
+
+.herotitle{
+  grid-area: main;
+  z-index:20;
+  align-self: flex-start;
+  text-align: center;
+  padding-top: 2.5em;
+  font-family: "open sans";
+  font-size: 4.5rem;
+  font-weight: lighter;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+
+.overview{
+  grid-area: overview;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+  "ovw ovw"
+  "role role"
+  "divider divider";
+}
+
+.divider{
+  grid-area: divider;
+}
+.divtitle{
+  font-size: 3.2em;
+  font-family: abel;
+}
+.gridcenter{
+  grid-area: ovw;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 2fr 4fr 2fr;
+  grid-template-rows: 3 auto;
+  grid-template-areas:
+  ". head ."
+  ". para ."
+  ". long .";
+  justify-items: center;
+  align-items: center;
+}
+
+.prototype-button{
+  grid-area: long;
+}
+
+.logolong{
+  display: grid;
+  grid-area: long;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    ". fw ."
+}
+
+.long{
+  grid-area: fw;
+}
+
+.grid3{
+  grid-area: role;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+  "people deliverables tools"
+  "people deliverables tools"
+  "people deliverables tools";
+  text-align: center;
+  justify-items: center;
+  padding-top: 10em;
+
+}
+
+.left-topic{
+
+}
+
+ul{
+  list-style-type: none;
+  text-align: center;
+
+}
+
+.shortlineblack {
+  grid-area: line;
+  text-align: center;
+}
+
+.divider1{
+
+}
+
+/**problem begins**/
+
+.problem-solution{
+  grid-area: problem;
+  align-content: center;
+  justify-content: center;
+}
+
+
+.research{
+  grid-area: research;
+  /**grid-area: research;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 7 auto;
+  grid-template-areas:
+  "overview"
+  "surveysection"
+  "resultsection"
+  "personasection"
+  "swotintrosection"
+  "swotinfosection"
+  "swotresultsection"
+**/
+}
+
+/**Survey Results**/
+
+.resultsgrid{
+  display: grid;
+  grid-template-columns: 2 1fr;
+  grid-template-rows: 4 auto;
+  grid-template-areas:
+  "surveytitle surveytitle "
+  "column1 column2"
+  "column1 column2"
+  "column1 column2";
+
+}
+
+.surveytitle{
+  grid-area: surveytitle;
+  text-align: left;
+}
+
+.column-one-results{
+  display: grid;
+  grid-area: column1;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4 auto;
+  grid-template-areas:
+  ". "
+  "content-block1"
+  "content-block2"
+  "content-block3";
+}
+
+.column-two-results{
+  display: grid;
+  grid-area: column2;
+  grid-template-columns: 1fr;
+  grid-template-rows:4 auto;
+  grid-template-areas:
+  ". "
+  "content-block4"
+  "content-block5"
+  "content-block6";
+}
+
+.content-block1{
+  grid-area: content-block1;
+  display: grid;
+  grid-template-columns: .25fr .75fr;
+  grid-template-rows: .1fr;
+  grid-template-areas:
+    "percent result"
+}
+
+.content-block2{
+  grid-area: content-block2;
+  display: grid;
+  grid-template-columns: .25fr .75fr;
+  grid-template-rows: .5fr;
+  grid-template-areas:
+    "percent result"
+}
+
+.content-block3{
+  grid-area: content-block3;
+  display: grid;
+  grid-template-columns: .25fr .75fr;
+  grid-template-rows: .5fr;
+  grid-template-areas:
+    "percent result"
+}
+
+.content-block4{
+  grid-area: content-block4;
+  display: grid;
+  grid-template-columns: .25fr .75fr;
+  grid-template-rows: .5fr;
+  grid-template-areas:
+    "percent result"
+}
+
+.content-block5{
+  grid-area: content-block5;
+  display: grid;
+  grid-template-columns: .25fr .75fr;
+  grid-template-rows: .5fr;
+  grid-template-areas:
+    "percent result"
+}
+
+.content-block6{
+  grid-area: content-block6;
+  display: grid;
+  grid-template-columns: .25fr .75fr;
+  grid-template-rows: .5fr;
+  grid-template-areas:
+    "percent result"
+}
+
+.percent{
+  grid-area: percent;
+}
+
+.percentages{
+  font-family: "abel";
+  font-size: 2em;
+  color: black;
+  font-style: light;
+  text-align: center;
+  justify-content:
+
+}
+
+/**results conclusion**/
+
+.results2grid{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 2 1fr;
+  grid-template-rows: 1fr 1fr 1fr ;
+  grid-template-areas:
+  "surveytitle surveytitle "
+  "survey1 survey3"
+  "survey2 survey4";
+
+}
+
+.survey1{
+  grid-area: survey1;
+  background-color: grey;
+
+}
+
+.survey2{
+  grid-area: survey2;
+  background-color: grey;
+}
+
+.survey3{
+  grid-area: survey3;
+  background-color: grey;
+}
+
+.survey4{
+  grid-area: survey4;
+  background-color: grey;
+}
+
+.result{
+  grid-area: result;
+}
+
+/**swotgrid**/
+
+.swotgrid{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "drive dropbox tresorit"
+    "drivepara dropboxpara tresoritpara"
+    text-align: center;
+    justify-items: center;
+}
+
+.swotgrid2{
+
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  grid-template-rows: 2 auto;
+  grid-template-areas:
+  ". head ."
+  ". swotresults .";
+  justify-items: center;
+  align-items: center;
+}
+
+
+.swot-list {
+    display: grid;
+    grid-area: swotresults;
+    grid-template-columns: repeat(3, 1fr);
+    color: #FFFFFF;
+    padding-left: 50px;
+    padding-right: 50px;
+    grid-gap: 10px;
+    text-align: center;
+    font-family: "open sans";
+    font-size: 1.8rem;
+    font-weight: regular;
+    grid-area: para;
+    text-align: center;
+
+
+}
+
+.swot-list > span {
+    padding: 2em 2em;
+    justify-content: center;
+    background-color: #05396B;
+    text-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+
+
+/**personas**/
+
+.pgrid{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 2 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "head joshpersona "
+  "para joshpersona"
+  "personabutton joshpersona";
+
+}
+
+.persona-image{
+  grid-area: joshpersona;
+  padding: 20px;
+}
+
+
+.information-architecture{
+  grid-area: architecture;
+}
+/**story beginning**/
+
+.story-table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:5px;
+    text-align: center;
+    font-family: "open sans";
+    font-size: 1.8rem;
+    font-weight: regular;
+}
+
+.story-table > span {
+    padding: 8px 4px;
+    background-color:#CFD9E2;
+
+}
+
+/**story results**/
+
+.story-results {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: #FFFFFF;
+    padding-left: 50px;
+    padding-right: 50px;
+    grid-gap: 10px;
+    text-align: center;
+    font-family: "open sans";
+    font-size: 1.8rem;
+    font-weight: regular;
+    grid-area: para;
+
+
+}
+
+.story-results > span {
+    padding: 2em 2em;
+    justify-content: center;
+    background-color: #05396B;
+    text-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+/**brand beginning**/
+
+.branding{
+  grid-area: branding;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 2fr 4fr 2fr;
+  grid-template-rows: 4 auto;
+  grid-template-areas:
+  ". head ."
+  ". para ."
+  ". brandcontent ."
+  ". brandimage .";
+  justify-items: center;
+  align-items: center;
+}
+
+
+.brandcontent{
+  grid-area:brandcontent;
+}
+
+.brand-image{
+  grid-area:brandimage
+}
+
+/**SKETCHES beginning**/
+
+.sketches-wireframes{
+  grid-area: sketch;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1 1fr;
+  grid-template-rows: 3 auto;
+  grid-template-areas:
+  "divider"
+  "sketchgrid"
+  "wfgrid";
+  justify-items: center;
+  align-items: center;
+}
+
+.sketchgrid{
+  grid-area: sketchgrid;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 2fr 4fr 2fr;
+  grid-template-rows: 3 auto;
+  grid-template-areas:
+  ". head ."
+  ". para ."
+  ". sketchimagegrid .";
+  justify-items: center;
+  align-items: center;
+}
+
+.sketchcontent{
+  grid-area: sketchcontent;
+}
+.sketchimagegrid{
+  grid-area: sketchimagegrid;
+}
+
+.wfgrid{
+  grid-area: wfgrid;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 2fr 4fr 2fr;
+  grid-template-rows: 4 auto;
+  grid-template-areas:
+  ". head ."
+  ". para ."
+  ". wfimagegrid .";
+  justify-items: center;
+  align-items: center;
+}
+
+
+.wfcontent{
+  grid-area: wfcontent;
+}
+.wfimagegrid{
+  grid-area: wfimagegrid;
+}
+
+
+
+
+}
+
+
+
+/**prototypes beginning**/
+
+.prototyping-testing{
+  grid-area: testing;
+}
+
+/**final mockups beginning**/
+
+.hi-fi-mockups{
+  grid-area: hifi;
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: 5 auto;
+  grid-template-areas:
+  ". head head ."
+  ". mock1 mock2 ."
+  ". mock1 mock3."
+  ". mock1 mock4."
+  ". mock1 mock5.";
+}
+
+.mockup1{
+ grid-area:mock1;
+}
+.mockup2{
+ grid-area:mock2;
+}
+.mockup3{
+ grid-area:mock3;
+}
+.mockup4{
+ grid-area:mock4;
+}
+.mockup5{
+ grid-area:mock5;
+}
+
+
+/**CONCLUSION beginning**/
+
+.conclusion{
+  grid-area: conclusion;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 2fr 4fr 2fr;
+  grid-template-rows: 3 auto;
+  grid-template-areas:
+  ". head ."
+  ". para ."
+  ". long .";
+  justify-items: center;
+  align-items: center;
+}
+
+
+.gridcenter{
+  grid-area: ovw;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 2fr 4fr 2fr;
+  grid-template-rows: 3 auto;
+  grid-template-areas:
+  ". head ."
+  ". para ."
+  ". long .";
+  justify-items: center;
+  align-items: center;
+}
+
+.footer-content{
+  grid-area: footer;
+}
+
+/** footer content **/
+
+.footer{
+  grid-area: footer;
+  width: 100%;
+}
+
+.footercontent{
+  display: grid;
+  grid-area: list;
+  grid-template-columns: 2fr .25fr .1fr .1fr .25fr 2fr;
+  grid-template-rows: 2fr;
+  grid-template-areas:
+    "bttn bttn bttn bttn bttn bttn"
+    ". . lnkd gthb . .";
+}
+
+/**all work completed by me**/
+.footerpara {
+  padding-top: 6em;
+  padding-bottom: 1em;
+  font-family: "open sans", sans-serif;
+  font-size: 1.5em;
+  align-items:center;
+
+}
+
+.contactmebutton {
+  text-align: center;
+  grid-area: bttn;
+}
+
+
+.linkedin {
+  text-align: center;
+  grid-area: lnkd;
+  padding-top: 5em;
+  padding-right: 1em;
+  padding-bottom: 10em;
+}
+
+.github{
+  text-align: center;
+  grid-area: gthb;
+  padding-top: 5em;
+  padding-left: 1em;
+  padding-bottom: 10em;
+}
+
+.greyfooter{
+  text-align: center;
+}
+
+.minitype{
+  font-family: "open sans";
+  background-color: #4A4A4A;
+  font-size: 1em;
+  color: #FFFFFF;
+  height: 8em;
+  padding: 3em;
+}
+
+.bodytype {
+  font-family: "open sans";
+  background-color: #4A4A4A;
+  font-size: 1em;
+  color: #FFFFFF;
+  height: 8em;
+  padding: 3em;
+}
+
+.sectiontitle {
+  grid-area: titl;
+  text-align: center;
+  font-family: "abel";
+  font-size: 22pt;
+  font-weight: lighter;
+}
+
+
+.centergrid{
+  grid-area: cntr;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr .1fr .5fr .25fr;
+  grid-template-areas:
+    ". . ."
+    ". line ."
+    ". titl ."
+    ". para ."
+    ". . ."
+
+}

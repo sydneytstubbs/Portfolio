@@ -6,87 +6,63 @@ html {
   font-size: 10px;
 }
 
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(150px, 1fr));
-  grid-template-rows: auto, auto, auto, auto;
-
-  grid-template-areas:
-  'navigation navigation navigtion navigation navigation'
-  'hero       hero       hero      hero       hero'
-  'projects   projects   projects  projects   projects'
-  'footer     footer     footer    footer     footer'
-
-}
-
+/**start navigation**/
 /**navbar**/
-.grid1{
+.navgrid{
   display: grid;
-  grid-template-columns: repeat(1fr 6fr 6fr 1fr);
-  grid-row-start: 1;
-  grid-row-end: 1;
-  grid-column-start: 1;
-  grid-column-end: -1;
-  height: 12em;
+  grid-area: nav;
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 0;
+  width: 100%; /* Set the navbar to fixed position */
+  grid-template-columns: .5fr 1fr 1fr 1fr 1fr 1fr 1fr .5fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    ". logo logo logo logo menu menu ."
 }
 
 /**logo**/
 .navlogo{
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  padding-left: 5em;
+  grid-area: logo;
   padding-top: 3em;
 }
 
 /**menubox**/
 .menuoptions{
-  grid-column-start: 5;
-  grid-column-end: 6;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  padding-bottom: 4em;
-  text-align: center;
+  grid-area: menu;
 }
 
 .name{
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  padding-top: 4em;
-  padding-bottom: 4em;
+  grid-area: logo;
+  font-family: oswald;
+  font-size: 24px;
+  color: #36431D;
+  padding-top: 1em;
+  padding-left: 2.3em;
 }
 
 
 .navmenu {
   display: grid;
   grid-template-columns: 5em 4em 5em;
-  grid-template-rows: 100px;
-  text-align: left;
-  font-family: oswald;
   font-size: 24px;
-  padding: 1.5em;
+  padding-top:1.5em;
+  padding-bottom:1.5em;
 }
 
 .nav-title {
   font-family: oswald;
-  font-size: 28px;
-  font-style: regular;
+  font-size: 24px;
   margin: 0 auto;
   padding: 1rem 0;
   color: #36431D;
   text-align: center;
-  padding-left: .1fr;
-  padding-right: .2fr;
 
 }
 
 .nav-title:hover {
   font-family: oswald;
-  font-size: 28px;
+  font-size: 24px;
   margin: 0 auto;
   padding: 1rem 0;
   text-decoration: none;
@@ -101,13 +77,11 @@ html {
 
 .aboutmenu {
   grid-column: 2 / 2;
-
   text-align: center;
 }
 
 .contactmenu {
   grid-column: 3 / 3;
-
   text-align: center;
 }
 
@@ -121,119 +95,224 @@ a:visited {
   color: #36431D;
 }
 
-a:hover {
-  text-decoration: none;
-  color: #C87B84;
-
-}
 
 a:active {
   text-decoration: none;
   color: none;
 }
+/**end navigation**/
 
-html {
-  font-size: 10px;
-}
-
-
-.grid2 {
+.container {
   display: grid;
-  grid-template-columns:
-    [full-start] minmax(1em, 1fr)
-    [main-start] minmax(0, 40em) [main-end]
-    minmax(1em, 1fr) [full-end];
-  margin: 0 auto;
-  width: auto;
-  height: 85em;
-  grid-column-start:1;
-  grid-column-end: 6;
+  grid-template-columns: .5fr repeat(6, 1fr) .5fr;
+  grid-template-rows: 1fr, repeat(3, auto);
+  grid-template-areas:
+  " . . . . . . . . "
+  ". hero hero hero hero hero hero ."
+  ". project project project project project project ."
+  ". foot foot foot foot foot foot ."
+  }
 
-  background-color: #36431D;
+  /**start hero**/
+  /**end hero**/
 
-  line-height: .7cm;
-  text-align: left;
-  padding:20em;
+  .hero {
+    display: grid;
+    grid-area: hero;
+    grid-template-columns: .2fr 1fr .2fr;
+    grid-template-rows: 200px 1fr .7fr;
+    grid-template-areas:
+      " . . . "
+      " . slgn . "
+      ". arrow .";
+    background-color: #36431D;
+  }
 
-}
+  .slogan {
+    display: grid;
+    grid-area: slgn;
+    text-align: left;
+    font-family: abel;
+    font-weight: light;
+    color: #FFFFFF;
+    font-size: 54pt;
+    line-height: 2cm;
+  }
 
-.grid2 > * {
-  grid-column: main;
-}
+  .arrow {
+      grid-area: arrow;
+      display: grid;
+      grid-template-columns: 1fr auto auto 1fr;
+      grid-template-rows: 1fr .25fr 1em;
+      grid-template-areas:
+        ". . . ."
+        ". arrowitem arrowitem ."
+        ". . . ."
+  }
 
-.slogan {
+  .arrowitem {
+      display: grid;
+      grid-area: arrowitem;
+      text-align: center;
+  }
 
-  text-align: left;
-  font-family: abel;
-  font-weight: light;
-  color: #FFFFFF;
-  font-size: 54pt;
-  line-height: 2cm;
-  grid-column: full;
-}
 
-.projects{
-  display: grid;
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-template-columns: 2, 3fr;
-  grid-gap: 25px;
+  /**start projects**/
+  .projects{
+    display: grid;
+    grid-area: project;
+    grid-template-columns: 2, minmax(250px, 5fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      " p1 p2 ";
+    grid-gap: 25px;
 
-}
+  }
+  .project1{
+    display: flex;
+    grid-area: p1;
+    grid-column: auto;
+    padding-left: 25px;
+    padding-top: 25px;
+    size: auto;
+    object-fit: cover;
 
-.project1{
-  grid-column: 1;
-  padding-left: 25px;
-  padding-top: 25px;
-  size: auto;
-}
+  }
 
-.project1 > img {
-  object-fit: cover;
-  width: 100%
-  max-height: 100%;
-}
+  .project1 > img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+  }
 
-.project2{
-  grid-column: 2;
-  padding-right: 25px;
-  padding-top: 25px;
-  size: auto;
-}
+  .project2{
+    display: flex;
+    grid-area: p2;
+    grid-column:auto;
+    padding-right: 25px;
+    padding-top: 25px;
+    size: auto;
+    object-fit: cover;
+  }
 
-.project2 > img {
-  object-fit: cover;
-  width: 100%
-  max-height: 100%;
-}
+  .project2 > img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+  }
 
-.footer-content{
-  display: grid;
-  text-align: center;
-  grid-template-columns:
-  grid-row-start: 4;
-  grid-row-end: 5;
+  /**end projects**/
 
-}
+  /**start pre-footer**/
+  /** footer content **/
 
-.section-line{
-  align-items:center;
-  width: 1000px;
-}
+  .footer{
+    display: grid;
+    grid-area: foot;
+    grid-template-columns: 2fr .25fr .1fr .1fr .25fr 2fr;
+    grid-template-rows: 1fr 1fr auto;
+    grid-template-areas:
+    "cont cont cont cont cont cont "
+    "ig ig ig ig ig ig"
+    "end end end end end end "
+  }
 
-.footerpara {
-  font-family: "open sans", sans-serif;
-  font-size: 1.5em;
-}
+  .footercontent{
+    display: grid;
+    grid-area: ig;
+    grid-template-columns: 2fr .25fr .1fr .1fr .25fr 2fr;
+    grid-template-rows: 2fr;
+    grid-template-areas:
+      "bttn bttn bttn bttn bttn bttn"
+      ". . lnkd gthb . .";
+  }
 
-.contactmebutton {
-  size: 200%;
-}
+  .centergrid{
+    grid-area: cont;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr .1fr .5fr .25fr;
+    grid-template-areas:
+      ". . ."
+      ". line ."
+      ". titl ."
+      ". para ."
+      ". . ."
+    }
 
-.linkedin{
-  align-items:center;
-}
+  .greyfooter{
+    display: grid;
+    grid-area: end;
+    text-align: center;
 
-.github{
-  align-items:center;
-}
+  }
+
+
+  .shortlineblack {
+    grid-area: line;
+    text-align: center;
+  }
+
+  .sectiontitle {
+    grid-area: titl;
+    text-align: center;
+    font-family: "abel";
+    font-size: 22pt;
+    font-weight: lighter;
+
+  }
+  **/
+
+  .footerpara {
+    padding-top: 6em;
+    padding-bottom: 1em;
+    font-family: "open sans", sans-serif;
+    font-size: 1.5em;
+    align-items:center;
+
+  }
+
+  .contactmebutton {
+    text-align: center;
+    grid-area: bttn;
+  }
+
+
+  .linkedin {
+    text-align: center;
+    grid-area: lnkd;
+    padding-top: 5em;
+    padding-right: 1em;
+    padding-bottom: 10em;
+  }
+
+  .github{
+    text-align: center;
+    grid-area: gthb;
+    padding-top: 5em;
+    padding-left: 1em;
+    padding-bottom: 10em;
+  }
+
+  .minitype{
+    font-family: "open sans";
+    background-color: #4A4A4A;
+    font-size: 1em;
+    color: #FFFFFF;
+    height: 8em;
+    padding: 3em;
+  }
+
+  .bodytype {
+    font-family: "open sans";
+    background-color: #4A4A4A;
+    font-size: 1em;
+    color: #FFFFFF;
+    height: 8em;
+    padding: 3em;
+  }
+
+  /**end pre-footer**/
+
+  /**start footer**/
+  /**end footer**/
