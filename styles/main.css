@@ -1,9 +1,15 @@
+/** PAGE ESSENTIALS **/
+
 * {
   box-sizing: border-box;
 }
 
-html {
+html, body{
   font-size: 10px;
+
+
+  margin:0;
+  padding:0;
 }
 
 /**start navigation**/
@@ -101,6 +107,7 @@ a:active {
   color: none;
 }
 /**end navigation**/
+/** PAGE ESSENTIALS **/
 
 .container {
   display: grid;
@@ -116,10 +123,14 @@ a:active {
   /**start hero**/
   /**end hero**/
 
+
+
   .hero {
     display: grid;
     grid-area: hero;
+    grid-template-columns: auto;
     grid-template-columns: .2fr 1fr .2fr;
+
     grid-template-rows: 200px 1fr .7fr;
     grid-template-areas:
       " . . . "
@@ -127,6 +138,7 @@ a:active {
       ". arrow .";
     background-color: #36431D;
   }
+
 
   .slogan {
     display: grid;
@@ -161,7 +173,7 @@ a:active {
   .projects{
     display: grid;
     grid-area: project;
-    grid-template-columns: 2, minmax(250px, 5fr);
+    grid-template-columns: 2 minmax(250px, 5fr);
     grid-template-rows: 1fr;
     grid-template-areas:
       " p1 p2 ";
@@ -175,7 +187,6 @@ a:active {
     padding-left: 25px;
     padding-top: 25px;
     size: auto;
-    object-fit: cover;
 
   }
 
@@ -206,27 +217,6 @@ a:active {
   /**start pre-footer**/
   /** footer content **/
 
-  .footer{
-    display: grid;
-    grid-area: foot;
-    grid-template-columns: 2fr .25fr .1fr .1fr .25fr 2fr;
-    grid-template-rows: 1fr 1fr auto;
-    grid-template-areas:
-    "cont cont cont cont cont cont "
-    "ig ig ig ig ig ig"
-    "end end end end end end "
-  }
-
-  .footercontent{
-    display: grid;
-    grid-area: ig;
-    grid-template-columns: 2fr .25fr .1fr .1fr .25fr 2fr;
-    grid-template-rows: 2fr;
-    grid-template-areas:
-      "bttn bttn bttn bttn bttn bttn"
-      ". . lnkd gthb . .";
-  }
-
   .centergrid{
     grid-area: cont;
     display: grid;
@@ -240,79 +230,169 @@ a:active {
       ". . ."
     }
 
-  .greyfooter{
-    display: grid;
-    grid-area: end;
-    text-align: center;
+    .shortlineblack {
+      grid-area: line;
+      text-align: center;
+    }
 
-  }
+    .sectiontitle {
+      grid-area: titl;
+      text-align: center;
+      font-family: "abel";
+      font-size: 22pt;
+      font-weight: lighter;
 
-
-  .shortlineblack {
-    grid-area: line;
-    text-align: center;
-  }
-
-  .sectiontitle {
-    grid-area: titl;
-    text-align: center;
-    font-family: "abel";
-    font-size: 22pt;
-    font-weight: lighter;
-
-  }
-  **/
-
-  .footerpara {
-    padding-top: 6em;
-    padding-bottom: 1em;
-    font-family: "open sans", sans-serif;
-    font-size: 1.5em;
-    align-items:center;
-
-  }
-
-  .contactmebutton {
-    text-align: center;
-    grid-area: bttn;
-  }
+    }
 
 
-  .linkedin {
-    text-align: center;
-    grid-area: lnkd;
-    padding-top: 5em;
-    padding-right: 1em;
-    padding-bottom: 10em;
-  }
+    .subtitle{
+      grid-area: head;
+      text-align: left;
+      font-family: "open sans";
+      font-size: 2.8rem;
+      font-weight: bold;
+      text-align: center;
 
-  .github{
-    text-align: center;
-    grid-area: gthb;
-    padding-top: 5em;
-    padding-left: 1em;
-    padding-bottom: 10em;
-  }
+    }
 
-  .minitype{
-    font-family: "open sans";
-    background-color: #4A4A4A;
-    font-size: 1em;
-    color: #FFFFFF;
-    height: 8em;
-    padding: 3em;
-  }
+    .content{
+      text-align: center;
+      font-family: "open sans";
+      font-size: 1.8rem;
+      font-weight: regular;
+      grid-area: para;
 
-  .bodytype {
-    font-family: "open sans";
-    background-color: #4A4A4A;
-    font-size: 1em;
-    color: #FFFFFF;
-    height: 8em;
-    padding: 3em;
-  }
+    }
 
-  /**end pre-footer**/
+    /** footer content **/
 
-  /**start footer**/
-  /**end footer**/
+    .footer{
+      grid-area: footer;
+      width: 100%;
+    }
+
+    .footercontent{
+      display: grid;
+      grid-area: list;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 2fr 2fr;
+      grid-template-areas:
+        ". . bttn bttn . ."
+        ". . . . . .";
+    }
+
+    /**all work completed by me**/
+    .footerpara {
+      padding-top: 6em;
+      padding-bottom: 1em;
+      font-family: "open sans", sans-serif;
+      font-size: 1.5em;
+      align-items:center;
+
+    }
+
+
+    .button,
+    button,
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"] {
+      grid-area: bttn;
+      display: inline-block;
+      height: 60px;
+      padding: 0 30px;
+      color: #555;
+      font-family: abel;
+      text-align: center;
+      font-size: 3em;
+      font-weight: 100;
+      line-height: 38px;
+      letter-spacing: .1rem;
+      white-space: nowrap;
+      background-color: transparent;
+      border-radius: 4px;
+      border: 1px solid #bbb;
+      cursor: pointer;
+      box-sizing: border-box; }
+
+    .button:hover,
+    button:hover,
+    input[type="submit"]:hover,
+    input[type="reset"]:hover,
+    input[type="button"]:hover,
+    .button:focus,
+    button:focus,
+    input[type="submit"]:focus,
+    input[type="reset"]:focus,
+    input[type="button"]:focus {
+      color: #FFFFFF;
+      border-color: #C87B84;
+      outline: 0; }
+
+
+    .button.button-primary,
+    button.button-primary,
+    input[type="submit"].button-primary,
+    input[type="reset"].button-primary,
+    input[type="button"].button-primary {
+      color: #FFF;
+      background-color:#C87B84;;
+      border-color: #C87B84;
+
+    }
+
+    .button.button-primary:hover,
+    button.button-primary:hover,
+    input[type="submit"].button-primary:hover,
+    input[type="reset"].button-primary:hover,
+    input[type="button"].button-primary:hover,
+    .button.button-primary:focus,
+
+    button.button-primary:focus,
+    input[type="submit"].button-primary:focus,
+    input[type="reset"].button-primary:focus,
+    input[type="button"].button-primary:focus {
+      color: #000000;
+      background-color: #FFFFFF;
+      border-color: #C87B84;
+      border-width: medium; }
+
+
+
+    .linkedin {
+      text-align: right;
+      grid-area: lnk;
+      padding-top: 4em;
+
+    }
+
+    .github{
+      text-align: left;
+      grid-area: git ;
+      padding-top: 4em;
+
+    }
+
+    .greyfooter{
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 4fr 1fr 1fr 4fr;
+      grid-template-rows: .2fr .2fr;
+      grid-template-areas:
+        ". lnk git . "
+        ". mini mini .";
+      text-align: center;
+      background-color: #4A4A4A;
+      background-position: center;
+
+    }
+
+    .minitype{
+      grid-area: mini;
+      font-family: "open sans";
+      font-size: 1em;
+      color: #FFFFFF;
+      height: 4em;
+      padding: 1em;
+
+    }
