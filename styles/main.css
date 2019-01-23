@@ -23,6 +23,15 @@ width: 100%
   padding-top: 3em;
 }
 
+.arrow {
+  color: #FFFFFF;
+  font-size: 20pt;
+  line-height: 1cm;
+  text-align: center;
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+
 @media(max-width: 37em){
   .slogan {
     text-align: left;
@@ -34,20 +43,13 @@ width: 100%
     margin-left: 3em;
     margin-right: 3em;
     padding-top: 3em;
+    padding-bottom: 4em;
   }
-
-
-
+  .arrow {
+  display: none;
+  }
 }
 
-.arrow {
-  color: #FFFFFF;
-  font-size: 20pt;
-  line-height: 1cm;
-  text-align: center;
-  padding-bottom: 2em;
-  padding-top: 2em;
-}
 
 @media(max-width: 37em){
   .arrow {
@@ -150,6 +152,8 @@ width: 100%
 	opacity: 1;
 }
 .hvrbox .hvrbox-text {
+  color: #ffffff;
+  font-family: "work sans";
 	text-align: center;
 	font-size: 18px;
 	display: inline-block;

@@ -14,6 +14,7 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
+    min-width: 350px;
 }
 
 .container {
@@ -198,6 +199,7 @@ nav {
   top: 0;
   width: 100%;
 
+
 }
 
 nav a {
@@ -241,7 +243,7 @@ nav ul li a:hover, .side-nav a:hover {
     display: inline-block;
     font-family: "work sans";
     font-size: 1.4rem;
-    font-weight: 400;
+    font-weight: 100;
     list-style: none;
   }
     .navlogo{
@@ -259,13 +261,13 @@ nav ul li a:hover, .side-nav a:hover {
     display: inline-block;
     font-family: "work sans";
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 100;
     list-style: none;
   }
   .navlogo{
     width: auto;
     height: 3rem;
-    margin-left: 5em;
+    margin-left: 4em;
     padding-top: 1.1em;
   }
 }
@@ -275,7 +277,7 @@ nav ul li a:hover, .side-nav a:hover {
 /**mobile**/
 .sectiontitle {
   text-align: center;
-  font-family: "abel";
+  font-family: "work sans";
   font-size: 18pt;
   font-weight: lighter;
   line-height: 24pt;
@@ -295,7 +297,7 @@ nav ul li a:hover, .side-nav a:hover {
 .sectiontitlewhite {
   text-align: center;
   color: #FFFFFF;
-  font-family: "abel";
+  font-family: "work sans";
   font-size: 18pt;
   font-weight: lighter;
   line-height: 24pt;
@@ -307,7 +309,7 @@ nav ul li a:hover, .side-nav a:hover {
   .sectiontitle {
     text-align: center;
     font-family: "work sans";
-    font-size: 22pt;
+    font-size: 16pt;
     font-weight: 400;
   }
 
