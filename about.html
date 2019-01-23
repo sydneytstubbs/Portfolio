@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Begin Page Essentials -->
   <head>
-<!-- Begin Page -->
+
     <meta charset="utf-8">
     <title>Sydney Stubbs | UX/UI Design Portfolio</title>
     <meta name="description" content="Sydney Stubbs is a Seattle based UX Designer. She solves problems with design to help people.">
     <meta name="author" content="Sydney Stubbs">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" type="text/css" href="styles/aboutme.css">
+    <script type="text/javascript" src="js/portfolio.js"></script>
+    <script type="text/javascript" src="js/aboutme.js"></script>
+
   </head>
-<!--Website-->
-  <body>
-    <section class="wrapper">
-      <div class="navgrid"> <!--grid area=nav-->
-<!-- Logo(begin navigation menu) -->
-      <div class="navlogo">
-          <a href="index.html"><img src="images/index/nav-logo.svg" alt="Sydney Stubbs Logo"></a>
-        </div>
-      <h2 class="name"> SYDNEY STUBBS
-      </h2>
-<!-- Righthand Side Nav -->
-      <div class="menuoptions">
-          <div class=navmenu>
-            <div class=projectsmenu><a href="index.html#projects"><h2 class="nav-title">PROJECTS</h2></a></div>
-            <div class=aboutmenu><a href="about.html"><h2 class="nav-title">ABOUT</h2></a></div>
-            <div class=contactmenu><a class="button" href="mailto:sydneytstubbs@gmail.com"><h2 class="nav-title">CONTACT</h2></a></div>
+  <header> <!-- Begin Navigation -->
+    <nav class="nav-bar">
+      <div>
+        <a href="index.html"><img class="navlogo" src="images/index/nav-logo.png" alt="Sydney Stubbs Logo"></a>
+            <ul>
+              <li><a href="index.html#projects">PROJECTS</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="mailto:sydneytstubbs@gmail.com" target="_blank">CONTACT</a></li>
+            </ul>
+      </div>
+    </nav>
+  </header>
+    <body>
+      <!-- Hero -->
+      <section class="hero"> <!--grid area=me-->
+        <div class="me">
+          <img class="herophoto" img src="images/aboutme/me.png"></img>
+          <div class="herotext">
+            <h3 class="herosubtitle"> A little about me </h3>
+            <p class="herocontent"> At a young age, I took on the role of our family’s in-house tech support.  Whenever my parents had an issue with technology, I was there to coach them through the task completion. Being witness to my parent's click patterns was often painful because they weren’t conditioned to understand non-readable cues, or common UI patterns that were second nature to me.  Their frustration was continuous, along with my patience and empathy for their experience as non-native tech users.Today, after years of practice and interface innovation, they are both avid tech users who pull out their computers first thing in the morning.  As their tech-coach and only child, I continue to want them to reap maximum benefit from technology.  It’s my goal and major motivation as a UX Designer to empower users through enriching their relationship with technology.  The products people use dictate their human experience, and it’s my goal to make that experience a meaningful one. see UX is a bridge towards individual empowerment, and I am the bridge builder.
+            </p>
           </div>
         </div>
-      </div>
-<!-- About Me Begin-->
-      <section class="item about-me-grid"> <!--grid area=me-->
-        <div class="item me">
-          <img class="item me" img src="images/aboutme/me.svg">
-        </div>
-        <div class="item lightgreenbackground">
-        </div>
-        <h1 class="item sectiontitlebio"> A little about me </h1>
-        <p class="item sectionbodybio"> At a young age, I took on the role of our family’s in-house tech support.  Whenever my parents had an issue with technology, I was there to coach them through the task completion. Being witness to my parent's click patterns was often painful because they weren’t conditioned to understand non-readable cues, or common UI patterns that were second nature to me.  Their frustration was continuous, along with my patience and empathy for their experience as non-native tech users. Today, after years of practice and interface innovation, they are both avid tech users who pull out their computers first thing in the morning.  As their tech-coach and only child, I continue to want them to reap maximum benefit from technology.  It’s my goal and major motivation as a UX Designer to empower users through enriching their relationship with technology.  The products people use dictate their human experience, and it’s my goal to make that experience a meaningful one. I see UX is a bridge towards individual empowerment, and I am the bridge builder.
-        </p>
       </section>
+
       <section class="lookingfor"> <!--grid area = looking-->
           <div class="centergrid">
             <div class=shortlineblack>
@@ -48,7 +50,8 @@
             <h3 class="sectionbody">I'm looking for a full-time UX/UI job that values the people that it serves and employs.
             </h3>
           </div>
-        </section>
+      </section>
+
       <section class="cando"> <!--grid area = cando--> <!--grid area = cando center title-->
           <div class="centergrid">
             <div class=shortlinewhite>
@@ -60,7 +63,7 @@
             <div class="candolist1">
               <ul> <!--skills -->
                 <li> <!--image lightbulb-->
-                  <img class="lightbulb" src="images/aboutme/lightbulb.svg" alt="lightbulb">
+                  <img class="lightbulb" src="images/aboutme/lightbulb.png" alt="lightbulb">
                 </li>
                 <li>
                   <h3 class="listtitle">SKILLS</h3>
@@ -112,7 +115,7 @@
             <div class="candolist2">
               <ul> <!--tools -->
                 <li> <!--image tools-->
-                  <img class="tools" src="images/aboutme/tools.svg" alt="tools">
+                  <img class="tools" src="images/aboutme/tools.png" alt="tools">
                 </li>
                 <li>
                   <h3 class="listtitle">TOOLS</h3>
@@ -142,155 +145,103 @@
             </div>
           </div>
           </section>
-      <section class="liketodo"> <!--grid area = like-->
-          <div class="centergrid">
-            <div class=shortlinewhite>
-              <img src="images/aboutme/shortlinewhite.svg">
+
+
+          <section class="liketodo"> <!--grid area = like-->
+            <div class="centergrid">
+              <div class=shortlinewhite>
+                <img src="images/aboutme/shortlinewhite.svg">
+              </div>
+              <h1 class="sectiontitlewhite">This is what I like to do</h1>
             </div>
-            <h1 class="sectiontitlewhite">This is what I like to do</h1>
-          </div>
-          <div class="likecontent"> <!--this is what i like to do -->
-              <div class="globe"> <!--globe image -->
-                <img src="images/aboutme/travel.svg" alt="globe">
+            <div class="likecontent"> <!--this is what i like to do -->
+              <div class="element globe"> <!--globe image -->
+                <img src="images/aboutme/travel1.png" alt="globe">
               </div>
-              <div class="hiking"> <!--hiking image -->
-                <img src="images/aboutme/hiking.svg" alt="hiking">
+              <div class="element hiking"> <!--hiking image -->
+                <img src="images/aboutme/hiking1.png" alt="hiking">
               </div>
-              <div class="camera"> <!--camera image -->
-                <img src="images/aboutme/camera.svg" alt="camera">
+              <div class="element camera"> <!--camera image -->
+                <img src="images/aboutme/camera1.png" alt="camera">
               </div>
-              <div class="headphone"> <!--headphone image -->
-                <img src="images/aboutme/headphones.svg" alt="headphone">
+              <div class="element headphone"> <!--headphone image -->
+                <img src="images/aboutme/headphones1.png" alt="headphone">
               </div>
-              <div class="media"> <!--movie image -->
-                <img src="images/aboutme/media.svg" alt="media">
+              <div class="element media"> <!--movie image -->
+                <img src="images/aboutme/media1.png" alt="media">
               </div>
             </div>
-        </section>
-      <section class="timeline"> <!--grid area = history-->
-          <div class="centergrid">
-            <div class=shortlineblack>
-                <img src="images/aboutme/shortlineblack.svg">
-            </div>
-            <h1 class="sectiontitle">This is how I got here</h1>
-          </div>
-          <div class="timelinegrid">
-            <div class="image">
-              <img class="timeline1" src="images/aboutme/timelin.png">
-            </div>
-          </div>
-        </section>
-      <section class="photoalbum"> <!--grid area = photos-->
+          </section>
+
+          <section class="how"> <!--grid area = history-->
               <div class="centergrid">
                 <div class=shortlineblack>
-                  <img src="images/aboutme/shortlineblack.jpg">
+                    <img src="images/aboutme/shortlineblack.svg">
                 </div>
-                <h1 class="sectiontitle">This is a collection of photos I've taken while traveling</h1>
+                <h1 class="sectiontitle">This is how I got here</h1>
               </div>
-              <div class="photocontent"><!--grid area = photo album-->
-                <section class="photoalbum"> <!--grid area = photos-->
-                  <div class="photocontent"><!--grid area = photo album-->
-                    <article>
-                      <img class="article-img" src="images/aboutme/croatia.jpg" alt="BALKINS" />
-                      <h1 class="article-title">
-                        CHINA
-                      </h1>
-                    </article>
-                    <article>
-                      <img class="article-img" src="images/aboutme/china-woman.jpg" alt="CHINA" />
-                      <h1 class="article-title">
-                        CHINA
-                      </h1>
-                    </article>
-                    <article>
-                      <img class="article-img" src="images/aboutme/louvre.jpg" alt="FRANCE" />
-                      <h1 class="article-title">
-                        FRANCE
-                      </h1>
-                    </article>
-                    <article>
-                      <img class="article-img" src="images/aboutme/kazbegi.jpg" alt="GEORGIA" />
-                      <h1 class="article-title">
-                        GEORGIA
-                      </h1>
-                    </article>
-                    <article>
-                      <img class="article-img" src="images/aboutme/israel.jpg" alt="ISRAEL" />
-                      <h1 class="article-title">
-                        ISRAEL
-                      </h1>
-                    </article>
-                    <article>
-                      <img class="article-img" src="images/aboutme/wadirum.jpg" alt="JORDAN" />
-                      <h1 class="article-title">
-                        JORDAN
-                      </h1>
-                    </article>
-                    <article>
-                      <img class="article-img" src="images/aboutme/morocco.jpg" alt="MOROCCCO" />
-                      <h1 class="article-title">
-                        MOROCCO
-                      </h1>
-                    </article>
-                    <article>
-                      <img class="article-img" src="images/aboutme/pnw.jpg" alt="PACIFIC NORTHWEST" />
-                      <h1 class="article-title">
-                        PACIFIC NORTHWEST
-                      </h1>
-                    </article>
-                    <article>
-                      <img class="article-img" src="images/aboutme/singapore.jpg" alt="SINGAPORE" />
-                      <h1 class="article-title">
-                        SINGAPORE
-                      </h1>
-                    </article>
-                    <article>
-                      <img class="article-img" src="images/aboutme/vietnam.jpg" alt="VIETNAM" />
-                      <h1 class="article-title">
-                        VIETNAM
-                      </h1>
-                    </article>
-                  </div>
-                </section>
           </section>
-      <section class="footer"><!--Footer--> <!--grid area = footer-->
-          <div class="centergrid">
-            <div class=shortlineblack>
-              <img src="images/aboutme/shortlineblack.svg">
-            </div>
-            <h1 class="sectiontitle">Thanks for stopping by, let's connect!</h1>
-          </div>
-          <div class="footercontent">
-            <button class="button-primary">CONTACT ME</button>
-              <a href="mailto:sydneytstubbs@gmail.com" target="_blank">
-              </a>
-            </div>
-          </div>
-        </section>
-      </section>
-      <div class=greyfooter>
-        <div class=linkedin>
-          <a href="http://www.linkedin.com/in/sydneytstubbs" target="_blank">
-            <img src="images/index/linkedinicon.svg" alt="linkedin icon" width="34" height="34">
-          </a>
-        </div>
-        <div class=github>
-          <a href="https://github.com/sydneytstubbs" target="_blank">
-            <img src="images/index/githubicon.svg" alt="github icon" width="34" height="34">
-          </a>
-        </div>
-        <p class=minitype>ALL WORK © SYDNEY STUBBS 2018</p>
-      </div>
-    <section class="wrapper">
-    </section>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131766282-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-131766282-1');
-    </script>
-  </body>
-</html>
+          <main id="main-content">
+        		<section class="container" id="casebody">
+        			<div class="row">
+        				<a class="anchor" id="about"></a>
+        				<ol class="timeline">
+        					<li> <span class="timeline__number__odd"></span> <span class="timeline__title">2008</span>
+        						<p>In high school, I spent a lot of time <b>making photos </b> in the darkroom, and <b>making graphic art</b> on Indesign.</p> <img src="./Images/aboutme/camera.png" alt=""> <span class="timeline__arc"></span> <span class="timeline__arc timeline__arc--bottom"></span></li>
+        					<li> <span class="timeline__number__even"></span> <span class="timeline__title">2010</span>
+        						<p>In college I studied how and why people do the things they do on a <b>societal, cultural</b>, and <b>economic</b> level.</p> <img src="./Images/aboutme/school.png" alt=""> <span class="timeline__arc"></span> <span class="timeline__arc timeline__arc--bottom"></span></li>
+        					<li> <span class="timeline__number__odd"></span> <span class="timeline__title">2013</span>
+        						<p>I spent a quarter in China conducting qualitative research.  Such as <b>in-depth interviews</b> and <b>focus groups.</b></p> <img src="./Images/aboutme/research.png" alt=""> <span class="timeline__arc"></span> <span class="timeline__arc timeline__arc--bottom"></span></li>
+        					<li> <span class="timeline__number__even"></span> <span class="timeline__title">2014</span>
+        						<p>I spent this time on a solo adventure aroudn the world, where I satiated my need to explore and learn about how other people live their lives around the globe.</p> <img src="./Images/aboutme/travel.png" alt=""> <span class="timeline__arc"></span> <span class="timeline__arc timeline__arc--bottom"></span></li>
+        					<li> <span class="timeline__number__odd"></span> <span class="timeline__title">2015</span>
+        						<p>Unsure what career move to make, I surrounded myself in design via architecture. Here I was <b>in charge of the company website</b> which was a pivotal part of my path towards discovering UX.</p> <img src="./Images/aboutme/greece.png" alt=""> <span class="timeline__arc"></span> <span class="timeline__arc timeline__arc--bottom"></span></li>
+        					<li> <span class="timeline__number__even"></span> <span class="timeline__title">2016</span>
+        						<p>With extremely strong people skills and an <b>empathetic demeanor</b>, I excelled at counseling families, but wasn't content. I needed a job where I could be creating.</p> <img src="./Images/aboutme/plur.png" alt=""> <span class="timeline__arc"></span> <span class="timeline__arc timeline__arc--bottom"></span></li>
+        					<li> <span class="timeline__number__odd"></span> <span class="timeline__title">2018</span>
+        						<p>Finding a career that combines my <b>passion to create</b>, and my strength of <b>understanding people</b> felt like everything I had been searching for in one. January 2018 I started my path towards a career in UX!</p> <img src="./Images/aboutme/sturdy.png" alt=""> <span class="timeline__arc"></span> <span class="timeline__arc timeline__arc--bottom"></span></li>
+        				</ol>
+        			</div>
+        		</section>
+        	</main>
+          <section class="footer"><!--Footer--> <!--grid area = footer-->
+              <div class="centergrid">
+                <div class=shortlineblack>
+                  <img src="images/aboutme/shortlineblack.svg">
+                </div>
+                <h1 class="sectiontitle">Thanks for stopping by, let's connect!</h1>
+              </div>
+              <div class="footercontent">
+                <button class="button-primary"><a href="mailto:sydneytstubbs@gmail.com" target="_blank">CONTACT</a></button>
+                </div>
+              </div>
+            </section>
+          <div class=greyfooter>
+            <div class=icons>
+              <div class=linkedin>
+                <a href="http://www.linkedin.com/in/sydneytstubbs" target="_blank">
+                  <img src="images/index/linkediniconwhite.png" alt="linkedin icon" width="34" height="34">
+                </a>
+              </div>
+              <div class=github>
+                <a href="https://github.com/sydneytstubbs" target="_blank">
+                  <img src="images/index/githubiconwhite.png" alt="github icon" width="34" height="34">
+                </a>
+              </div>
+            </div>
+            <p class=minitype>ALL WORK © SYDNEY STUBBS 2018</p>
+          </div>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131766282-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-131766282-1');
+        </script>
+
+      </body>
+<!-- About Me Begin-->

@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Begin Page Essentials -->
   <head>
-<!-- Begin Page -->
+
     <meta charset="utf-8">
     <title>Sydney Stubbs | UX/UI Design Portfolio</title>
     <meta name="description" content="Sydney Stubbs is a Seattle based UX Designer. She solves problems with design to help people.">
     <meta name="author" content="Sydney Stubbs">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <script type="text/javascript" src="js/portfolio.js"></script>
+
   </head>
-  <header>
-    <figure class="brand"><a href="index.html"><img src="images/index/nav-logo.svg" alt="Sydney Stubbs Logo"></a></figure>
-    <nav class="menu">
-        <input type="checkbox" id="menuToggle">
-        <label for="menuToggle" class="menu-icon"><i class="fa fa-bars"></i></label>
-        <ul>
-            <a href="#"><li>Work</li></a>
-            <a href="#"><li>About</li></a>
-            <a href="#"><li>Home</li></a>
-        </ul>
-    </nav>
+    <header>
+      <!-- Begin Navigation -->
+      <nav class="nav-bar">
+        <div>
+          <a href="index.html"><img class="navlogo" src="images/index/nav-logo.png" alt="Sydney Stubbs Logo"></a>
+              <ul>
+                <li><a href="index.html#projects">PROJECTS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="mailto:sydneytstubbs@gmail.com" target="_blank">CONTACT</a></li>
+              </ul>
+        </div>
+      </nav>
   </header>
-<!--Website-->
+
+<!--Begin Body-->
   <body>
       <section class="hero">
         <h1 class="slogan">Hi, I’m Sydney, a Seattle based UX Designer that solves problems to help people.
@@ -34,17 +38,36 @@
           <img class="arrowitem" src="images/index/arrow.svg">
         </div>
       </section>
-    <div class="container">
-    <!-- projects -->
-      <section class="projects">
-        <div class="project1">
-          <img class="FileWeave-Project" img src="images/index/fileweave-project.svg">
-        </div>
-        <div class="project2">
-          <img class="FileWeave-Project" img src="images/index/language-project.svg">
-        </div>
-      </section>
+    <div class="container">    <!-- projects -->
     </div>
+
+    <ul class="project">
+
+      <a href="casestudy.html">
+        <li class="project1">
+          <div class="hvrbox">
+            <img class="FileWeave-Project" img src="images/index/fileweave-project.svg">
+              <div class="hvrbox-layer_top">
+                <div class="hvrbox-text">FileWeave: A cloud storage solution
+                </div>
+              </div>
+          </div>
+        </li>
+      </a>
+
+      <a href="casestudy.html">
+        <li class="project2">
+          <div class="hvrbox">
+            <img class="FileWeave-Project" img src="images/index/language-project.svg">
+              <div class="hvrbox-layer_top">
+                <div class="hvrbox-text">FileWeave is a great product</div>
+              </div>
+            </div>
+        </li>
+      </a>
+    </ul>
+
+
       <section class="footer"><!--Footer--> <!--grid area = footer-->
           <div class="centergrid">
             <div class=shortlineblack>
@@ -53,29 +76,26 @@
             <h1 class="sectiontitle">Thanks for stopping by, let's connect!</h1>
           </div>
           <div class="footercontent">
-            <button class="button-primary">CONTACT ME</button>
-              <a href="mailto:sydneytstubbs@gmail.com" target="_blank">
-              </a>
+            <button class="button-primary"><a href="mailto:sydneytstubbs@gmail.com" target="_blank">CONTACT</a></button>
             </div>
           </div>
         </section>
-      </section>
       <div class=greyfooter>
-        <div class=linkedin>
-          <a href="http://www.linkedin.com/in/sydneytstubbs" target="_blank">
-            <img src="images/index/linkedinicon.svg" alt="linkedin icon" width="34" height="34">
-          </a>
-        </div>
-        <div class=github>
-          <a href="https://github.com/sydneytstubbs" target="_blank">
-            <img src="images/index/githubicon.svg" alt="github icon" width="34" height="34">
-          </a>
+        <div class=icons>
+          <div class=linkedin>
+            <a href="http://www.linkedin.com/in/sydneytstubbs" target="_blank">
+              <img src="images/index/linkediniconwhite.png" alt="linkedin icon" width="34" height="34">
+            </a>
+          </div>
+          <div class=github>
+            <a href="https://github.com/sydneytstubbs" target="_blank">
+              <img src="images/index/githubiconwhite.png" alt="github icon" width="34" height="34">
+            </a>
+          </div>
         </div>
         <p class=minitype>ALL WORK © SYDNEY STUBBS 2018</p>
       </div>
-    <section class="wrapper">
-    </section>
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131766282-1"></script>
     <script>
