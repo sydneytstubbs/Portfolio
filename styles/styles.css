@@ -278,7 +278,7 @@ nav ul li a:hover, .side-nav a:hover {
 .sectiontitle {
   text-align: center;
   font-family: "work sans";
-  font-size: 18pt;
+  font-size: 16pt;
   font-weight: lighter;
   line-height: 24pt;
 }
@@ -288,7 +288,7 @@ nav ul li a:hover, .side-nav a:hover {
   text-align: center;
   font-family: "work sans";
   font-size: 12pt;
-  font-weight: 400;
+  font-weight: 100;
   line-height: 24px;
   padding-bottom: 6em;
   padding: 2em 3em 5em 3em;
@@ -298,7 +298,7 @@ nav ul li a:hover, .side-nav a:hover {
   text-align: center;
   color: #FFFFFF;
   font-family: "work sans";
-  font-size: 18pt;
+  font-size: 16pt;
   font-weight: lighter;
   line-height: 24pt;
 
@@ -310,22 +310,22 @@ nav ul li a:hover, .side-nav a:hover {
     text-align: center;
     font-family: "work sans";
     font-size: 16pt;
-    font-weight: 400;
+    font-weight: 100;
   }
 
   .sectiontitlewhite {
     text-align: center;
     color: #FFFFFF;
     font-family: "work sans";
-    font-size: 22pt;
-    font-weight: 400;
+    font-size: 16pt;
+    font-weight: 100;
   }
 
   .sectionbody {
     text-align: center;
     font-family: "work sans";
-    font-size: 16pt;
-    font-weight: 400;
+    font-size: 14pt;
+    font-weight: 100;
   }
 
   .shortlineblack{

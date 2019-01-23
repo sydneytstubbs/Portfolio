@@ -7,7 +7,7 @@
 /*HERO*/
 
 .hero {
-background-color: #36431D;
+background-color: #FFFFFF;
 width: 100%
 }
 
@@ -15,7 +15,7 @@ width: 100%
   text-align: left;
   font-family: "work sans";
   font-weight: 100;
-  color: #FFFFFF;
+  color: #000000;
   font-size: 3em;
   line-height: 1em;
   margin-left: 3em;
@@ -34,15 +34,7 @@ width: 100%
 
 @media(max-width: 37em){
   .slogan {
-    text-align: left;
-    font-family: "work sans";
-    font-weight: 100;
-    color: #FFFFFF;
     font-size: 2em;
-    line-height: 1em;
-    margin-left: 3em;
-    margin-right: 3em;
-    padding-top: 3em;
     padding-bottom: 4em;
   }
   .arrow {
