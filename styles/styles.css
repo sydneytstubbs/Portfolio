@@ -14,7 +14,7 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-    min-width: 350px;
+  min-width: 350px;
 }
 
 .container {
@@ -29,7 +29,6 @@ html, body {
 
 .textgrid{
   text-align: left;
-  align-items: left;
   display: grid;
   grid-template-columns: .5fr 1fr .5fr;
   grid-template-rows: 1fr auto;
@@ -39,6 +38,7 @@ html, body {
   " . btn .";
   text-rendering: optimizeLegibility;
   padding-bottom: 8em;
+
 
 }
 
@@ -54,7 +54,7 @@ html, body {
     grid-template-areas:
     " . title ."
     " . para ."
-    " . btn .";
+    " btn . .";
     text-rendering: optimizeLegibility;
     padding-bottom: 4em;
   }
@@ -406,6 +406,7 @@ nav ul li a:hover, .side-nav a:hover {
 
 button {
   grid-area: btn;
+
   height: 4em;
   padding: 1.5em auto;
   margin: 1em auto;
@@ -416,6 +417,7 @@ button {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   transition: all 0.2s cubic-bezier(.4,0,.2,1);
+
 }
 
 

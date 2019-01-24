@@ -1,3 +1,4 @@
+
 /*CONTAINER*/
 .container {
   display: flex;
@@ -12,7 +13,7 @@ width: 100%
 }
 
 .slogan {
-  text-align: left;
+  text-align: center;
   font-family: "work sans";
   font-weight: 100;
   color: #000000;
@@ -21,6 +22,7 @@ width: 100%
   margin-left: 3em;
   margin-right: 3em;
   padding-top: 3em;
+  padding-bottom: 15em;
 }
 
 .arrow {
@@ -55,43 +57,148 @@ width: 100%
 }
 
 .project{
-  display: grid;
+  display: inline-block;
+  grid-gap: 10px;
   width: 100%;
-  grid-template-areas:
-  "p1 p2";
-  margin-right: 20px;
 }
 
 .project1{
-  grid-area: p1;
+  margin-bottom: 10em;
+  margin-left: 4em;
+}
+.casestudygrid{
+  display: grid;
+  grid-template-columns: .7fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "item2 item1";
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10em;
+}
+
+.photo1{
+  grid-area: item1;
+  width: 50%;
+  margin-left: 15em;
+}
+
+.description{
+  grid-area: item2;
+  align-items: center;
+  width: 50%;
+  margin-left: 10em;
 }
 
 .project2{
-  grid-area: p2;
+  margin-bottom: 20em;
+  margin-left: 4em;
 }
 
-.project2 > img {
+.casestudygrid2{
+  display: grid;
+  grid-template-columns: 1fr .7fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "item3 item4";
+  align-items: center;
+  text-align: center;
+}
+
+
+.photo2{
+  grid-area: item3;
+  width: 50%;
+  margin-left: 15em;
+}
+
+.studybutton{
+  width: 150px;
+  padding-top: 2.5em;
+}
+
+h1{
+  font-family: "work sans";
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 3em;
+
+}
+
+h2{
+  font-family: "work sans";
+    font-size: 1.5em;
+    line-height: 1.5em;
+  font-weight: 200;
+}
+
+.description2{
+  grid-area: item4;
+  align-items: center;
+  width: 50%;
+
+}
+
+.photo1 > img {
   object-fit: cover;
-  width: 100%;
+  width: 40%;
   max-height: 100%;
 }
 
 .project1 > img {
   object-fit: cover;
   width: 100%;
-  max-width: 10px;
+  max-height: 100%;
 }
 
-/**tablet**/
-@media(max-width: 550px){
-  .project{
-    display: grid;
-    width: 100%;
-    grid-template-areas:
-    "p1"
-    "p2";
+
+@media(max-width: 900px){
+.casestudygrid2{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr .7fr;
+  grid-template-areas:
+  "item3"
+  "item4";
+  align-items: center;
+  text-align: center;
+}
+  .photo2{
+    grid-area: item3;
+    width: 50%;
+    text-align: center;
   }
 
+  .description2{
+    text-align: center;
+    grid-area: item4;
+    text-align: center;
+  }
+
+  .casestudygrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr .7fr;
+    grid-template-areas:
+    "item1"
+    "item2";
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10em;
+  }
+
+  .photo1{
+    grid-area: item1;
+    width: 50%;
+    margin-left: 15em;
+  }
+
+  .description{
+    grid-area: item2;
+    align-items: center;
+    width: 50%;
+    margin-left: 10em;
+  }
 }
 
 
@@ -104,67 +211,3 @@ width: 100%
 }
 
 /**project hover**/
-
-.hvrbox,
-.hvrbox * {
-	box-sizing: border-box;
-}
-.hvrbox {
-	position: relative;
-	display: inline-block;
-	overflow: hidden;
-	max-width: 100%;
-	height: auto;
-}
-.hvrbox img {
-	max-width: 100%;
-}
-.hvrbox .hvrbox-layer_bottom {
-	display: block;
-}
-.hvrbox .hvrbox-layer_top {
-	opacity: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.6);
-	color: #fff;
-	padding: 15px;
-	-moz-transition: all 0.4s ease-in-out 0s;
-	-webkit-transition: all 0.4s ease-in-out 0s;
-	-ms-transition: all 0.4s ease-in-out 0s;
-	transition: all 0.4s ease-in-out 0s;
-}
-.hvrbox:hover .hvrbox-layer_top,
-.hvrbox.active .hvrbox-layer_top {
-	opacity: 1;
-}
-.hvrbox .hvrbox-text {
-  color: #ffffff;
-  font-family: "work sans";
-	text-align: center;
-	font-size: 18px;
-	display: inline-block;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-moz-transform: translate(-50%, -50%);
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-}
-.hvrbox .hvrbox-text_mobile {
-	font-size: 15px;
-	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
-	border-top: 1px solid rgba(179, 179, 179, 0.7);
-	margin-top: 5px;
-	padding-top: 2px;
-	display: none;
-}
-.hvrbox.active .hvrbox-text_mobile {
-	display: block;
-}
