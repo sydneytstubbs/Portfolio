@@ -6,9 +6,11 @@
     <title>Sydney Stubbs | UX/UI Design Portfolio</title>
     <meta name="description" content="Sydney Stubbs is a Seattle based UX Designer. She solves problems with design to help people.">
     <meta name="author" content="Sydney Stubbs">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" type="text/css" href="styles/fileweave.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <script type="text/javascript" src="js/portfolio.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
@@ -27,21 +29,19 @@
       </div>
     </nav>
     </header>
-  <div class="hero-photo">
+  <div class="hero-photo"><img class="laptop"src="images/fileweave/laptop.png" alt="people">
   <h1 class=herotitle>
-    <span style="color:#002E67"><strong>File</strong></span><span style="color:#5AD993"><strong>Weave:</strong></span> A social cloud storage solution.
+    <span style="color:#002E67"><strong>File</strong></span><span style="color:#5AD993"><strong>Weave</strong></span><br><br>A social cloud storage solution.
   </h1>
 </div>
 <section class="wrapper">
   <section class="overview"> <!--Overview-->
-
-    <section class="textgrid"> <!--Overview Text-->
+    <section class="textgrid" id="overviewtext"> <!--Overview Text-->
       <h2 class="subtitle">PROJECT OVERVIEW</h2>
-      <p class="content">FileWeave is a single cloud storage platform that keeps your personal, school, and professional files organized in one place. Staying connected with other users, FileWeave helps you stay connected through being able to easily collaborate and download editable files to enhance your workflow. </p>
-      <button id="hello" class="textgridbtn"><a href="WWW.SYDNEYSTUBBS.DESIGN.COM">View Prototype</a></button>
-
+      <p class="content">The task at hand was to design a cloud storage platform that catered to an untapped market.  In an already saturated cloud storage ecosystem, the only way to find a unique angle would be to ask the users themselves.  The viable solution resulted in the creation of FileWeave, a one stop shop for all your various cloud storage needs, with enhanced organization and social collaboration.  </p>
+      <p id="protolink"><a href="mailto:sydneytstubbs@gmail.com">View Prototype</a></p>
     </section>
-    <section class="grid3"><!--Roles Deliverables and Tools List-->
+    <section class="scopegrid"><!--Roles Deliverables and Tools List-->
       <ul class="roles">
         <li>
           <img class="icon roleicon" src="images/fileweave/roles.png" alt="people">
@@ -115,152 +115,152 @@
         </li>
       </ul>
     </section>
-
     <section class="problem-solution"><!--Problem & Solution-->
-      <img class="divider1" src="images/fileweave/divider1.png" alt="discovery-divider">
-      <div id="problem" class="textgrid">
+      <div id="squishgrid" class="textgrid">
         <h2 class="subtitle">PROBLEM</h2>
-        <p class="content">Ever have issues keeping your cloud storage organized? Between work, family, and your personal files, it’s easy to get disorganized.  When you’re working on multiple platforms to store and share personal and professional life documents, streamlined workflow is inhibited.</p>
+        <p class="content">The research unveiled three major issues that users were having with their current cloud storage solution...<br>
+          <br> (1) having to use more than one platform<br>
+          (2) poor organization, and<br>
+          (3) users wanting to expand their platform socially.  <br>
+          <br>From this feedback the problem was identified: between work, family, and your personal files, it’s easy to get disorganized.  When you’re working on multiple platforms to store and share personal and professional life documents, streamlined workflow is inhibited. Moving forward, we needed to consolidate competitor platforms functionalities, improve the organization and expand to the users social networks in order to reach the untapped market the client was looking for.<br><br></p>
       </div>
       <div id="solution" class="textgrid"><!--solution-->
         <h2 class="subtitle">SOLUTION</h2>
-        <p class="content">FileWeave as a minimum viable product provides file storage, creation, and collaboration. With enhanced organizational features, and the capability to easily share and display your files for all realms of your life, FileWeave is the answer to your cloud storage needs.</p>
+        <p class="content">An app for all types of file storage (docs, photos, links, spreadsheets etc.) with advanced social sharing abilities, allowing users to post documents, and download documents from other users.  Last but not least, advanced organization, with the capability to make overarching folders that function as separate interfaces within one account.</p>
       </div>
     </section>
-
-<!--Info Architecture Divider-->
+    <section class="dividegrid">
+      <div class="divideit">
+          <h2>RESEARCH AND DISCOVERY &nbsp;&nbsp;</h2><b class="hr anim"></b>
+      </div>
+    </section>
+  </section>
     <section class="research"><!--Info Architecture Divider-->
-
-      <img class="divider2" src="images/fileweave/divider2.png" alt="research-divider"><!--Research Divider-->
       <div class="textgrid"><!--Research Overview-->
         <h2 class="subtitle">RESEARCH OVERVIEW</h2>
-        <p class="content">First off, I had to test the client's, and my own assumptions about cloud storage users needed to be confirmed or denied with research.  Identifying use context and needs of potential users was done through deploying a user survey.  With the initial survey responses, an empathetic understanding of how individuals use and think about cloud storage was gained.</p>
+        <p class="content">First off was testing the client’s, and my own assumptions about cloud storage user needs and frustrations.  I deployed an online survey using google forms to gain insight into user motivation, behavior, preferences and dislikes.<br>
+<br>On top of gaining insight into the mind of the user, at the client’s suggestion, I asked specific questions about how the user feels about potential features concerning collaboration and social functions.</p>
       </div>
-      <div class="survey box"><!--Survey Reuslts-->
-          <div class="survey-analysis">
-            <ul class="survey-table">
-              <li><h6 id="title">Survey Findings<br></h6></li>
-              <li class="survey-results"><h6><strong>40%</strong> of users are happy using multiple cloud storage platforms for different tasks.<br></h6></li>
-              <li class="survey-results"><h6><strong>80%</strong> of users would benefit from expanding social network cloud features.<br></h6></li>
-              <li class="survey-results"><h6><strong>87%</strong> of users see benefit of expanding collaboratve features.<br></h6></li>
-              <li class="survey-results"><h6><strong>70%</strong> are very concerned with keeping files organized.<br></h6></li>
-              <li class="survey-results"><h6><strong>85%</strong> say saving, viewing and editing files, are the most important functions.<br></h6></li>
-              <li class="survey-results"><h6><strong>32%</strong> of users are unhappy with syncing across devices.<br></h6></li>
-            </ul>
+      <div class="surveybox"><!--Survey Reuslts-->
+        <div class="survey-analysis">
+          <ul class="survey-table">
+            <li><h6 id="title">Survey Findings<br></h6></li>
+            <li class="survey-results"><h6><strong>64%</strong> are unhappy using multiple cloud platforms to complete different tasks.<br></h6></li>
+            <li class="survey-results"><h6><strong>70%</strong> are very concerned with keeping files organized.<br></h6></li>
+            <li class="survey-results"><h6><strong>85%</strong> are open to having multiple modes of organization within their cloud storage.<br></h6></li>
+            <li class="survey-results"><h6><strong>80%</strong> would benefit from expanding social uses.<br></h6></li>
+            <li class="survey-results"><h6><strong>87%</strong> of users see benefit of expanding collaboratve features in general.<br></h6></li>
+            <li class="survey-results"><h6><strong>87%</strong> stated they would benefit from editable documents.<br></h6></li>
+          </ul>
         </div><!--Survey Results Table-->
-      </d
-
-      iv>
+      </div>
       <section class="personas"><!--Personas-->
         <div class="textgrid"><!--Peronas-->
           <h2 class="subtitle">PERSONAS</h2>
-          <p class="content">After the survey results were analyzed, I created user personas to key in on user needs and frustrations as I designed FileWeave.</p>
+          <p class="content">After the survey results were analyzed, I was able to take that information and create user personas to key in on user needs and frustrations as I designed FileWeave.</p>
+          <p class="personalink" id="protolink"><a href="mailto:sydneytstubbs@gmail.com">View More Personas</a></p>
         </div>
         <section class="personacontent">
           <img class="personaimage" src="images/fileweave/personaimage.png">
-          <button id="hello"><a href="WWW.SYDNEYSTUBBS.DESIGN.COM">VIEW PERSONAS</a></button>
         </section>
       </section>
       <div class="textgrid"><!--SWOT Analysis Introduction-->
         <h2 class="subtitle">COMPETITIVE ANALYSIS</h2>
-        <p class="content"> I did a SWOT analysis to learn more about the ecosystem of cloud storage platfoms FileWeave was entering.  I researched the ease of document uploading, navigation, organization, effectiveness of UI and UX, and task facilitation and special features, and yielded these results:</p>
+        <p class="content"> Once I had narrowed down the problem through the first round of research, I was ready to take a look into the competition.  I conducted a SWOT analysis to learn more about the ecosystem that FileWeave would be entering.  Here are some of the major takeaways gleaned from the results:</p>
       </div>
-      <div class="swotgrid"><!--SWOT Analysis Results-->
-        <div class="drive">
-          <div class="swot-explaination">
-            <img class="swotimage" src="images/fileweave/google.png" alt="googledriveimage">
-            <p class="contentswot">Positioning: Google drive positions itself as a file storage and syncing system, leveraging it's loyal user base. It is seen as a comprehensive storage and collaboration tools, as well as a key component of G Suite, to appeal to businesses. </p>
-          </div>
-        </div>
-        <div class="dropbox">
-          <div class="swot-explaination">
-            <img class="swotimage" src="images/fileweave/dropbox.png" alt="dropboximage">
-            <p class="contentswot">Positioning: Dropbox positions itself as a backup and file sharing platform, centered around team collaboration and document storage.  Dropbox is built for productivity as opposed to simply storage.  Primary Audience: Dropbox is used mainly for B2B transactions, but also for individual use.<br></h2>
-          </div>
-        </div>
-        <div class="tresorit">
-          <div class="swot-explaination">
-            <img class="swotimage" src="images/fileweave/tresorit.png" alt="tresoritimage">
-            <p class="contentswot">Positioning: Tresorit positions itself to be providing secure storage better than other cloud providers. Positions itself as a backup cloud storage site.</p>
-          </div>
-        </div>
+      <div>
+        <img class="swotimage" src="images/fileweave/swotimage.png" alt="tresoritimage">
       </div>
-      <div id="apply" class="textgrid"><!--SWOT Analysis Applying Results-->
-        <h2 class="subtitle">APPLYING THE RESULTS</h2>
-        <p class="content">
-          <ol>
-            <li class="result1">All three platforms are tapered to a specific type of storage, but users have to use different platforms based on their user purpose.  FileWeave can provide one centralized platform.<br></li>
-            <br><li class="result1">Dropbox lacks file creation, Tresorit lacks organization.  FileWeave will allow you to store, edit and organize files.</li>
-            <br><li class="result1">GoogleDrive lacks access to public social documents.FileWeave will have a social feed where you can download public documents, which will be what it’s known for.</li>
-          </ol>
-        </p>
+      <div class="textgrid" id="swotgrid"><!--SWOT Analysis Results-->
+        <h2 class="subtitle" id="squishtitle">Google Drive</h2>
+        <p class="content" id="squishtext">Google Drive is a known favorite of most cloud storage users.  Though Google Drive markets itself as a platform that is all inclusive, most users take notes and store photos elsewhere.  On the outside, Google Drive looks as if it’s UI is simple and easy to use, but due to the bloated feel of the application, users are deterred from maximizing it’s functionality. </p>
       </div>
-
+      <div class="textgrid" id="swotgrid"><!--SWOT Analysis Results-->
+        <h2 class="subtitle" id="squishtitle">Dropbox</h2>
+        <p class="content" id="squishtext">Dropbox positions itself as a backup and file sharing platform, centered around team collaboration and document storage.  Dropbox is built for productivity as opposed to simply storage.  Overall, Dropbox’s intuitive interface and organizational structure has a leg up on Google Drive, but is lacking the range of functions that Drive offers.</p>
+      </div>
+      <div class="textgrid" id="swotgrid"><!--SWOT Analysis Results-->
+        <h2 class="subtitle" id="squishtitle">Tresorit</h2>
+        <p class="content" id="squishtext">Tresorit is a Swiss made platform, that offers top of the line security encryption.  Positions itself as a backup cloud storage site.  Different than Drive and Dropbox, Tresorit is purely a content storage tool.  The major downfall of Tresorit is the lack of organizational abilities once the data has been uploaded.  Content can’t be reorganized from the dashboard itself, which has resulted in a major pinpoint for users.</p>
+      </div>
     </section>
 
 
-    <section class="stories">
-  <div class="textgrid"><!--User Stories -->
-    <h2 class="subtitle">USER STORIES</h2>
-    <p class="content">With a general product direction, and an understanding of the user’s goals and frustrations, Iwas ready to make user stories. Based on everything I had learned thus far, I wrote the user stories to narrow down what was necessary to create the MVP.</p>
-  </div>
-  <div class="story-table">
-    <span><strong>User Type</strong></span>
-    <span><strong>Action to Perform</strong></span>
-    <span><strong>Importance</strong></span>
-    <span>As a new user I want</span>
-    <span>to create a new account so that I can upload, organize and create files</span>
-    <span>High</span>
-    <span>As a new user I want</span>
-    <span>to upload a document to a category so that I can easily keep my work files separate from my personal files</span>
-    <span>High</span>
-    <span>As a new user I want to</span>
-    <span>share a document so that I can collaborate with another user</span>
-    <span>High</span>
-    <span>As a new user I want</span>
-    <span>to search for an editable document to download so that I don't have to spend time creating my own spreadsheet</span>
-    <span>Medium</span>
-    <span>As a new user I want</span>
-    <span>to explore files posted by other users so that I can easily learn from others</span>
-    <span>Medium</span>
-  </div>
-</section>
-
+      <div class="textgrid"><!--User Stories -->
+        <h2 class="subtitle">USER STORIES</h2>
+        <p class="content">After creating the personas, I created a list of user stories to determine what tasks were deemed as high importance so that I could put those into the MVP.</p>
+      </div>
+          <section class="stories">
+      <div class="story-table">
+        <span><strong>User Type</strong></span>
+        <span><strong>Action to Perform</strong></span>
+        <span><strong>Importance</strong></span>
+        <span>As a new user I want</span>
+        <span>to create a new account so that I can upload, organize and create files</span>
+        <span>High</span>
+        <span>As a new user I want</span>
+        <span>to upload a document to a category so that I can easily keep my work files separate from my personal files</span>
+        <span>High</span>
+        <span>As a new user I want</span>
+        <span>to share a document so that I can collaborate with another user</span>
+        <span>High</span>
+        <span>As a new user I want</span>
+        <span>to search for an editable document to download so that I don't have to spend time creating my own spreadsheet</span>
+        <span>Medium</span>
+        <span>As a new user I want</span>
+        <span>to explore files posted by other users so that I can easily learn from others</span>
+        <span>Medium</span>
+      </div>
+    </section>
 
   <section class="flow">
-      <img class="divider3" src="images/fileweave/divider3.png" alt="information-divider">
     <div class="layer">
     <div id="flow1" class="textgrid"><!--User Flows-->
       <h2 class="subtitle">USER FLOWS</h2>
       <p class="content">I created user flows to ensure the information was organized in a way that was intuitive. The high and medium user story tasks were turned into flows to build a path to creating the solution as an MVP.</p>
+          <p id="protolink"><a href="mailto:sydneytstubbs@gmail.com">Click here to view more flows</a></p>
     </div>
-      <button id="hello"><a href="WWW.SYDNEYSTUBBS.DESIGN.COM">VIEW MORE FLOWS</a></button>
-    </div>
-    </section>
+    <img class="flow-image" src="/images/fileweave/userflows.png">
+  </section>
 
     <section class="sitemap">
       <div class="layer">
-      <div id="flow1" class="textgrid"><!--User Flows-->
-        <h2 class="subtitle">SITE MAP</h2>
-        <p class="content">In order to stay organized, I mapped out the overarching hierarchy of the product by creating a site map.</p>
+        <div id="flow1" class="textgrid"><!--User Flows-->
+          <h2 class="subtitle">SITE MAPS</h2>
+          <p class="content">I created user flows to ensure the information was organized in a way that was intuitive. The high and medium user story tasks were turned into flows to build a path to creating the solution as an MVP.</p>
       </div>
-      </div>
+          <img class="flow-image" src="/images/fileweave/sitemap.png">
       </section>
 
   <section class="branding">
-    <img class="divider4" src="images/fileweave/divider4.png" alt="branding-divider">
     <div class="textgrid">
       <h2 class="subtitle">DEVELOPING AN IDENTITY</h2>
-      <p class="content">FIleWeave is built for users with different motives, so my goal was to create a brand that is appealing to the weightless optimist, and the secure and stable pragmatist.  When you bridge those two user characteristics you create a weave: something fun, stable, secure to enjoy and trust.  First, I developed a mindmap to figure out the direction of the brand.   Once the brand was ideated, I needed to clarify what the brand is about and set up a unique brand identity, and the logo mark is critical in defining identity.  It was created with cool colors and collaboration at the core to promote a sense of confidence and strength.  Here is the process I followed for branding...</p>
+      <p class="content">FileWeave is built for users with different motives, so my goal was to create a brand that is appealing to the weightless optimist, and the secure and stable pragmatist.  When you bridge those two user characteristics you create a weave: something fun, stable, secure to enjoy and trust.</p>
     </div>
-    <div class="brandingimage">
-      <img class="flow-image" src="/images/fileweave/branding.png">
+    <div id="brandingsub" class="textgrid">
+      <h2 id="squishtitle" class="subtitle">Name</h2>
+      <p id="squishtext" class="content">The name FileWeave emerged through exploring the meaning and intent behind the concept of a cloud storage platform.  After exploring many related concepts, I was lead to the word, “weave.”  A concept that evoked the ideas  of security and stability while simple, and visually pleasing.</p>
+      <img id="brandingimage" class="flow-image" src="/images/fileweave/mindmap.png">
+    </div>
+    <div id="brandingsub" class="textgrid">
+      <h2 id="squishtitle" class="subtitle">Logo</h2>
+      <p id="squishtext" class="content">As for the logo, I tried to illustrate the concept of a Weave, and after many iterations, I came upon one that I felt accurately represented the concept of the brand.  The logo mark was critical in defining the brand identity.</p>
+      <img id="brandingimage" class="flow-image" src="/images/fileweave/logofinal.png">
+    </div>
+    <div id="brandingsub" class="textgrid">
+      <h2 id="squishtitle" class="subtitle">Color</h2>
+      <p id="squishtext" class="content">The color palette for FileWeave was to be based in blues and greens to convey a sense of confidence and strength.</p>
+      <img id="brandingimage" class="flow-image" src="/images/fileweave/colors.png">
+    </div>
+    <div id="brandingsub" class="textgrid">
+      <h2 id="squishtitle" class="subtitle">Typography</h2>
+      <p id="squishtext" class="content">For typography, I wanted to keep everything as simple as possible while still having a unique look.  Signika was used for the logo font, and Monserrat and Source Sans Pro for type within the bulk of the design.</p>
+      <img id="brandingimage" class="flow-image" src="/images/fileweave/font.png">
     </div>
   </section>
 
   <section class="sketch">
-    <img class="divider5" src="images/fileweave/divider5.png" alt="sketch-divider">
-    <div class="textgrid">
+    <div id="squishgrid" class="textgrid">
       <h2 class="subtitle">SKETCHES</h2>
       <p class="content">I began the visual design process by sketching, and then turned theminto digital wireframes on Sketch.</p>
     </div>
@@ -269,18 +269,17 @@
 
 
   <section class="wireframes">
-    <div class="textgrid">
+    <div id="squishgrid" class="textgrid">
       <h2 class="subtitle">LO-FI WIREFRAMES</h2>
-      <p class="content">I sketched out the wireframe on paper, then transferred the wireframes to sketch, where I was able to create a clickable prototype for usability testing.  After multiple rounds of testing, I had a final set of wireframes to use moving forward. Here’s an example of the dashboard sketch and wireframe.</p>
+      <p  class="content">I sketched out the wireframe on paper, then transferred the wireframes to sketch, where I was able to create a clickable prototype for usability testing.  After multiple rounds of testing, I had a final set of wireframes to use moving forward. Here’s an example of the dashboard sketch and wireframe.</p>
     </div>
-      <img class="flow-image" src="images/fileweave/wf.png" alt="wireframeimage">
+      <img id="brandingimage" class="flow-image" src="images/fileweave/wf.png" alt="wireframeimage">
   </section>
 
 
   <section class="testing"><!--Prototyping Testing-->
-    <img class="divider6" src="images/fileweave/divider6.png" alt="testing-divider">
 
-    <div class="textgrid">
+    <div id="squishgrid" class="textgrid">
       <h1 class="subtitle">USER TESTING RESPONSES</h1>
       <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
@@ -333,7 +332,6 @@
     </div>
     </section>
     <section class="mockups">
-      <img class="divider7" src="images/fileweave/divider7.png" alt="mockups-divider">
       <div class="textgrid">
       </div>
       <section class="hi-fi-mockups"><!--HiFi Mockups-->
@@ -344,18 +342,12 @@
         <img class="mockup5" src="/images/fileweave/mockupsocialfeed.png" alt="mockupsocial">
       </section>
   </section>
+  <section class="message">
+    <div class="endmessage">
+      <p class="content" id="end">Thanks for stopping by! If you like what you see, let's chat!</p>
+    </div>
+  </section>
 
-    <section class="footer"><!--Footer--> <!--grid area = footer-->
-        <div class="centergrid">
-          <div class=shortlineblack>
-            <img src="images/aboutme/shortlineblack.svg">
-          </div>
-          <h1 class="sectiontitle">Thanks for stopping by, let's connect!</h1>
-        </div>
-        <div class="footercontent">
-          <button id="hello"><a href="mailto:sydneytstubbs@gmail.com" target="_blank">CONTACT</a></button>
-        </div>
-      </section>
     <div class=greyfooter>
       <div class=icons>
         <div class=linkedin>
@@ -371,5 +363,6 @@
       </div>
       <p class=minitype>ALL WORK © SYDNEY STUBBS 2018</p>
     </div>
+
   </body>
 </html>

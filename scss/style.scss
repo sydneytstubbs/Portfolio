@@ -1,0 +1,76 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, rgba(#fff, 0.4) 0%, rgba(#000, 0.4) 120%) #343033;
+  background-blend-mode: multiply;
+}
+
+.scroll {
+  width: 50PX;
+  height: 50PX;
+  color: #C87B84;
+  cursor: pointer;
+  transform-origin: bottom center;
+  animation: bounce 3s infinite;
+
+  &:hover {
+    $accent: #C3E9E9;
+    animation-play-state: paused;
+    stroke-width: 2px;
+    color: $accent;
+    filter: drop-shadow(0 0 5px rgba($accent, 0.25));
+  }
+
+  @mixin bezier($x1, $y1, $x2, $y2) {
+    animation-timing-function: cubic-bezier($x1, $y1, $x2, $y2);
+  }
+
+  @keyframes bounce {
+    $bezier-down: 0.45, 0.04, 0.57, 0.09;
+    $bezier-up: 0.21, 0.61, 0.35, 1;
+
+    // calculate animation percentage after initial pause
+    @function bt($n) {
+      //             ^  ^  v  ^  v  ^
+      $bounce-times: 25 30 45 55 70 85;
+      $t: (100% - 30%) * nth($bounce-times, $n) / 100;
+      @return 30% + $t;
+    }
+
+    from,
+    #{30%},
+    to {
+      // resting on ground
+      @include bezier($bezier-up...);
+      transform: translate(0, 0);
+    }
+
+    #{bt(3)},
+    #{bt(5)} {
+      // hitting ground
+      @include bezier($bezier-up...);
+      transform: translate(0, 0) scale(1.03, 0.95);
+    }
+
+    #{bt(1)},
+    #{bt(2)} {
+      // raising before bounce
+      @include bezier($bezier-down...);
+      transform: translate(0, -40%) scale(0.95, 1.05);
+    }
+
+    #{bt(4)} {
+      // first bounce
+      @include bezier($bezier-down...);
+      transform: translate(0, -20%) scale(0.98, 1.02);
+    }
+
+    #{bt(6)} {
+      // second bounce
+      @include bezier($bezier-down...);
+      transform: translate(0, -10%) scale(0.98, 1.02);
+    }
+  }
+}
