@@ -35,6 +35,22 @@ ul{
   justify-items: left;
 }
 
+@media(max-width: 750px){
+  .textgrid{
+    text-align: left;
+    display: grid;
+    grid-template-columns: .25fr 1fr .25fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+    " . title ."
+    " . para ."
+    " . img . ";
+    text-rendering: optimizeLegibility;
+    padding: 5em 0em 5em 0em;
+    justify-items: left;
+  }
+}
+
 
 .subtitle{
   grid-area: title;
@@ -85,7 +101,7 @@ ol {
 
 @media(max-width: 575px){
   .subtitle{
-    font-size: 4.6em;
+    font-size: 1.8em;
   }
 
   .content {
