@@ -2,10 +2,6 @@
   font-weight: 900;
 }
 
-.problem-solution{
-  padding-bottom: 3em;
-  background-color: #FFFFFF;
-}
 
 #solution{
   margin-top: -9em;
@@ -17,10 +13,6 @@
   }
 }
 
-.overview{
-  margin-top: -5em;
-}
-
 .hero-photo{
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
@@ -30,6 +22,7 @@
   ". lptp .";
   justify-items: center;
   align-items: center;
+  padding-bottom: 10em;
 }
 
 .laptop{
@@ -75,8 +68,10 @@
 /**mobile**/
 
 /**overview**/
+
 .overview{
   margin-top: -1em;
+  background-color: #f1f1f1;
 }
 
 @media(max-width: 575px){
@@ -123,6 +118,7 @@ margin: 1em 0;
   text-align: center;
   justify-items: center;
   grid-gap: 10em;
+  padding-bottom: 5em;
 }
 
   .deliverables{
@@ -179,7 +175,7 @@ text-align: center;
 
 .personas{
   background-color: #F1F1F1F1;
-  padding-bottom: 5em;
+
 }
 
 @media(max-width: 37em){
@@ -258,6 +254,7 @@ grid-area: tresorit;
   text-align: center;
   display: grid;
   justify-items: center;
+  padding: 5em 0em 5em 0em;
 }
 
 @media(max-width: 700px){
@@ -357,7 +354,7 @@ h6{
 
 @media(max-width: 37em){
   .flow-image{
-    margin: 4em;
+    margin: 2em;
     max-width: 200px;
     height: auto;
     align-items: center;
@@ -370,9 +367,9 @@ h6{
 
 #brandingimage{
   grid-area:img;
-  width: 100%;
+  width: 600px;
   height: auto;
-  max-width: 600px;
+  max-width: 100%;
   margin-top: 2em;
 }
 
@@ -652,11 +649,75 @@ max-width: 600px;
   text-align: center;
 }
 
+#sketchtitle{
+  background-color: #f4f4f4;
+}
+
+#sketchtitle2{
+  background-color: #f4f4f4;
+}
+
+#sketchanim {
+  width: 100%;
+  height: 1px;
+  display: block;
+  position: relative;
+  margin-bottom: 0em;
+  padding: 2em 0;
+}
+
+#sketchanim:after, #sketchanim:before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 3px;
+  bottom: 50%;
+  left: 0;
+}
+
+#sketchanim:before{
+  background: linear-gradient(90deg, #F4F4F4 0%, #F4F4F4 50%, transparent 50%, transparent 100%);
+  background-size: 5px;
+  background-position: center;
+  z-index: 1;
+}
+
+#sketchanim:after{
+  transition: opacity 0.3s ease, -webkit-animation 0.3s ease;
+  transition: opacity 0.3s ease, animation 0.3s ease;
+  transition: opacity 0.3s ease, animation 0.3s ease, -webkit-animation 0.3s ease;
+  background: linear-gradient(to right, #62efab 5%, #F2EA7D 15%, #F2EA7D 25%, #FF8797 35%, #FF8797 45%, #e1a4f4 55%, #e1a4f4 65%, #82fff4 75%, #82fff4 85%, #62efab 95%);
+  background-size: 200%;
+  background-position: 0%;
+  -webkit-animation: bar 15s linear infinite;
+          animation: bar 15s linear infinite;
+}
+
+#sketchanim:before {
+  background: linear-gradient(90deg, #F4F4F4 0%, #F4F4F4 5%, transparent 5%, transparent 10%, #F4F4F4 10%, #F4F4F4 15%, transparent 15%, transparent 20%, #F4F4F4 20%, #F4F4F4 25%, transparent 25%, transparent 30%, #F4F4F4 30%, #F4F4F4 35%, transparent 35%, transparent 40%, #F4F4F4 40%, #F4F4F4 45%, transparent 45%, transparent 50%, #F4F4F4 50%, #F4F4F4 55%, transparent 55%, transparent 60%, #F4F4F4 60%, #F4F4F4 65%, transparent 65%, transparent 70%, #F4F4F4 70%, #F4F4F4 75%, transparent 75%, transparent 80%, #F4F4F4 80%, #F4F4F4 85%, transparent 85%, transparent 90%, #F4F4F4 90%, #F4F4F4 95%, transparent 95%, transparent 100%);
+  background-size: 150px;
+  background-position: center;
+  z-index: 1;
+  -webkit-animation: bar 120s linear infinite;
+          animation: bar 120s linear infinite;
+}
+#sketchanim:hover:before {
+  -webkit-animation-duration: 50s;
+          animation-duration: 50s;
+}
+#sketchanim:hover:after {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+
+
 .dividegrid1{
   display:grid;
   grid-template-columns: .5fr 600px .5fr;
   grid-template-rows: 1fr;
   grid-template-areas: ". separate .";
+  padding-top: 5em;
 }
 
 .dividegrid{
@@ -674,7 +735,7 @@ max-width: 600px;
 .hr:after, .hr:before {
   content: "";
   position: absolute;
-  width: 600px;
+  width: 100%;
   height: 3px;
   bottom: 50%;
   left: 0;
@@ -737,6 +798,8 @@ max-width: 600px;
   text-indent: 1em;
 }
 
+
+
 #dividetext {
   margin-left: -.3em;
   line-height: 1;
@@ -750,6 +813,7 @@ max-width: 600px;
     grid-template-columns: .25fr 1fr .25fr;
     grid-template-rows: 1fr;
     grid-template-areas: ". separate .";
+    padding-top: 5em;
   }
 
   .dividegrid{
