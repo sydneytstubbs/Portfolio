@@ -5,6 +5,7 @@
 
 #solution{
   margin-top: -9em;
+  padding-bottom: 5em;
 }
 
 @media(max-width: 575px){
@@ -12,6 +13,8 @@
     margin-top: -5em;
   }
 }
+
+
 
 .hero-photo{
   display: grid;
@@ -364,7 +367,11 @@ h6{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 80%;
+}
+
+.layer{
+  padding-bottom: 5em;
 }
 
 
@@ -682,6 +689,7 @@ max-width: 600px;
 
 #sketchtitle{
   background-color: #f4f4f4;
+
 }
 
 #sketchtitle2{
@@ -748,7 +756,7 @@ max-width: 600px;
   grid-template-columns: .5fr 600px .5fr;
   grid-template-rows: 1fr;
   grid-template-areas: ". separate .";
-  padding-top: 10em;
+  padding-top: 5em;
 }
 
 .dividegrid{
@@ -838,7 +846,7 @@ max-width: 600px;
 #dividetext {
   margin-left: -.3em;
   margin-bottom: -0.5em;
-  font-size: 4em;
+  font-size: 3em;
 }
 
 @media(max-width: 750px){

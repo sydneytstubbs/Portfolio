@@ -172,6 +172,7 @@ nav {
 nav a {
   color: #FFFFFF;
   text-decoration: none;
+  margin: 0em .25em 0em .25em;
 }
 
 nav img {
