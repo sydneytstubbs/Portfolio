@@ -16,9 +16,16 @@ ul{
   box-sizing: border-box;
 }
 
+.studybutton{
+  width: 150px;
+  padding-top: 2.5em;
+}
+
+
 .container {
   display: flex;
   margin: 1em;
+  z-align: 10;
 }
 
 .textgrid{
@@ -31,7 +38,6 @@ ul{
   " . para ."
   " . img . ";
   text-rendering: optimizeLegibility;
-  padding-top: 1em;
   justify-items: left;
 }
 
@@ -46,7 +52,6 @@ ul{
     " . para ."
     " . img . ";
     text-rendering: optimizeLegibility;
-    padding-top: 1em;
     justify-items: left;
   }
 }
@@ -69,6 +74,10 @@ ul{
   font-weight: 200;
   line-height: 1.4em;
   text-rendering: optimizeLegibility;
+}
+
+#problemcontent{
+  padding-bottom: 3em;
 }
 
 ol {
@@ -157,7 +166,7 @@ nav {
   width: 100%;
   background-color: white;
   z-index: 99;
-  padding: 5em 5em 5em 5em;
+  padding: 3em 3em 3em 3em;
 }
 
 nav a {
@@ -240,8 +249,7 @@ nav ul li a:hover, .side-nav a:hover {
   font-size: 12pt;
   font-weight: 100;
   line-height: 24px;
-  padding-bottom: 6em;
-  padding: 2em 3em 5em 3em;
+  padding: 0em 3em 0em 3em;
 }
 
 /**desktop**/
@@ -342,4 +350,26 @@ button {
   a:active {
     text-decoration: none;
     color: #000000;
+  }
+  .message{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: .5fr 2fr .5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    ". message .";
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 10em 0em 10em 0em;
+  }
+
+  .endmessage{
+    grid-area: message;
+    text-align: center;
+  }
+
+  #end{
+    font-weight: 300;
+    text-align: center;
   }

@@ -6,7 +6,8 @@ background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #DCAEB3 10%);
   font-family: "work sans";
   font-size: 1.8rem;
   font-weight: 300;
-  padding-bottom:30em;
+  padding-bottom: 3em;
+  }
 }
 
 .bluesplash{
@@ -20,11 +21,12 @@ background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #DCAEB3 10%);
   ". hello tell .";
   grid-template-columns: .25fr 1.5fr 3fr .25fr;
   grid-template-rows: 2fr 2fr;
-  padding-top: 10em;
-  padding-bottom: 20em;
+  padding-top: 20em;
+  padding-bottom: 10em;
   justify-items: center;
   align-items: center;
   background-color: #F1F1F1;
+
 }
 
 .portrait{
@@ -65,6 +67,8 @@ background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #DCAEB3 10%);
     grid-template-areas:
     ". hello hello ."
     ". tell tell .";
+    padding-top: 15em;
+    padding-bottom: 10em;
     grid-template-columns: .5fr 1.5fr 1.5fr .5fr;
     grid-template-rows: 2fr auto;
     justify-items: center;
@@ -92,12 +96,21 @@ background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #DCAEB3 10%);
 
 }
 
+@media(max-width:400px){
+  .howigothere{
+    padding-bottom: 10em;
+  }
+
+}
+
 @media(max-width: 375px){
   .hero{
     display: grid;
     grid-template-areas:
     ". hello hello ."
     ". tell tell .";
+    padding-top: 10em;
+    padding-bottom: 5em;
     grid-template-columns: .5fr 1.5fr 1.5fr .5fr;
     grid-template-rows: 2fr auto;
   }
@@ -121,19 +134,24 @@ background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #DCAEB3 10%);
   .herotext{
     padding-left: 0em;
   }
+
+  .lookingfor{
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+}
+
+@media(min-width: 375px){
+  .sectiontitle {
+    padding-bottom: 1em;
+  }
 }
 
 .lookingfor{
   padding-bottom: 10em;
-  padding-top: 18em;
+  padding-top: 8em;
 }
 
-
-
-
-#hsubtitle{
-  padding-bottom: 3em;
-}
 .cando {
   background-color: #F1F1F1;
   display: grid;
@@ -147,9 +165,8 @@ background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #DCAEB3 10%);
   grid-gap: 4em;
   grid-template-areas:
     ". lst1 lst2 .";
-  padding-bottom: 20em;
+  padding-bottom: 10em;
 }
-
 
 ul{
   list-style-type: none;
@@ -162,12 +179,10 @@ ul{
     height: 3em !important;
 }
 
-
 .lightbulb {
     width: 3em !important;
     height: 3em !important;
 }
-
 
 .listtitle {
   text-align: center;
@@ -212,9 +227,6 @@ hr {
   line-height: 24pt;
 }
 
-
-
-
 /**can do mobile**/
 @media(max-width: 550px){
 .candocontent{
@@ -225,7 +237,7 @@ hr {
   grid-template-areas:
     ". lst1 ."
     ". lst2 .";
-  padding-bottom: 20em;
+  padding-bottom: 10em;
 }
 }
 
@@ -234,6 +246,28 @@ hr {
 #liketodosubtitle{
   padding-top: 5em;
   font-weight: 300;
+}
+
+#liketodosubtitle1{
+  padding-top: 5em;
+  font-weight: 300;
+}
+
+@media(max-width: 575px){
+  #liketodosubtitle1{
+    padding-top: 5em;
+    padding-bottom: 2em;
+    font-weight: 300;
+  }
+}
+
+
+@media(max-width: 375px){
+  #liketodosubtitle{
+    padding-top: 0em;
+    padding-bottom: 2em;
+    font-weight: 300;
+  }
 }
 
 .liketodo {
@@ -291,8 +325,8 @@ hr {
 
 .howigothere{
   background-color: #F1F1F1;
-  padding-top: 10em;
-  padding-bottom: 30em;
+  padding-bottom: 10em;
+  z-index:;
 }
 
 @media (min-width: 700px) {
