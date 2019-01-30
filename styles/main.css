@@ -243,6 +243,19 @@ h2{
   justify-content: center;
 
 }
+#arrowcolor a:link, a:visited, a:active{
+color: #C87B84;
+}
+
+#arrowcolor:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  stroke-width: 2px;
+  color: #C3E9E9;
+  -webkit-filter: drop-shadow(0 0 5px rgba(195, 233, 233, 0.25));
+          filter: drop-shadow(0 0 5px rgba(195, 233, 233, 0.25));
+}
+
 
 .scroll {
   width: 50PX;
@@ -268,14 +281,7 @@ h2{
     height: 20PX;
   }
 }
-.scroll:hover {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
-  stroke-width: 2px;
-  color: #C3E9E9;
-  -webkit-filter: drop-shadow(0 0 5px rgba(195, 233, 233, 0.25));
-          filter: drop-shadow(0 0 5px rgba(195, 233, 233, 0.25));
-}
+
 @-webkit-keyframes bounce {
   from,
     30%,
