@@ -244,11 +244,12 @@ h2{
 
 }
 
-#arrowcolor a:link, a:visited, a:active{
+.arrowcolor a:link, a:active, a:visited{
 color: #C87B84;
 }
 
-#arrowcolor:hover {
+
+.arrowcolor:hover {
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
   stroke-width: 2px;
