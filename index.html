@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- Begin Page Essentials -->
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Sydney Stubbs | UX/UI Design Portfolio</title>
     <meta name="description" content="Sydney Stubbs is a Seattle based UX Designer. She solves problems with design to help people.">
@@ -10,89 +11,86 @@
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-  </head>
-    <header>
-      <!-- Begin Navigation -->
-      <nav class="nav-bar">
-          <a href="index.html"><img class="navlogo" src="images/index/nav-logo.png" alt="Sydney Stubbs Logo"></a>
-              <ul id="parent">
-                <li><a href="index.html#project1">PROJECTS</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="mailto:sydneytstubbs@gmail.com" target="_blank">CONTACT</a></li>
-              </ul>
-      </nav>
-  </header>
-
-<!--Begin Body-->
-
-    <div class=body1>
-      <p class="text">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Work+Sans:100,200,300,400,500,600,700,800,900');
+    </style>
+</head>
+<header>
+    <nav class="nav-bar"><!--navigationbegins-->
+        <a href="index.html"><img class="navlogo" src="images/index/nav-logo.png" alt="Sydney Stubbs Logo"></a>
+        <ul id="parent">
+            <li><a href="index.html#project1">PROJECTS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="mailto:sydneytstubbs@gmail.com" target="_blank">CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+<div class=body1><!--body begins-->
+    <p class="text">
         <span class="text__first">
         <span class="text__word">Hi, I'm Sydney.</span>
         <span class="text__first-bg"></span></span><br/>
         <span class="text__second"><span class="text__word">I'm a Seattle based UX Designer.</span>
         <span class="text__second-bg">
-        </span></span></p>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js'></script>
-          <script  src="js/portfolio.js"></script>
-    </div>
-    <div class="arrowbox">
-      <div class="scroll">
-        <svg xmlns="http://www.w3.org/2000/svg" version="1" viewbox="0 0 46 46">
+        </span></span>
+    </p>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js'></script>
+    <script src="js/portfolio.js"></script>
+</div>
+<body>
+<div class="arrowbox"><!--bounce arrow-->
+    <div class="scroll">
+        <a href="#project"><svg xmlns="http://www.w3.org/2000/svg" version="1" viewbox="0 0 46 46">
           <circle cx="23" cy="23" r="22" fill="none" stroke="currentColor"></circle>
           <path fill="none" stroke="currentColor" d="M36 18L23 31 11 18"></path>
-        </svg>
-      </div>
+        </svg></a>
     </div>
-    <ul class="project">
-      <li class="project1">
+</div>
+<ul id="project" class="project"><!--project section begins-->
+    <li class="project1"><!--project 1 begins-->
         <div class="casestudygrid">
-          <img class="photo1" src="images/index/fileweave-project.png">
-          <div class="description">
-            <h1>FileWeave</h1>
-            <h2> A cloud storage platform</h2>
-            <a href="casestudy.html"><img class=studybutton src="images/index/casestudybutton.png"></a>
-          </div>
+            <img class="photo1" src="images/index/fileweave-project.png" alt="project photo 1">
+            <div class="description">
+                <h1>FileWeave</h1>
+                <h2> A cloud storage platform</h2>
+                <a href="casestudy.html"><img class=studybutton src="images/index/casestudybutton.png" alt="view case study button"></a>
+            </div>
         </div>
-      </li>
-      <li class="project2">
+    </li>
+    <li class="project2"><!--project 2 begins-->
         <div class="casestudygrid2">
-          <img class="photo2" src="images/index/language-project.png">
-          <div class="description2">
-            <h1>Linkup</h1>
-            <h2> A travel application that allows you to connect with people while you are abroad.</h2>
-            <a href="casestudy.html"><img class=studybutton src="images/index/casestudybutton.png"></a>
-          </div>
+            <img class="photo2" src="images/index/language-project.png" alt="project photo 2">
+            <div class="description2">
+                <h1>Linkup</h1>
+                <h2> A travel application that allows you to connect with people while you are abroad.</h2>
+                <a href="casestudy.html"><img class=studybutton src="images/index/casestudybutton.png" alt="view case study button"></a>
+            </div>
         </div>
-      </li>
-    </ul>
-
-
-
-      <div class=greyfooter>
-        <div class=icons>
-          <div class=linkedin>
+    </li>
+</ul>
+<div class=greyfooter><!--footer begins-->
+    <div class=icons>
+        <div class=linkedin>
             <a href="http://www.linkedin.com/in/sydneytstubbs" target="_blank">
               <img src="images/index/linkediniconwhite.png" alt="linkedin icon" width="34" height="34">
             </a>
-          </div>
-          <div class=github>
+        </div>
+        <div class=github>
             <a href="https://github.com/sydneytstubbs" target="_blank">
               <img src="images/index/githubiconwhite.png" alt="github icon" width="34" height="34">
             </a>
-          </div>
         </div>
-        <p class=minitype>ALL WORK © SYDNEY STUBBS 2018</p>
-      </div>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131766282-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
+    </div>
+    <p class=minitype>ALL WORK © SYDNEY STUBBS 2018</p>
+</div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131766282-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'UA-131766282-1');
-    </script>
+</script>
 
-  </body>
+</body>
+</html>
