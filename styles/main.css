@@ -56,6 +56,7 @@
   .body1{
     font-size: 4.5em;
   }
+
 }
 
 @media(max-width: 890px){
@@ -78,7 +79,10 @@
   }
   .restart{
     font-size: 4px;
-}
+  }
+  .text{
+    font-weight: 200;
+  }
 }
 
 @media(max-width: 490px){
@@ -90,6 +94,9 @@
   .restart{
     font-size: 2px;
 }
+  .text{
+    font-weight: 300;
+  }
 }
 
 
