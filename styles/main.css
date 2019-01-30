@@ -15,6 +15,7 @@
 .text{
   display: inline-block;
   line-height: 1.205;
+  font-weight: 150;
 }
 
 
@@ -244,7 +245,7 @@ h2{
 
 }
 
-.arrowcolor a:link, a:active, a:visited{
+.arrowcolor:link{
 color: #C87B84;
 }
 

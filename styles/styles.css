@@ -230,6 +230,11 @@ font-weight:300;
 text-align:center;
 }
 
+.navcolor a:link,a:visited,a:active {
+  text-decoration:none;
+  color:#000000;
+}
+
 a:link,a:visited,a:active {
 text-decoration:none;
 color:#000;

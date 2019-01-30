@@ -42,7 +42,7 @@
   padding-bottom: 2em;
   text-align: center;
   font-family: "work sans";
-  font-size: 3.6rem;
+  font-size: 3.6em;
   font-weight: 300;
   max-width: 600px;
   line-height: .9em;
@@ -51,19 +51,19 @@
 @media(max-width: 836px){
   .herotitle{
     padding-top: 6em;
-    font-size: 2.3rem;
+    font-size: 2.3em;
   }
 }
 
 @media(max-width: 575px){
   .herotitle{
-    font-size: 2rem;
+    font-size: 2em;
   }
 }
 
 @media(max-width: 375px){
   .herotitle{
-    font-size: 2.0rem;
+    font-size: 2.0em;
   }
 }
 
@@ -260,7 +260,7 @@ grid-area: tresorit;
     grid-template-columns: 100px 400px 100px;
     grid-gap:5px;
     font-family: "work sans";
-    font-size: 1.2rem;
+    font-size: 1.2em;
     line-height: 2em;
 }
 
@@ -282,7 +282,7 @@ grid-area: tresorit;
       grid-template-columns: 70px 100px 70px;
       grid-gap: 5px;
       font-family: "work sans";
-      font-size: 1.0rem;
+      font-size: 1.0em;
       line-height: 1.3em;
   }
 
@@ -842,17 +842,26 @@ max-width: 600px;
     line-height: .3em;
     padding-top: 1em;
     margin-left: -.3em;
-    margin-bottom: -.2;
+    margin-bottom: -.2em;
+
 }
 
 
 #dividetext {
   margin-left: -.3em;
   margin-bottom: -0.5em;
-  font-size: 3em;
+  font-size: 3.1em;
 }
 
 @media(max-width: 750px){
+  .infoarch{
+      font-size: 2.5em;
+      line-height: 1em;
+      padding-top: 1em;
+      margin-left: -.3em;
+      margin-bottom: -.2em;
+
+  }
   .dividegrid1{
     display:grid;
     grid-template-columns: .25fr 1fr .25fr;
@@ -877,7 +886,7 @@ max-width: 600px;
   #dividetext {
     line-height: 1;
     margin-bottom: -0.5em;
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   .hr {
