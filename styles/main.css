@@ -1,4 +1,5 @@
-.body1{
+.body1
+{
   padding-top: 5em;
   padding-bottom: 5em;
   display: flex;
@@ -12,22 +13,25 @@
   position: relative;
 }
 
-.text{
+.text
+{
   display: inline-block;
   line-height: 1.205;
   font-weight: 100;
 }
 
-
-.text__first, .text__second{
+.text__first, .text__second
+{
   position: relative;
 }
 
-.text__word{
+.text__word
+{
   opacity: 0;
 }
 
-.text__first-bg, .text__second-bg{
+.text__first-bg, .text__second-bg
+{
   display: block;
   width: 100%;
   height: 100%;
@@ -39,62 +43,80 @@
   transform: scaleX(0);
 }
 
-.text__first-bg{
+.text__first-bg
+{
   background-color: #C87B84;
 }
 
-.text__second-bg{
+.text__second-bg
+{
   background-color: #C3E9E9;
 }
 
-.text__second{
+.text__second
+{
   margin-left: 15vmin;
 }
 
-
-@media(max-width: 1200px){
-  .body1{
+@media(max-width: 1200px)
+{
+  .body1
+  {
     font-size: 4.5em;
   }
-
 }
 
-@media(max-width: 890px){
-  .body1{
+@media(max-width: 890px)
+{
+  .body1
+  {
     font-size: 3.0em;
   }
 }
 
-@media(max-width: 700px){
-  .body1{
+@media(max-width: 700px)
+{
+  .body1
+  {
     font-size: 2.8em;
     padding-top: 7em;
   }
 }
 
-@media(max-width: 575px){
-  .body1{
+@media(max-width: 575px)
+{
+  .body1
+  {
     font-size: 2.3em;
     padding-top: 7em;
   }
-  .restart{
+
+  .restart
+  {
     font-size: 4px;
   }
-  .text{
+
+  .text
+  {
     font-weight: 200;
   }
 }
 
-@media(max-width: 490px){
-  .body1{
+@media(max-width: 490px)
+{
+  .body1
+  {
     font-size: 1.7em;
     padding-top: 8em;
-
   }
-  .restart{
+
+  .restart
+  {
     font-size: 2px;
-}
-  .text{
+  }
+
+  .text
+  {
     font-weight: 300;
   }
 }
@@ -102,33 +124,37 @@
 
 
 /*CONTAINER*/
-.container {
+.container
+{
   display: flex;
   margin: 1em;
 }
 
 /*HERO*/
 
-.hero {
-background-color: #FFFFFF;
-width: 100%
+.hero
+{
+  background-color: #FFFFFF;
+  width: 100%;
 }
 
-.project{
+.project
+{
   display: inline-block;
   width: 100%;
 }
 
-.project1{
+.project1
+{
   margin-bottom: 5em;
 }
 
-.casestudygrid{
+.casestudygrid
+{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas:
-  "item2 item1";
+  grid-template-areas: "item2 item1";
   align-items: center;
   text-align: center;
   padding-bottom: 5em;
@@ -137,98 +163,104 @@ width: 100%
   align-items: center;
 }
 
-.photo1{
+.photo1
+{
   grid-area: item1;
   width: 50%;
-
 }
 
-.description{
+.description
+{
   grid-area: item2;
   align-items: center;
   width: 50%;
 }
 
-.project2{
+.project2
+{
   margin-bottom: 20em;
 }
 
-.casestudygrid2{
+.casestudygrid2
+{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas:
-  "item3 item4";
+  grid-template-areas: "item3 item4";
   text-align: center;
   justify-items: center;
   align-items: center;
 }
 
-
-.photo2{
+.photo2
+{
   grid-area: item3;
   width: 50%;
 }
 
-.studybutton{
+.studybutton
+{
   width: 150px;
   padding-top: 2.5em;
 }
 
-h1{
+h1
+{
   font-family: "work sans";
   font-size: 2em;
   font-weight: 400;
   line-height: 3em;
-
 }
 
-h2{
+h2
+{
   font-family: "work sans";
   font-size: 1.5em;
   line-height: 1.5em;
   font-weight: 300;
 }
 
-.description2{
+.description2
+{
   grid-area: item4;
   align-items: center;
   width: 50%;
-
 }
 
-.photo1 > img {
+.photo1 > img
+{
   object-fit: cover;
   width: 40%;
   max-height: 100%;
 }
 
-.project1 > img {
+.project1 > img
+{
   object-fit: cover;
   width: 100%;
   max-height: 100%;
 }
 
-
-@media(max-width: 900px){
-.casestudygrid2{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-  "item3"
-  "item4";
-  text-align: center;
-  justify-items: center;
-  align-items: center;
-}
-
-  .casestudygrid{
+@media(max-width: 900px)
+{
+  .casestudygrid2
+  {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-    "item1"
+    grid-template-areas: "item3"
+  "item4";
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .casestudygrid
+  {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "item1"
     "item2";
     text-align: center;
     padding-bottom: 5em;
@@ -236,57 +268,62 @@ h2{
     align-items: center;
     margin-top: 11em;
   }
-
 }
 
 /**footer**/
-.centergrid{
+.centergrid
+{
   text-align: center;
 }
 
-.arrowbox {
+.arrowbox
+{
   display: flex;
   height: 10px;
   align-items: center;
   justify-content: center;
-
 }
 
-.arrowcolor {
-color: #C87B84;
+.arrowcolor
+{
+  color: #C87B84;
 }
 
-
-.arrowcolor:hover {
+.arrowcolor:hover
+{
   -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation-play-state: paused;
   stroke-width: 2px;
   color: #C3E9E9;
   -webkit-filter: drop-shadow(0 0 5px rgba(195, 233, 233, 0.25));
-          filter: drop-shadow(0 0 5px rgba(195, 233, 233, 0.25));
+  filter: drop-shadow(0 0 5px rgba(195, 233, 233, 0.25));
 }
 
-
-.scroll {
+.scroll
+{
   width: 50PX;
   height: 50PX;
   color: #C87B84;
   cursor: pointer;
   -webkit-transform-origin: bottom center;
-          transform-origin: bottom center;
+  transform-origin: bottom center;
   -webkit-animation: bounce 3s infinite;
-          animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
 }
 
-@media(max-width: 575px){
-  .scroll {
+@media(max-width: 575px)
+{
+  .scroll
+  {
     width: 30PX;
     height: 30PX;
   }
 }
 
-@media(max-width: 375px){
-  .scroll {
+@media(max-width: 375px)
+{
+  .scroll
+  {
     width: 20PX;
     height: 20PX;
   }
