@@ -103,6 +103,14 @@
   font-weight: 200;
 }
 
+.flowlink{
+  grid-area: img;
+  padding: 1em 0em 1em 0em;
+  font-family: 'work sans';
+  font-size: 1.2em;
+  font-weight: 200;
+}
+
 /**roles**/
 .icon{
   height: 5em;
@@ -219,6 +227,28 @@ grid-area: dropbox;
 grid-area: tresorit;
 }
 
+.swottextgrid {
+text-align:left;
+display:grid;
+grid-template-columns:1fr 600px 1fr;
+grid-template-rows:auto auto;
+grid-template-areas:" . title ." " . para ." " . img . ";
+text-rendering:optimizeLegibility;
+justify-items:left;
+}
+
+@media(max-width:750px){
+.swottextgrid {
+text-align:left;
+display:grid;
+grid-template-columns:.25fr 1fr .25fr;
+grid-template-rows:auto auto;
+grid-template-areas:" . title ." " . para ." " . img . ";
+text-rendering:optimizeLegibility;
+justify-items:left;
+}
+}
+
 
 .swotimage{
   height: 10em;
@@ -235,7 +265,7 @@ grid-area: tresorit;
   padding-bottom: 5em;
 }
 
-#squishtitle{
+#squishtitle, #squishtitle1, #squishtitle2{
     padding: 0em 0em .5em 0em;
     margin: 1em 0em 0em 0em;
     font-size: 2em;
@@ -370,6 +400,19 @@ h6{
   width: 80%;
 }
 
+@media(max-width: 550px){
+  .flow-image{
+    margin: 2em;
+    max-width: 270px;
+    min-width: 200px;
+    height: auto;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
 .layer{
   padding-bottom: 5em;
 }
@@ -382,20 +425,6 @@ h6{
   max-width: 60%;
   margin-top: 2em;
 }
-
-
-
-@media(max-width: 37em){
-  .flow-image{
-    margin: 2em;
-    max-width: 200px;
-    height: auto;
-    align-items: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
 
   #brandingimage{
     grid-area:img;
@@ -687,16 +716,15 @@ max-width: 600px;
   text-align: center;
 }
 
-#sketchtitle{
-  background-color: #f4f4f4;
-
+#sketchtitle, #sketchtitle3, #sketchtitle4, #sketchtitle5,#sketchtitle6,{
+  background-color: #FFFFFF;
 }
 
-#sketchtitle2{
-  background-color: #f4f4f4;
+#sketchtitle3{
+    background-color: #F4;
 }
 
-#sketchanim {
+#sketchanim1, #sketchanim2, #sketchanim3  {
   width: 100%;
   height: 1px;
   display: block;
@@ -847,7 +875,7 @@ max-width: 600px;
 }
 
 
-#dividetext {
+.dividetext {
   margin-left: -.3em;
   margin-bottom: -0.5em;
   font-size: 3.1em;
@@ -883,7 +911,7 @@ max-width: 600px;
 
   }
 
-  #dividetext {
+  .dividetext {
     line-height: 1;
     margin-bottom: -0.5em;
     font-size: 2.5em;

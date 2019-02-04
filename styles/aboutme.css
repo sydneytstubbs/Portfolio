@@ -1,13 +1,29 @@
 .pinksplash{
-background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #DCAEB3 10%);
+background-image: -webkit-linear-gradient(rgba(000,000,000,0) 50%, #DCAEB3 10%);
+background-image: -o-linear-gradient(rgba(000,000,000,0) 50%, #DCAEB3 10%);
+background-image: linear-gradient(rgba(000,000,000,0) 50%, #DCAEB3 10%);
 }
 
-#hsubtitle{
-  font-family: "work sans";
+
+.abouttitle {
+  text-align:center;
+  font-family:"work sans";
   font-size: 1.8rem;
-  font-weight: 300;
+  font-weight:300;
   padding-bottom: 3em;
+  line-height:24pt;
+}
+
+@media(max-width: 375px){
+  .abouttitle {
+    padding-bottom: 1em;
   }
+}
+
+@media(max-width:550px){
+  .abouttitle {
+    font-size:14pt;
+}
 }
 
 .aquasplash{
@@ -145,6 +161,22 @@ background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
   padding-top: 8em;
 }
 
+.listitem {
+text-align:center;
+font-family:"work sans";
+font-size:14pt;
+font-weight:200;
+line-height:2em;
+padding:0;
+}
+
+@media(max-width:550px){
+.listitem {
+font-size:12pt;
+font-weight:200;
+}
+}
+
 .cando {
   background-color: #F1F1F1;
   display: grid;
@@ -158,7 +190,7 @@ background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
   grid-gap: 4em;
   grid-template-areas:
     ". lst1 lst2 .";
-  padding-bottom: 10em;
+  padding-bottom: 10em 0em 10em 0em;
 }
 
 ul{
@@ -198,11 +230,6 @@ hr {
   margin-bottom:10px;
 }
 
-#list3{
-  line-height: 2em;
-  padding: 0em 0em 0em 0em;
-  FONT-WEIGHT: 200;
-}
 
 .candolist1{
   grid-area: lst1;
@@ -266,6 +293,7 @@ hr {
 .liketodo {
   background-color: white;
   display: grid;
+  padding-top: 10em;
 }
 
 .likecontent {
@@ -319,7 +347,7 @@ hr {
 
 .howigothere{
   background-color: #F1F1F1;
-  padding-bottom: 10em;
+  padding: 10em 0em 10em 0em;
 }
 
 @media (min-width: 700px) {
@@ -329,6 +357,7 @@ hr {
     background-image: none;
   }
 }
+
 .timeline {
   width: 100%;
   position: relative;
@@ -711,4 +740,22 @@ hr {
     right: 0;
     left: auto;
   }
+}
+
+.endmessage {
+grid-area: message;
+text-align:center;
+}
+
+.end {
+font-weight:300;
+text-align:center;
+}
+
+h2
+{
+  font-family: "work sans";
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-weight: 300;
 }

@@ -15,11 +15,6 @@ list-style:none;
 box-sizing:border-box;
 }
 
-.studybutton {
-width:150px;
-padding-top:2.5em;
-}
-
 .container {
 display:flex;
 z-align:10;
@@ -189,19 +184,6 @@ background-color:#F08C99;
 color:#000;
 }
 
-button {
-grid-area:btn;
-height:4em;
-background-color:#C87B84;
-font-family:"work sans";
-border:none;
-border-radius:3px;
-text-transform:uppercase;
-letter-spacing:.1em;
-transition:all .2s cubic-bezier(.4,0,.2,1);
-margin:1em auto;
-padding:1.5em auto;
-}
 
 a:hover {
 text-decoration:none;
@@ -225,7 +207,7 @@ grid-area: message;
 text-align:center;
 }
 
-#end {
+.end {
 font-weight:300;
 text-align:center;
 }
@@ -343,4 +325,23 @@ font-family:"work sans";
 font-size:14pt;
 font-weight:200;
 }
+}
+
+.contactdivide{
+  width: 50%;
+
+}
+
+.studybutton
+{
+  width: 150px;
+  padding-top: 2.5em;
+}
+
+@media(max-width: 575px){
+  .studybutton
+  {
+    width: 100px;
+    padding-top: 2.5em;
+  }
 }
