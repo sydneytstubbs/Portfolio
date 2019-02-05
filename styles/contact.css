@@ -1,13 +1,64 @@
 
+.contactmetitle{
+  padding-top: 5em;
+  text-align: center;
+  font-family: "work sans";
+  font-size: 35px;
+  font-weight: 100;
+}
+
+@media (max-width: 575px){
+  .contactmetitle{
+    padding-top: 6em;
+    font-size: 22px;
+    font-weight: 200;
+  }
+}
+
+.contactmebody{
+  padding-top: 10px;
+  text-align: center;
+  font-family: "work sans";
+  font-size: 20px;
+  font-weight: 100;
+}
+
+#topbody{
+  padding-top: 3em;
+}
+
+#bottombody{
+  padding-bottom: 3em;
+}
+
+@media (max-width: 575px){
+  .contactmebody{
+    font-size: 14px;
+    font-weight: 200;
+  }
+}
+
+a:link{
+  text-decoration: none;
+  color: #C87B84;
+}
+
+a:hover{
+  text-decoration: none;
+  color: #C3E9E9;
+}
+
+
 
   #contactForm {
-      padding-top: 20em;
+      padding-top: 5em;
       margin: 0 auto;
 }
 
   #contactForm input, textarea {
       font-family: "work sans";
-
+      font-size: 14px;
+      font-weight: 300;
       color: #000;
       background-color: RGBA(204, 204, 204, .1);
 
