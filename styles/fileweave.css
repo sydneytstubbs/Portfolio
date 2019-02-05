@@ -191,9 +191,7 @@ text-align: center;
 /**person++as**/
 
 
-.personacontent{
-  padding-bottom: 4em;
-}
+
 
 @media(max-width: 37em){
   .personaimage{
@@ -827,13 +825,15 @@ max-width: 600px;
   text-align: center;
 }
 
-#sketchtitle, #sketchtitle3, #sketchtitle4, #sketchtitle5,#sketchtitle6,{
+#sketchtitle4, #sketchtitle5,#sketchtitle6,{
   background-color: #FFFFFF;
 }
 
-#sketchtitle3{
-    background-color: #F4;
+
+#sketchtitle, #sketchtitle3, #sketchtitle4, #sketchtitle7, #sketchtitle8, #sketchtitle9, #sketchtitle10, #sketchtitle10, #sketchtitle11 {
+  background-color: #f4f4f4;
 }
+
 
 #sketchanim1, #sketchanim2, #sketchanim3  {
   width: 100%;
@@ -871,7 +871,7 @@ max-width: 600px;
           animation: bar 15s linear infinite;
 }
 
-#sketchanim:before {
+#sketchanim:before, #sketchanim3:before, #sketchanim1:before, #sketchanim2:before, #sketchanim8:before {
   background: linear-gradient(90deg, #F4F4F4 0%, #F4F4F4 5%, transparent 5%, transparent 10%, #F4F4F4 10%, #F4F4F4 15%, transparent 15%, transparent 20%, #F4F4F4 20%, #F4F4F4 25%, transparent 25%, transparent 30%, #F4F4F4 30%, #F4F4F4 35%, transparent 35%, transparent 40%, #F4F4F4 40%, #F4F4F4 45%, transparent 45%, transparent 50%, #F4F4F4 50%, #F4F4F4 55%, transparent 55%, transparent 60%, #F4F4F4 60%, #F4F4F4 65%, transparent 65%, transparent 70%, #F4F4F4 70%, #F4F4F4 75%, transparent 75%, transparent 80%, #F4F4F4 80%, #F4F4F4 85%, transparent 85%, transparent 90%, #F4F4F4 90%, #F4F4F4 95%, transparent 95%, transparent 100%);
   background-size: 150px;
   background-position: center;
@@ -888,14 +888,13 @@ max-width: 600px;
           animation-duration: 2s;
 }
 
-
-
 .dividegrid1{
   display:grid;
   grid-template-columns: .5fr 600px .5fr;
   grid-template-rows: 1fr;
   grid-template-areas: ". separate .";
   padding-top: 5em;
+
 }
 
 .dividegrid{
@@ -974,6 +973,10 @@ max-width: 600px;
   font-weight:600;
   color: #000000;
   text-indent: 1em;
+}
+
+#greybackground1{
+  background: #f4f4f4;
 }
 
 .infoarch{
@@ -1092,4 +1095,8 @@ max-width: 600px;
     -webkit-animation-duration: 2s;
             animation-duration: 2s;
   }
+}
+
+.conclusionbackground{
+  background-color: #f4f4f4;
 }
