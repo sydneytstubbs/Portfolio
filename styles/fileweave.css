@@ -261,11 +261,11 @@ justify-items:left;
   padding: 2em 0em 0em 0em;
 }
 
-#squishtext1{
-  padding-bottom: 5em;
+#squishtext, #squishtext1, #squishtext2, #squishtext3, #squishtext4, #squishtext5 {
+  padding-bottom: .5em;
 }
 
-#squishtitle, #squishtitle1, #squishtitle2{
+#squishtitle, #squishtitle1, #squishtitle2, #squishtitle3, #squishtitle4, #squishtitle5, #squishtitle6, #squishtitle7{
     padding: 0em 0em .5em 0em;
     margin: 1em 0em 0em 0em;
     font-size: 2em;
@@ -417,30 +417,55 @@ h6{
   padding-bottom: 5em;
 }
 
+}
 
-#brandingimage{
+#brandingimage5{
   grid-area:img;
   width: 600px;
   height: auto;
-  max-width: 60%;
+  max-width: 80%;
   margin-top: 2em;
 }
 
-  #brandingimage{
-    grid-area:img;
-    width: 600px;
+.brandingimage{
+  grid-area:img;
+  display: grid;
+  justify-items: center;
+  margin: 4em;
+  max-width: 600px;
+  height: auto;
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:2em;
+  width: 100%;
+}
+
+@media(max-width: 550px){
+  .brandingimage{
+    margin: 2em;
+    max-width: 350px;
+    min-width: 200px;
     height: auto;
-    max-width: 60%;
-    margin-top: 2em;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
-}
 
-#brandingimage{
-  grid-area:img;
-  width: 600px;
-  height: auto;
-  max-width: 60%;
-  margin-top: 2em;
+@media(max-width: 375px){
+  .brandingimage{
+    margin: 4em;
+    max-width: 280px;
+    height: auto;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
 }
 
 #brandingsub{
@@ -455,15 +480,93 @@ h6{
   background-color: #f1F1F1;
 }
 
+.textgrid {
+text-align:left;
+display:grid;
+grid-template-columns:1fr 600px 1fr;
+grid-template-rows:auto auto;
+grid-template-areas:" . title ." " . para ." " . img . ";
+text-rendering:optimizeLegibility;
+justify-items:left;
+}
+
+@media(max-width:750px){
+.textgrid {
+text-align:left;
+display:grid;
+grid-template-columns:.25fr 1fr .25fr;
+grid-template-rows:auto auto;
+grid-template-areas:" . title ." " . para ." " . img . ";
+text-rendering:optimizeLegibility;
+justify-items:left;
+}
+}
+
+
+.squishgrid {
+display:grid;
+grid-template-columns:1fr 600px 1fr;
+grid-template-rows:auto auto;
+grid-template-areas:
+" . title ."
+" . para ."
+" . img . ";
+text-rendering:optimizeLegibility;
+padding-bottom: 1em;
+}
+
+@media(max-width:750px){
+.squishgrid {
+text-align:left;
+display:grid;
+grid-template-columns:.25fr 1fr .25fr;
+grid-template-rows:auto auto;
+grid-template-areas:
+" . title ."
+" . para ."
+" . img . ";
+text-rendering:optimizeLegibility;
+justify-items:left;
+padding-bottom: 1em;
+}
+}
+
+.brandgrid{
+display:grid;
+grid-template-columns:1fr 600px 1fr;
+grid-template-rows:auto auto;
+grid-template-areas:
+" . title ."
+" . para ."
+" . img . ";
+text-rendering:optimizeLegibility;
+padding-bottom: 0em 0em 0em 0em;
+}
+
+@media(max-width:750px){
+.brandgrid {
+text-align:left;
+display:grid;
+grid-template-columns:.25fr 1fr .25fr;
+grid-template-rows:auto auto;
+grid-template-areas:
+" . title ."
+" . para ."
+" . img . ";
+text-rendering:optimizeLegibility;
+padding-bottom: 0em 0em 0em 0em;
+}
+}
+
+
 
 /**sketches**/
 .sketch{
   padding-bottom: 2em;
 }
 
-#squishgrid{
-  padding-bottom: 1em;
-}
+
+
 /**user testing**/
 
 .testing{
@@ -496,7 +599,6 @@ h6{
 
 /**ab testing**/
 
-
 .abtest{
   grid-area: testing;
   display: grid;
@@ -528,12 +630,12 @@ h6{
   }
 }
 
+
 .abone{
   grid-area: ab1;
   max-width: 35em;
   height: auto;
   align-items: center;
-
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -579,7 +681,7 @@ h6{
 @media(max-width: 37em){
   .flow-image{
     margin: 4em;
-    max-width: 200px;
+    max-width: 275px;
     height: auto;
     align-items: center;
     display: block;
@@ -636,7 +738,6 @@ h6{
   grid-template-areas:
   " . title ."
   " . para .";
-
 }
 
 .mockup2, .mockup3, .mockup4, .mockup5{
@@ -647,7 +748,7 @@ max-width: 600px;
 
 
 
-@media(max-width: 55em){
+@media(max-width: 575px){
   .hi-fi-mockups{
     display: grid;
     grid-gap: 2em;
@@ -696,9 +797,18 @@ max-width: 600px;
   width: 100%;
   height: auto;
   max-width: 600px;
-
   }
 
+}
+
+
+/**dividers**/
+
+.userimage{
+  grid-area: img;
+  height: auto;
+  width: 100%;
+  padding-top: 3em;
 }
 
 /**dividers**/
