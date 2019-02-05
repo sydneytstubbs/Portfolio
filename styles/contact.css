@@ -28,7 +28,7 @@
 }
 
 #bottombody{
-  padding-bottom: 3em;
+  padding-bottom: 10em;
 }
 
 @media (max-width: 575px){
@@ -50,9 +50,10 @@ a:hover{
 
 
 
-  #contactForm {
-      padding-top: 5em;
-      margin: 0 auto;
+#contactForm {
+    padding-top: 5em;
+    margin: 0 auto;
+
 }
 
   #contactForm input, textarea {
