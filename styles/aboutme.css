@@ -10,7 +10,7 @@ background-image: linear-gradient(rgba(000,000,000,0) 50%, #DCAEB3 10%);
   font-family:"work sans";
   font-size: 1.8rem;
   font-weight:300;
-  padding-bottom: 3em;
+  padding: 3em 0em 3em 0em;
   line-height:24pt;
 }
 
@@ -151,8 +151,8 @@ background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
   }
 
   .lookingfor{
-    padding-top: 5em;
-    padding-bottom: 5em;
+    padding-bottom: 2.5em;
+    padding-top: 0em;
   }
 }
 
@@ -190,7 +190,7 @@ font-weight:200;
   grid-gap: 4em;
   grid-template-areas:
     ". lst1 lst2 .";
-  padding-bottom: 10em 0em 10em 0em;
+  padding: 0em 0em 10em 0em;
 }
 
 ul{

@@ -1,71 +1,49 @@
-@import url(https://fonts.googleapis.com/css?family=Open Sans:300,400);
-body {
-  font-family: "Open Sans",  "Helvetica Neue", "Arial", sans-serif;
-  background: url("https://i.imgur.com/lJOMNeJ.png");
+
+
+  #contactForm {
+      padding-top: 20em;
+      margin: 0 auto;
 }
 
-.container{
-  padding-top:10em;
+  #contactForm input, textarea {
+      font-family: "work sans";
+
+      color: #000;
+      background-color: RGBA(204, 204, 204, .1);
+
+      outline: none; border: none;
+
+      display:block;
+      margin: 0 auto;
+      padding: 1em;
+      width: 90%;
+      max-width: 370px;
+ }
+
+#contactForm textarea {
+  height: 150px;
 }
 
-.form__container {
-  background: #fff;
-  margin: 0 auto;
-  margin-top: 16px;
-  padding: 32px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+#contactForm *:focus {
+   background-color: #C3E9E9;
 }
 
-.gutter {
-  height: 32px;
+#contactForm *:hover {
+   background-color: #C3E9E9;
 }
 
-.footer__social {
-  height: 68px;
-  text-align: center;
-  opacity: 1;
-  transition: all 0.3s ease;
-  line-height: 70px;
-}
-.footer__social .fa {
-  vertical-align: middle;
-  transition: all 0.3s ease;
-}
-.footer__social.instagram:hover {
-  background-color: #3f729b;
-}
-.footer__social.instagram .fa {
-  color: #3f729b;
-}
-.footer__social.twitter:hover {
-  background-color: #3CF;
-}
-.footer__social.twitter .fa {
-  color: #3CF;
-}
-.footer__social.github:hover {
-  background-color: #4183c4;
-}
-.footer__social.github .fa {
-  color: #4183c4;
-}
-.footer__social.codepen:hover {
-  background-color: #1D1F20;
-}
-.footer__social.codepen .fa {
-  color: #1D1F20;
-}
-.footer__social:hover .fa {
-  color: #fff;
-}
-.footer__social:focus {
-  opacity: .85;
+::-webkit-input-placeholder {
+      color: #777;
 }
 
-@media (max-width: 767px) {
-  .form__container {
-    margin: 0;
-    padding: 16px;
-  }
+:-moz-placeholder { /* Firefox 18- */
+      color: #777;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #777;
+}
+
+:-ms-input-placeholder {
+       color: #777;
 }
