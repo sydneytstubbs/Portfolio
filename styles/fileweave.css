@@ -179,7 +179,7 @@ margin: 1em 0;
 
 .research{
 text-align: center;
-  background-color: #f4f4f4;
+  background-color: #f1f1f1;
 }
 
 .surveytitle{
@@ -831,7 +831,7 @@ max-width: 600px;
 
 
 #sketchtitle, #sketchtitle3, #sketchtitle4, #sketchtitle7, #sketchtitle8, #sketchtitle9, #sketchtitle10, #sketchtitle10, #sketchtitle11 {
-  background-color: #f4f4f4;
+  background-color: #f1f1f1;
 }
 
 
@@ -854,7 +854,7 @@ max-width: 600px;
 }
 
 #sketchanim:before{
-  background: linear-gradient(90deg, #F4F4F4 0%, #F4F4F4 50%, transparent 50%, transparent 100%);
+  background: linear-gradient(90deg, #f1f1f1 0%, #f1f1f1 50%, transparent 50%, transparent 100%);
   background-size: 5px;
   background-position: center;
   z-index: 1;
@@ -872,7 +872,7 @@ max-width: 600px;
 }
 
 #sketchanim:before, #sketchanim3:before, #sketchanim1:before, #sketchanim2:before, #sketchanim8:before {
-  background: linear-gradient(90deg, #F4F4F4 0%, #F4F4F4 5%, transparent 5%, transparent 10%, #F4F4F4 10%, #F4F4F4 15%, transparent 15%, transparent 20%, #F4F4F4 20%, #F4F4F4 25%, transparent 25%, transparent 30%, #F4F4F4 30%, #F4F4F4 35%, transparent 35%, transparent 40%, #F4F4F4 40%, #F4F4F4 45%, transparent 45%, transparent 50%, #F4F4F4 50%, #F4F4F4 55%, transparent 55%, transparent 60%, #F4F4F4 60%, #F4F4F4 65%, transparent 65%, transparent 70%, #F4F4F4 70%, #F4F4F4 75%, transparent 75%, transparent 80%, #F4F4F4 80%, #F4F4F4 85%, transparent 85%, transparent 90%, #F4F4F4 90%, #F4F4F4 95%, transparent 95%, transparent 100%);
+  background: linear-gradient(90deg, #f1f1f1 0%, #f1f1f1 5%, transparent 5%, transparent 10%, #f1f1f1 10%, #f1f1f1 15%, transparent 15%, transparent 20%, #f1f1f1 20%, #f1f1f1 25%, transparent 25%, transparent 30%, #f1f1f1 30%, #f1f1f1 35%, transparent 35%, transparent 40%, #f1f1f1 40%, #f1f1f1 45%, transparent 45%, transparent 50%, #f1f1f1 50%, #f1f1f1 55%, transparent 55%, transparent 60%, #f1f1f1 60%, #f1f1f1 65%, transparent 65%, transparent 70%, #f1f1f1 70%, #f1f1f1 75%, transparent 75%, transparent 80%, #f1f1f1 80%, #f1f1f1 85%, transparent 85%, transparent 90%, #f1f1f1 90%, #f1f1f1 95%, transparent 95%, transparent 100%);
   background-size: 150px;
   background-position: center;
   z-index: 1;
@@ -976,7 +976,7 @@ max-width: 600px;
 }
 
 #greybackground1{
-  background: #f4f4f4;
+  background: #f1f1f1;
 }
 
 .infoarch{
@@ -1098,5 +1098,5 @@ max-width: 600px;
 }
 
 .conclusionbackground{
-  background-color: #f4f4f4;
+  background-color: #f1f1f1;
 }
