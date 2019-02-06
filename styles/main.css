@@ -149,7 +149,21 @@
   .project
   {
     padding-bottom: 0em;
-    margin-bottom: -30em;
+    margin-bottom: -19em;
+  }
+}
+
+@media(max-width:600px){
+  .project
+  {
+    margin-bottom: -15em;
+  }
+}
+
+@media(max-width:375px){
+  .project
+  {
+    margin-bottom: -10em;
   }
 }
 

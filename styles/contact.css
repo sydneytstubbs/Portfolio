@@ -23,13 +23,6 @@
   font-weight: 100;
 }
 
-#topbody{
-  padding-top: 3em;
-}
-
-#bottombody{
-  padding-bottom: 10em;
-}
 
 @media (max-width: 575px){
   .contactmebody{
@@ -48,7 +41,9 @@ a:hover{
   color: #C3E9E9;
 }
 
-
+.contactinfo{
+  margin: 18em 0em 18em 0em;
+}
 
 #contactForm {
     padding-top: 5em;
