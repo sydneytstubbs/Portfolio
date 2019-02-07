@@ -191,18 +191,18 @@ text-align: center;
 /**personas**/
 
 
+.personaimage{
+  margin: 4em;
+  max-width: 400px;
+  height: auto;
+}
+
 @media(max-width: 37em){
   .personaimage{
     margin: 4em;
     max-width: 200px;
     height: auto;
   }
-}
-
-.personaimage{
-  margin: 4em;
-  max-width: 200px;
-  height: auto;
 }
 
 /**SWOT**/
@@ -338,13 +338,14 @@ justify-items:left;
 h6{
   font-family: "work sans";
   font-size: 1.6em;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 2.3em;
   overflow-wrap: normal;
 }
 
 #title {
   font-size: 2.2em;
+  font-weight: 300;
   margin-bottom: 1em;
   margin-top: .5em;
   text-align: left;
@@ -569,6 +570,10 @@ padding-bottom: 0em 0em 0em 0em;
 
 
 /**user testing**/
+
+#dashboardtitle{
+  padding-bottom: 0em;
+}
 
 .testing{
   background-color: #F1F1F1;
