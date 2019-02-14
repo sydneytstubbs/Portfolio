@@ -175,9 +175,9 @@
 .casestudygrid
 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: .15fr 1fr 1fr .15fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "item2 item1";
+  grid-template-areas: ". item2 item1 .";
   align-items: center;
   text-align: center;
   padding-bottom: 5em;
@@ -189,7 +189,7 @@
 .photo1
 {
   grid-area: item1;
-  width: 40%;
+  width: 70%;
 }
 
 .description
@@ -207,9 +207,9 @@
 .casestudygrid2
 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: .15fr 1fr 1fr .15fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "item3 item4";
+  grid-template-areas: ". item3 item4 .";
   text-align: center;
   justify-items: center;
   align-items: center;
@@ -218,7 +218,8 @@
 .photo2
 {
   grid-area: item3;
-  width: 50%;
+  width: 70%;
+  padding-right:
 }
 
 
@@ -288,11 +289,7 @@ h2
     margin-top: 11em;
   }
 
-  .photo1
-  {
-    grid-area: item1;
-    width: 40%;
-  }
+
 
   .description
   {

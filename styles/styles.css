@@ -5,6 +5,7 @@ width:100%;
 min-width:350px;
 margin:0;
 padding:0;
+scroll-behavior: smooth;
 }
 
 ul {
@@ -35,7 +36,7 @@ padding:1em 0;
 grid-area:para;
 text-align:left;
 font-family:"work sans";
-font-size:14pt;
+font-size:18px;
 font-weight:300;
 line-height:1.4em;
 text-rendering:optimizeLegibility;
@@ -49,7 +50,7 @@ ol {
 grid-area:para;
 text-align:left;
 font-family:"work sans";
-font-size:16pt;
+font-size:16px;
 font-weight:lighter;
 }
 
@@ -84,7 +85,7 @@ width:100%;
 background-color:#FFF;
 z-index:99;
 margin:0 auto;
-padding:3em;
+padding:3em 5em 3em 5em;
 }
 
 nav a {
@@ -118,15 +119,15 @@ color:#C87B84;
 .sectiontitle {
 text-align:center;
 font-family:"work sans";
-font-size:16pt;
+font-size:16px;
 font-weight:lighter;
-line-height:24pt;
+line-height:24px;
 }
 
 .sectionbody {
 text-align:center;
 font-family:"work sans";
-font-size:12pt;
+font-size:12px;
 font-weight:200;
 line-height:24px;
 padding:0 3em;
@@ -226,7 +227,7 @@ font-size:1.8em;
 .content {
 text-align:left;
 font-family:"work sans";
-font-size:12pt;
+font-size:13pt;
 line-height:1.5em;
 }
 
@@ -320,11 +321,60 @@ font-weight:200;
 
 }
 
-.studybutton
-{
+.studybutton {
+  background-color: #FFFFFF; /* White */
+  border-radius: 30px;
+  color: black;
+  border: 2px solid #C87B84; /* Green */
+  padding: .5em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
   width: 150px;
-  padding-top: 2.5em;
+  font-size: 16px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  margin-top: 1.25em;
 }
+
+.contactme{
+  font-size: 14px;
+  text-decoration: none;
+  font-family: "work sans";
+
+}
+
+/* unvisited link */
+a:link {
+  color: red;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+    text-decoration: none;
+}
+
+.studybutton:hover {
+  background-color: #C87B84; /* Green */
+  color: white;
+  box-shadow: 0 5px 7px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
 
 @media(max-width: 575px){
   .studybutton
