@@ -57,7 +57,7 @@ font-weight:lighter;
 .large-content {
 text-align:center;
 font-family:"work sans";
-font-size:2em;
+font-size:1.8em;
 line-height:1.5em;
 font-weight:300;
 }
@@ -227,7 +227,7 @@ font-size:1.8em;
 .content {
 text-align:left;
 font-family:"work sans";
-font-size:13pt;
+font-size:13px;
 line-height:1.5em;
 }
 
@@ -235,7 +235,7 @@ ol {
 grid-area:para;
 text-align:left;
 font-family:"work sans";
-font-size:13pt;
+font-size:13px;
 font-weight:lighter;
 }
 
@@ -260,14 +260,14 @@ font-weight:400;
 }
 
 .content {
-font-size:12pt;
+font-size:12px;
 }
 
 ol {
 grid-area:para;
 text-align:left;
 font-family:"work sans";
-font-size:12pt;
+font-size:12px;
 font-weight:lighter;
 }
 
