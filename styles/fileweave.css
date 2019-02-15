@@ -128,7 +128,7 @@ margin: 1em 0;
 
 .scopegrid{
   display: grid;
-  grid-template-columns: .5fr 100px 100px 100px .5fr;
+  grid-template-columns: 1fr 130px 130px 130px 1fr;
   grid-template-areas:
   ". roles deliverables tools .";
   text-align: center;
@@ -156,8 +156,8 @@ margin: 1em 0;
 
   @media(max-width: 700px){
     .icon{
-      height: 3em;
-      width: 3em;
+      height: 4em;
+      width: 4em;
     }
 
     .scopegrid{

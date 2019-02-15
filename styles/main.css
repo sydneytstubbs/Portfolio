@@ -66,7 +66,17 @@ background-image: linear-gradient(rgba(000,000,000,0) 50%, #DCAEB3 10%);
 
 .text__second
 {
-  margin-left: 15vmin;
+  margin-left: 10vmin;
+}
+
+.text__third
+{
+  margin-left: 10vmin;
+}
+
+.text__fourth
+{
+  margin-left: 10vmin;
 }
 
 
@@ -122,10 +132,6 @@ background-image: linear-gradient(rgba(000,000,000,0) 50%, #DCAEB3 10%);
     padding-top: 8em;
   }
 
-  .restart
-  {
-    font-size: 2px;
-  }
 
   .text
   {
