@@ -1,7 +1,9 @@
 .pinksplash{
-background-image: -webkit-linear-gradient(rgba(000,000,000,0) 50%, #DCAEB3 10%);
-background-image: -o-linear-gradient(rgba(000,000,000,0) 50%, #DCAEB3 10%);
 background-image: linear-gradient(rgba(000,000,000,0) 50%, #DCAEB3 10%);
+}
+
+.aquasplash{
+background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
 }
 
 .abouttitle {
