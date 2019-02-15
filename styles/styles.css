@@ -127,8 +127,8 @@ line-height:24px;
 .sectionbody {
 text-align:center;
 font-family:"work sans";
-font-size:12px;
-font-weight:200;
+font-size:14px;
+font-weight:300;
 line-height:24px;
 padding:0 3em;
 }
@@ -304,15 +304,15 @@ height:3.5em;
 .sectiontitle {
 text-align:center;
 font-family:"work sans";
-font-size:16pt;
+font-size:16px;
 font-weight:100;
 }
 
 .sectionbody {
 text-align:center;
 font-family:"work sans";
-font-size:14pt;
-font-weight:200;
+font-size:14px;
+font-weight:300;
 }
 }
 

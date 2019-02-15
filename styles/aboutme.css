@@ -27,7 +27,6 @@ background-image: linear-gradient(rgba(000,000,000,0) 50%, #DCAEB3 10%);
 
 @media(max-width:550px){
   .abouttitle {
-    font-size:14pt;
 }
 }
 
@@ -76,8 +75,8 @@ background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
 .herocontent {
   text-align: left;
   font-family: "work sans";
-  font-size: 12pt;
-  font-weight: 200;
+  font-size: 14px;
+  font-weight: 300;
   line-height: 1.8em;
 }
 
@@ -107,7 +106,7 @@ background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
   .herocontent {
     text-align: center;
     font-family: "work sans";
-    font-size: 11pt;
+    font-size: 1.4em;
     line-height: 1.8em;
   }
   .herotext{
@@ -115,7 +114,6 @@ background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
   }
 
 }
-
 
 @media(max-width: 375px){
   .hero{
@@ -141,8 +139,8 @@ background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
   .herocontent {
     text-align: center;
     font-family: "work sans";
-    font-size: 11pt;
-    font-weight: 200;
+    font-size: 1.4em;
+    font-weight: 300;
     line-height: 1.8em;
   }
   .herotext{
@@ -163,16 +161,16 @@ background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
 .listitem {
 text-align:center;
 font-family:"work sans";
-font-size:14pt;
-font-weight:200;
+font-size:1.4em;
+font-weight:300;
 line-height:2em;
 padding:0;
 }
 
 @media(max-width:550px){
 .listitem {
-font-size:12pt;
-font-weight:200;
+font-size:1.4em;
+font-weight:300;
 }
 }
 
@@ -341,7 +339,8 @@ hr {
   font-family: 'work sans';
   color: #4F4F4F;
   line-height: 2EM;
-  font-weight: 200;
+  font-weight: 300;
+  font-size: 14px;
 }
 
 .howigothere{
