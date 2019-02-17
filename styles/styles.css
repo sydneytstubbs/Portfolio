@@ -144,7 +144,7 @@ padding:0 3em;
 }
 
 .greyfooter {
-background-color:GREY;
+background-color:#F0F0F3;
 padding-bottom:2em;
 }
 
@@ -169,10 +169,10 @@ text-align:left;
 .minitype {
 display:grid;
 font-family:"work sans";
-background-color:GREY;
+background-color:#F0F0F3;
 text-align:center;
 font-size:1em;
-color:#FFF;
+color:grey;
 height:4em;
 padding:1em;
 }
@@ -357,7 +357,7 @@ font-weight:300;
 
 /* unvisited link */
 a:link {
-  color: red;
+  color: black;
     text-decoration: none;
 }
 
@@ -374,12 +374,12 @@ a:hover {
 
 /* selected link */
 a:active {
-  color: blue;
+  color: black;
     text-decoration: none;
 }
 
 .studybutton:hover {
-  background-color: #C87B84; /* Green */
+  background-color: #C87B84;
   color: white;
   box-shadow: 0 5px 7px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
