@@ -183,7 +183,25 @@ text-align: center;
 }
 
 .surveytitle{
-  text-align: left;
+  text-align:left;
+  display:grid;
+  grid-template-columns:1fr 600px 1fr;
+  grid-template-rows:auto auto;
+  grid-template-areas:" . st .";
+  text-rendering:optimizeLegibility;
+  justify-items:center;
+}
+
+@media(max-width:750px){
+.surveytitle {
+text-align:left;
+display:grid;
+grid-template-columns:.25fr 1fr .25fr;
+grid-template-rows:auto auto;
+grid-template-areas:" . st ." ;
+text-rendering:optimizeLegibility;
+justify-items:center;
+}
 }
 
 
@@ -326,44 +344,34 @@ justify-items:left;
 
 /**survey start**/
 
-.surveybox{
-  padding: 3em 0em 2em 0em;
-}
-.survey-results{
-  display: table;
-  max-width: 600px;
-  text-align: left;
-}
+
 
 h6{
   font-family: "work sans";
-  font-size: 1.6em;
+  font-size: 1.8em;
   font-weight: 300;
-  line-height: 2.3em;
+  line-height: 1.8em;
   overflow-wrap: normal;
 }
 
 #title {
+  grid-area: st;
   font-size: 2.2em;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 1em;
   margin-top: .5em;
-  text-align: left;
+  text-align: center;
+  padding: 2em 0em 2em 0em;
 }
 
-.survey-analysis{
-  display: grid;
-  justify-items: center;
-  margin: .5em 1.5em .5em 1.5em;
-}
+
 
 
 @media(max-width: 700px){
-  .survey-results{
-  display: table;
-  }
+
 
   #title {
+    grid-area: st;
     font-size: 2em;
     margin-bottom: .5em;
     margin-top: 1em;
@@ -373,15 +381,13 @@ h6{
 
   h6{
     font-family: "work sans";
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: 300;
-    line-height: 2.3em;
+    line-height: 1.6em;
     overflow-wrap: normal;
   }
 
-  .surveybox{
-    margin: 0em 3em 0em 3em;
-  }
+
 }
 
 .flow-image{
@@ -1201,21 +1207,74 @@ max-width: 600px;
 
 /**percentages**/
 
-.flex-wrapper {
-  display: flex;
-  flex-flow: row nowrap;
+.survey-results{
+  border-width: medium;
+  border-style: dashed;
+  border-color: grey;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.survey-table{
+  display:grid;
+  grid-template-columns: .25fr 1fr 1fr 1fr .25fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  ". findone findtwo findthree ."
+  ". findfour findfive findsix .";
+  justify-items: center;
+  grid-gap: 3em;
+  padding-bottom: 5em;
+
+}
+
+@media (max-width: 850px){
+  .survey-table{
+    display:grid;
+    grid-template-columns: .25fr 1fr 1fr .25fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    ". findone findtwo  ."
+    ". findthree findfour ."
+    ". findfive findsix .";
+    grid-gap: 2em;
+  }
+}
+
+#finding1{
+  grid-area: findone;
+}
+
+#finding2{
+  grid-area: findtwo;
+}
+
+#finding3{
+  grid-area: findthree;
+}
+
+#finding4{
+  grid-area: findfour;
+}
+
+#finding5{
+  grid-area: findfive;
+}
+
+#finding6{
+  grid-area: findsix;
 }
 
 .single-chart {
-  width: 33%;
+  width: 90%;
   justify-content: space-around ;
 }
 
 .circular-chart {
   display: block;
   margin: 10px auto;
-  max-width: 50%;
-  max-height: 250px;
+  max-width: 40%;
+  max-height: 200px;
 }
 
 .circle-bg {
@@ -1251,8 +1310,8 @@ max-width: 600px;
 
 .percentage {
   fill: #666;
-  font-family: sans-serif;
-  font-size: 0.5em;
+  font-family: "work sans";
+  font-size: 1em;
   text-anchor: middle;
 }
 
