@@ -863,7 +863,7 @@ h2
                     background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
                     display: inline-block;
                     line-height: 20px;
-                    width: 16px;
+                    width: 12px;
 
 }
 .mast__text span:nth-child(26) {
@@ -880,7 +880,7 @@ h2
                     background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
                     display: inline-block;
                     line-height: 20px;
-                    width: 4px;
+                    width: 5px;
 }
 .mast__text span:nth-child(28) {
   -webkit-animation-delay: 1.4s;
@@ -906,7 +906,7 @@ h2
                     background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
                     display: inline-block;
                     line-height: 20px;
-                    width: 13px;
+                    width: 11px;
 }
 .mast__text span:nth-child(31) {
   -webkit-animation-delay: 1.55s;
