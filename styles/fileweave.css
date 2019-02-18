@@ -98,8 +98,10 @@
   grid-area: img;
   padding: 1em 0em 1em 0em;
   font-family: 'work sans';
-  font-size: 1.2em;
-  font-weight: 200;
+  font-size: 1.8em;
+  font-weight: 300;
+  color: #C87B84;
+  text-decoration: underline;
 }
 
 .flowlink{
@@ -120,6 +122,10 @@
     font-size: 1.4em;
     font-weight: 300;
     color: #C87B84;
+  }
+  #protolink{
+    font-size: 1.4em;
+
   }
 }
 
