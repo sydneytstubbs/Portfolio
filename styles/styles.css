@@ -174,7 +174,7 @@ font-family:"work sans";
 background-color:#F0F0F3;
 text-align:center;
 font-size:1em;
-color:grey;
+color:#4A4A4A;
 height:4em;
 padding:1em;
 }
@@ -209,25 +209,28 @@ padding:10em 0;
 .endmessage {
 grid-area: message;
 text-align:center;
+
 }
 
 .end {
+color: #4a4a4a;
 font-weight:300;
 text-align:center;
+font-family: "work sans";
+font-size: 1.5em;
+line-height: 1.5em;
+font-weight: 300;
 }
 
 #endfont{
-  font-family: "work sans";
-  font-size: 1.5em;
-  line-height: 1.5em;
-  font-weight: 300;
+
 }
 
 
 
 nav a {
 text-decoration:none;
-color:#000;
+color:#4a4a4a;
 }
 
 
@@ -342,33 +345,39 @@ font-weight:300;
 }
 
 .studybutton {
-  background-color: #FFFFFF; /* White */
-  border-radius: 30px;
-  color: black;
-  border: 2px solid #C87B84; /* Green */
-  padding: .5em;
-  text-align: center;
-  text-decoration: none;
+  border: none;
+  background: #ffffff;
+  color: #C87B84;
+  font-weight: 100;
+  padding: 15px;
+  text-transform: uppercase;
+  border-color: #C87B84;
+  border-radius: 6px;
+  border-width: medium;
+  border-style: solid;
   display: inline-block;
-  font-size: 16px;
-  width: 150px;
-  font-size: 16px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  margin-top: 1.25em;
-}
 
-.contactme{
   font-size: 14px;
+  font-weight: 300;
   text-decoration: none;
   font-family: "work sans";
+  margin-top: 1em;
+}
 
+.studybutton:hover {
+  font-weight: 700 !important;
+  letter-spacing: 3px;
+  background: none;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.3s ease 0s;
 }
 
 /* unvisited link */
-a:link {
-  color: black;
-    text-decoration: none;
+.studybutton a:link {
+  color: #C87B84;
+  font-weight: 400;
+  text-decoration: none;
 }
 
 /* visited link */
@@ -376,39 +385,19 @@ a:visited {
   text-decoration: none;
 }
 
-/* mouse over link */
-a:hover {
-  color: white;
-    text-decoration: none;
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
 }
+
+/* mouse over link */
+
 
 /* selected link */
 a:active {
   color: black;
     text-decoration: none;
 }
-
-.studybutton:hover {
-  background-color: #C87B84;
-  color: white;
-  box-shadow: 0 5px 7px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-
-
-@media(max-width: 575px){
-  .studybutton
-  {
-    width: 100px;
-    padding-top: 2.5em;
-  }
-}
-
-
-
-
-
-
 
 
 .slideanim {

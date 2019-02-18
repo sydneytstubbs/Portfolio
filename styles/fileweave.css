@@ -107,7 +107,7 @@
   grid-area: img;
   padding: 1em 0em 1em 0em;
   font-family: 'work sans';
-  font-size: 1.6em;
+  font-size: 2.0em;
   font-weight: 200;
 }
 
@@ -305,7 +305,7 @@ padding-top: 5em;
 @media(max-width:900px){
   .analysisgrid {
   display: grid;
-  grid-template-columns: .25fr 1fr .25fr;
+  grid-template-columns: .1fr 1fr .1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
   ". gd ."
@@ -396,7 +396,7 @@ padding-top: 5em;
 
   .story-table > span {
       padding: 8px 4px;
-      background-color:#CFD9E2;
+      background-color:#f1f1f1;
   }
 
   .stories{
@@ -499,8 +499,9 @@ h6{
     width: 50%;
   }
 
+
 .layer{
-  padding-bottom: 10em;
+  padding-bottom: 3em;
 }
 
 }
@@ -510,6 +511,14 @@ h6{
 }
 
 #brandingimage5{
+  grid-area:img;
+  width: 600px;
+  height: auto;
+  max-width: 80%;
+  margin-top: 2em;
+}
+
+#brandingimage10{
   grid-area:img;
   width: 600px;
   height: auto;
@@ -544,6 +553,10 @@ h6{
     margin-right: auto;
     width: 100%;
   }
+
+  .typespecial{
+    max-width
+  }
 }
 
 @media(max-width: 375px){
@@ -557,7 +570,44 @@ h6{
     margin-right: auto;
     width: 100%;
   }
+
+  .typespecial{
+    min-width: 350px;
+  }
 }
+
+
+.typography1{
+  font-family: "signika";
+  font-size: 31px;
+  line-height: 2em;
+}
+
+.typography2{
+  font-family: "Montserrat";
+  font-size: 31px;
+  line-height: 2em;
+}
+
+.typography3{
+  font-family: "Montserrat";
+  font-size: 16px;
+  line-height: 2em;
+}
+
+.typography4{
+  font-family: "Montserrat";
+  font-size: 12px;
+    line-height: 5em;
+}
+
+
+.typography5{
+  font-family: "Source Sans Pro";
+  font-size: 12px;
+      line-height: 6em;
+}
+
 
 #brandingsub{
     padding: 0em 0em 0em 0em;
@@ -659,20 +709,21 @@ grid-template-areas:
 " . cp . ";
 text-rendering:optimizeLegibility;
 padding-bottom: 0em 0em 0em 0em;
+
 }
 
 @media(max-width:750px){
 .colorgrid {
-text-align:left;
 display:grid;
 grid-template-columns:.25fr 1fr .25fr;
-grid-template-rows:auto auto;
+grid-template-rows: auto auto;
 grid-template-areas:
 " . title ."
 " . para ."
 " . cp . ";
-text-rendering:optimizeLegibility;
-padding-bottom: 0em 0em 0em 0em;
+text-rendering: optimizeLegibility;
+padding-bottom: 0em;
+
 }
 }
 

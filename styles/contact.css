@@ -65,9 +65,7 @@ a:hover{
       font-weight: 300;
       color: #000;
       background-color: RGBA(204, 204, 204, .1);
-
       outline: none; border: none;
-
       display:block;
       margin: .5em;
       padding: 1em;
@@ -86,6 +84,12 @@ a:hover{
 #contactForm *:hover {
    background-color: #C3E9E9;
 }
+
+#submitForm{
+  background-color: blue;
+}
+
+
 
 ::-webkit-input-placeholder {
       color: #777;
