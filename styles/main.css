@@ -650,6 +650,8 @@ h2
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
           background-image: linear-gradient(rgba(000,000,000,0) 50%, #DCAEB3 10%);
+          width: 20px;
+
 }
 .mast__title span:nth-child(13) {
 
@@ -725,6 +727,7 @@ h2
 .mast__text span {
   -webkit-animation: letter-glow 0.7s 0s ease both;
           animation: letter-glow 0.7s 0s ease both;
+
 }
 
 .mast__text span:nth-child(1) {
@@ -821,6 +824,9 @@ h2
                     background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
                     display: inline-block;
                     line-height: 20px;
+                    width: 13px;
+
+
 
 
 }
@@ -831,6 +837,7 @@ h2
                     display: inline-block;
                     line-height: 20px;
 
+
 }
 .mast__text span:nth-child(23) {
   -webkit-animation-delay: 1.15s;
@@ -839,6 +846,7 @@ h2
                     display: inline-block;
                     line-height: 20px;
 
+
 }
 .mast__text span:nth-child(24) {
   -webkit-animation-delay: 1.2s;
@@ -846,6 +854,7 @@ h2
                     background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
                     display: inline-block;
                     line-height: 20px;
+                    width: 13px;
 
 }
 .mast__text span:nth-child(25) {
@@ -854,6 +863,7 @@ h2
                     background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
                     display: inline-block;
                     line-height: 20px;
+                    width: 16px;
 
 }
 .mast__text span:nth-child(26) {
@@ -862,6 +872,7 @@ h2
                     background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
                     display: inline-block;
                     line-height: 20px;
+                    width: 10px;
 }
 .mast__text span:nth-child(27) {
   -webkit-animation-delay: 1.35s;
@@ -869,6 +880,7 @@ h2
                     background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
                     display: inline-block;
                     line-height: 20px;
+                    width: 4px;
 }
 .mast__text span:nth-child(28) {
   -webkit-animation-delay: 1.4s;
@@ -876,6 +888,8 @@ h2
                     background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
                     display: inline-block;
                     line-height: 20px;
+                    width: 11px;
+
 }
 .mast__text span:nth-child(29) {
   -webkit-animation-delay: 1.45s;
@@ -883,6 +897,8 @@ h2
                     background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
                     display: inline-block;
                     line-height: 20px;
+                    width: 13px;
+
 }
 .mast__text span:nth-child(30) {
   -webkit-animation-delay: 1.5s;
@@ -890,6 +906,7 @@ h2
                     background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
                     display: inline-block;
                     line-height: 20px;
+                    width: 13px;
 }
 .mast__text span:nth-child(31) {
   -webkit-animation-delay: 1.55s;
@@ -904,6 +921,7 @@ h2
                     background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
                     display: inline-block;
                     line-height: 20px;
+                    width: 0px;
 }
 .mast__text span:nth-child(33) {
   -webkit-animation-delay: 1.65s;
@@ -1100,6 +1118,7 @@ h2
           background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
           display: inline-block;
           line-height: 20px;
+          width: 12px;
 }
 .mast__text span:nth-child(72) {
   -webkit-animation-delay: 3.6s;
@@ -1107,6 +1126,7 @@ h2
           background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
           display: inline-block;
           line-height: 20px;
+                    width: 12px;
 }
 .mast__text span:nth-child(73) {
   -webkit-animation-delay: 3.65s;
@@ -1114,13 +1134,15 @@ h2
           background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
           display: inline-block;
           line-height: 20px;
+          width: 8px;
 }
 .mast__text span:nth-child(74) {
   -webkit-animation-delay: 3.7s;
           animation-delay: 3.7s;
           background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
-          display: inline-block;
+          display: inline-flex;
           line-height: 20px;
+          width: 9px;
 }
 .mast__text span:nth-child(75) {
   -webkit-animation-delay: 3.75s;
@@ -1128,6 +1150,7 @@ h2
                     background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
                     display: inline-block;
                     line-height: 20px;
+                    width: 13px;
 }
 .mast__text span:nth-child(76) {
   -webkit-animation-delay: 3.8s;
@@ -1193,29 +1216,30 @@ h2
   -webkit-animation-delay: 4.55s;
           animation-delay: 4.55s;
           background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
-          display: inline-block;
+          display: inline-flex;
           line-height: 20px;
 }
 .mast__text span:nth-child(92) {
   -webkit-animation-delay: 4.6s;
           animation-delay: 4.6s;
           background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
-          display: inline-block;
+          display: inline-flex;
           line-height: 20px;
 }
 .mast__text span:nth-child(93) {
   -webkit-animation-delay: 4.65s;
           animation-delay: 4.65s;
           background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
-          display: inline-block;
+          display: inline-flex;
           line-height: 20px;
 }
 .mast__text span:nth-child(94) {
   -webkit-animation-delay: 4.7s;
           animation-delay: 4.7s;
           background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
-          display: inline-block;
+          display: inline-flex;
           line-height: 20px;
+          width: 10px;
 }
 .mast__text span:nth-child(95) {
   -webkit-animation-delay: 4.75s;
