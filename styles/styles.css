@@ -52,6 +52,8 @@ line-height:1.4em;
 text-rendering:optimizeLegibility;
 }
 
+
+
 #problemcontent {
 padding-bottom:3em;
 }
@@ -241,6 +243,14 @@ font-size:13px;
 line-height:1.5em;
 }
 
+.personatitle{
+  text-align:left;
+  font-family:"work sans";
+  font-size:13px;
+  line-height:1.5em;
+  font-weight: 500;
+}
+
 ol {
 grid-area:para;
 text-align:left;
@@ -392,4 +402,37 @@ a:active {
     width: 100px;
     padding-top: 2.5em;
   }
+}
+
+
+
+
+
+
+
+
+.slideanim {
+    visibility:hidden;
+    visibility:visible\9;/*For old IE browsers IE6-8 */
+
+}
+.slideanim.slide {
+    visibility: visible;
+    animation: slide 1s;
+}
+.slideanim::after {
+    /* useful when its child elements are float:left; */
+    content: "";
+    display: table;
+    clear: both;
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
