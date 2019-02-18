@@ -722,6 +722,7 @@ h2
 }
 
 .mast__text span {
+  line-height: 10px;
   -webkit-animation: letter-glow 0.7s 0s ease both;
           animation: letter-glow 0.7s 0s ease both;
 
