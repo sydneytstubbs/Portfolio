@@ -123,7 +123,7 @@
     font-weight: 300;
     color: #C87B84;
   }
-  
+
   #protolink{
     font-size: 1.4em;
   }
@@ -304,7 +304,12 @@ grid-area: tt;
 }
 
 .gd, .db, .tt{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-width: medium;
+  border-style: dashed;
+  border-color: grey;
+  background-color: white;
+  border-radius: 10px;
+  padding: 7px;
   text-align: center;
 }
 
@@ -1545,7 +1550,12 @@ max-width: 600px;
 .user-persona-mobile {
   width: 100%;
   margin: 5em 0em 5aem 0em;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-width: medium;
+  border-style: dashed;
+  border-color: grey;
+  background-color: white;
+  border-radius: 10px;
+  padding: 7px;
 }
 
 .user-persona-mobile-header {
