@@ -9,9 +9,9 @@
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<link href="styles/reset.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat|Signika|Source+Sans+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
 	<link href="styles/styles.css" rel="stylesheet" type="text/css">
-	<link href="styles/fileweave.css" rel="stylesheet" type="text/css">
+	<link href="styles/activo.css" rel="stylesheet" type="text/css">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet">
 	<script src="js/portfolio.js"></script>
 	<script src="js/float-panel.js"></script>
@@ -128,11 +128,10 @@
 			<!--Problem & Solution-->
 			<div class="squishgrid">
 				<h2 class="subtitle">PROBLEM</h2>
-				<p class="content" id="problemcontent">Travelers want a local perspective, but finding locals to take you around is difficult.  On top of that, meeting with strangers can be uncomfortable.<br>
+				<p class="content" id="problemcontent">After discovery was completed, the following problem was unveiled:<br>
 				<br>
-				(1) travelers want a local perspective but don't have locals to show them around<br>
-				(2) when traveling, it's hard to parse out tourist attractions from experience how people live<br>
-				(3) meeting strangers in a foreign city is difficult, and can be awkward<br>
+				(1) travelers want a local perspective and experience but don't know any locals<br>
+				(2) meeting strangers in a foreign city is difficult, and can be awkward<br>
 				<br>
 				From this feedback the problem was identified: travelers need a tool to help connect them with locals, that also bridges the gap of uncomfortability in meeting a stranger.<br>
 				<br></p>
@@ -140,7 +139,7 @@
 			<div class="textgrid slideanim" id="solution">
 				<!--solution-->
 				<h2 class="subtitle">SOLUTION</h2>
-				<p class="content">An app for all types of file storage (docs, photos, links, spreadsheets etc.) with advanced social sharing abilities, allowing users to post documents, and download documents from other users. Last but not least, advanced organization, with the capability to make overarching folders that function as separate interfaces within one account.</p>
+				<p class="content">An application that allows travelers to find local people that advertize activities, so that the traveler can get a local experience, while also reducing social uncomfortability of meeting a new person by setting the expectation of sharing an activity together. This solution offers the user an experience that offers the user a better understand local life, and create a meaningful memory and relationship while traveling.</p>
 			</div>
 		</div>
 		<div class="dividegrid1" id="sketchtitle">
@@ -156,9 +155,16 @@
 		<div class="textgrid slideanim slideanim">
 			<!--Research Overview-->
 			<h2 class="subtitle ">RESEARCH OVERVIEW</h2>
-			<p class="content">First off was testing the client’s, and my own assumptions about cloud storage user needs and frustrations. I deployed an online survey using google forms to gain insight into user motivation, behavior, preferences and dislikes.<br>
+			<p class="content">First off, I deployed a google forms survey through email, slack, reddit, and a community college student forum in Seattle, WA.<br>
 			<br>
-			On top of gaining insight into the mind of the user, at the client’s suggestion, I asked specific questions about how the user feels about potential features concerning collaboration and social functions.</p>
+			The initial problem hypothesis I was testing for was this: "learning language with a person while sharing an activity produces higher rates of comprehension than classroom learning." Survey responses showed that my hypothesis was confirmed, but the qualitative responses gave me further insight into how the users really felt about the questions at hand. Here is an example of the feedback that changed the scope of the problem, <br><br>“I would want to do one of those activities, but I would never make a lesson plan centered around an activity.  It's boring and tedious to come up with content for practicing language, but if there is an activity/goal involved and no pressure involved, it's easier to interact and I am more motivated to learn the vocabulary and try to speak."<br><br>
+			Other feedback about the initial idea yielded the following written responses:<br><br>
+			"I don't have enough time to do this regularly"<br><br>
+			"Teaching language is boring, I would hang out with someone while learning thought"<br><br>
+			"I'd rather just cook together than feel pressured"<br><br>
+			"Skipping the language lesson and just hanging out with the person seems better"<br><br>
+
+		</p>
 		</div>
 		<div class="surveybox slideanim">
 			<!--Survey Reuslts-->
@@ -176,13 +182,13 @@
 												a 15.9155 15.9155 0 0 1 0 -31.831"
 										/>
 										<path class="circle"
-											stroke-dasharray="64, 100"
+											stroke-dasharray="90, 100"
 											d="M18 2.0845
 												a 15.9155 15.9155 0 0 1 0 31.831
 												a 15.9155 15.9155 0 0 1 0 -31.831"
 										/>
-										<text x="18" y="20.35" class="percentage">64%</text>
-									</svg><h6> are unhappy using multiple cloud platforms to complete different tasks.</h6>
+										<text x="18" y="20.35" class="percentage">90%</text>
+									</svg><h6> of users living in a foreign country were interested in local culture.</h6>
 								</div>
 					</li>
 					<li class="survey-results" id="finding2">
@@ -194,14 +200,14 @@
 										a 15.9155 15.9155 0 0 1 0 -31.831"
 								/>
 								<path class="circle"
-									stroke-dasharray="70, 100"
+									stroke-dasharray="73, 100"
 									d="M18 2.0845
 										a 15.9155 15.9155 0 0 1 0 31.831
 										a 15.9155 15.9155 0 0 1 0 -31.831"
 								/>
-								<text x="18" y="20.35" class="percentage">60%</text>
+								<text x="18" y="20.35" class="percentage">73%</text>
 							</svg>
-							<h6>are very concerned with keeping files organized.<br></h6>
+							<h6>were interested in trading skills with a local to make friends in the community.<br></h6>
 						</div>
 					</li>
 					<li class="survey-results" id="finding3">
@@ -213,72 +219,14 @@
 										a 15.9155 15.9155 0 0 1 0 -31.831"
 								/>
 								<path class="circle"
-									stroke-dasharray="85, 100"
+									stroke-dasharray="95, 100"
 									d="M18 2.0845
 										a 15.9155 15.9155 0 0 1 0 31.831
 										a 15.9155 15.9155 0 0 1 0 -31.831"
 								/>
-								<text x="18" y="20.35" class="percentage">85%</text>
+								<text x="18" y="20.35" class="percentage">95%</text>
 							</svg>
-							<h6>are open to multiple modes of organization within their cloud storage.<br></h6>
-						</div>
-					</li>
-					<li class="survey-results" id="finding4">
-						<div class="single-chart">
-							<svg viewBox="0 0 36 36" class="circular-chart orange">
-								<path class="circle-bg"
-									d="M18 2.0845
-										a 15.9155 15.9155 0 0 1 0 31.831
-										a 15.9155 15.9155 0 0 1 0 -31.831"
-								/>
-								<path class="circle"
-									stroke-dasharray="80, 100"
-									d="M18 2.0845
-										a 15.9155 15.9155 0 0 1 0 31.831
-										a 15.9155 15.9155 0 0 1 0 -31.831"
-								/>
-								<text x="18" y="20.35" class="percentage">80%</text>
-							</svg>
-							<h6>would benefit from expanding social uses.<br></h6>
-						</div>
-					</li>
-					<li class="survey-results" id="finding5">
-
-								<div class="single-chart">
-									<svg viewBox="0 0 36 36" class="circular-chart green">
-										<path class="circle-bg"
-											d="M18 2.0845
-												a 15.9155 15.9155 0 0 1 0 31.831
-												a 15.9155 15.9155 0 0 1 0 -31.831"
-										/>
-										<path class="circle"
-											stroke-dasharray="87, 100"
-											d="M18 2.0845
-												a 15.9155 15.9155 0 0 1 0 31.831
-												a 15.9155 15.9155 0 0 1 0 -31.831"
-										/>
-										<text x="18" y="20.35" class="percentage">87%</text>
-									</svg>
-									<h6>of users see benefit of expanding collaboratve features in general.</h6>
-								</div>
-					</li>
-					<li class="survey-results" id="finding6">
-						<div class="single-chart">
-							<svg viewBox="0 0 36 36" class="circular-chart blue">
-								<path class="circle-bg"
-									d="M18 2.0845
-										a 15.9155 15.9155 0 0 1 0 31.831
-										a 15.9155 15.9155 0 0 1 0 -31.831"
-								/>
-								<path class="circle"
-									stroke-dasharray="87, 100"
-									d="M18 2.0845
-										a 15.9155 15.9155 0 0 1 0 31.831
-										a 15.9155 15.9155 0 0 1 0 -31.831"
-								/>
-								<text x="18" y="20.35" class="percentage">87%</text>
-							</svg>
-							<h6>stated they would benefit from editable documents.<br></h6>
+							<h6>said it is hard to make good friends with locals or become a part of the local community as a non-native language speaker<br></h6>
 						</div>
 					</li>
 				</ul>
@@ -294,81 +242,89 @@
 	    <!--Peronas-->
 	    <h2 class="subtitle">PERSONAS</h2>
 	    <p class="content">After the survey results were analyzed, I was able to take that information and create user personas to key in on user needs and frustrations as I designed FileWeave.</p>
-	    <p class="personalink" id="protolink"><a href="https://drive.google.com/open?id=1_hivBHeHWT3wKDKxcQoo7hKCSqnn2Ib6">View More Personas</a></p>
+	    <p class="personalink" id="protolink"><a href="https://drive.google.com/open?id=11Scma5VlZ43EQCMm9lqP6qqEc7ROCZOw">View More Personas</a></p>
 	  </div>
 	  <div class="personawrapper">
 	  <div class="user-persona-mobile  slideanim" id="josh1">
 	    <div class="user-persona-mobile-header">
-	      <img src="images/fileweave/josh.png" alt="a">
-	      <h1 class="personatitle">Josh Lopez</h1>
-	      <p class="content" id="persona1">29 | Male |  Marketing Coordinator | Raleigh, NC</p>
+	      <img src="images/activo/anika.png" alt="a">
+	      <h1 class="personatitle">Anika Kaur</h1>
+	      <p class="content" id="persona1">31 | Feale |  Project Manager | Miami, FL</p>
 	    </div>
 	    <div class="user-persona-mobile-content">
 	      <div class="user-persona-mobile-motivations">
 	      <h2 class="personasubtitle">Motivations</h2>
-	      <p class="content">At work, Josh is always creting content to share with his team all around the world.  Collaborating on these documents remotely is key to his workflow.  Creating folders, spreadsheets and presentations need to be accessible and easy to edit anywhere.  Having access to other marketing professional’s organizational spreadsheets and resources would be of huge help to him, but he doesn’t know where to find these downloadable documents.</p>
+				<ul>
+					<li class="goals">Meeting new people makes her a better person</li>
+					<li class="goals">Wants to gain worldly perspective</li>
+					<li class="goals">Loves to travel</li>
+					<li class="goals">Enjoys sharing her city and culture</li>
+					<li class="goals">Passionate about her work</li>
+				</ul>
 	    </div>
 	    <div class="user-persona-mobile-goals">
 	      <h2 class="personasubtitle">Goals</h2>
 	      <ul>
-	        <li class="goals">Able to upload files and folders to the cloud</li>
-	        <li class="goals">Able to share uploaded files and folders</li>
-	        <li class="goals">Explore new documents</li>
-	        <li class="goals">Streamline Workflow</li>
-	        <li class="goals">Organizing uploaded files and folders</li>
+	        <li class="goals">Grow her social network internationally</li>
+	        <li class="goals">Learn about the world through fellow travelers</li>
+	        <li class="goals">Satiate her want to travel through meeting international people</li>
 	      </ul>
 	    </div>
 	    <div class="user-persona-mobile-frustrations">
 	      <h2 class="personasubtitle">Frustrations</h2>
 	      <ul>
-	        <li class="goals">Difficulty viewing files</li>
-	        <li class="goals">Slow upload times</li>
-	        <li class="goals">Automatic upload</li>
-	        <li class="goals">Lack of streamlined workflow</li>
-	        <li class="goals">Organizing uploaded files and folders</li>
+	        <li class="goals">Doesn't have the PTO to travel</li>
+	        <li class="goals">Doesn't have the extra cash to travel</li>
+	        <li class="goals">She's bored hanging out with her lifelong friends, seeks new exciting interpersonal interaction</li>
 	      </ul>
 	    </div>
 	    <div class="user-persona-mobile-bio">
 	      <h2 class="personasubtitle">Biography</h2>
 	      <p class="content">
-	        Josh is an overachiever.  He is single and working as a marketing coordinator full-time, while going to school part-time to earn his MBA.  He is tech savvy, but often spreads himself thin with school, work, and social events, to the point where he doesn’t have extra time to spend organizing his technology.
+	        Anika has liked in Miami most of her life, and now works as a project manager at a construction company. She really loves spending her time with friends and family, and emphasizes the importance of community in her life.  Over the years, she has spent her precious PTO on vacations around the world, and wishes she had more time to spend traveling.  The people that she has met abroad have changed the way she views the world, and is driven to keep expanding her social network across boarders.  The cross of her passions, people and architecture, she enjoys taking people on walks around the city and talking about Miami's interesting history.
 	      </p>
 	    </div>
 	    </div>
 	  </div>
 	  <div class="user-persona-mobile  slideanim" id="bre1">
 	    <div class="user-persona-mobile-header">
-	      <img src="images/fileweave/bre.png" alt="a">
-	      <h1 class="personatitle">Bre Johnson</h1>
-	      <p class="content" id="persona2">33 | Female |  Psychologist | Portland, OR</p>
+	      <img src="images/activo/jack.png" alt="a">
+	      <h1 class="personatitle">Jack Smith</h1>
+	      <p class="content" id="persona2">26 | Male |  Assistant Producer | Brooklyn, NY</p>
 	    </div>
 	    <div class="user-persona-mobile-content">
 	       <div class="user-persona-mobile-motivations">
 	          <h2 class="personasubtitle">Motivations</h2>
-	          <p class="content">Maggie uses her cloud mainly for personal use.  Maggie loves to take pictures of her children. Her photos sync with iCloud, but finds it frustrating that photos automatically upload that she doesn’t want. To stay organized, Maggie also saves albums of all of her family activities and uploads them to dropbox, and would like to easily share her albums with friends and family via her cloud.</p>
+						<ul>
+							<li class="goals">Has the ability to travel often</li>
+							<li class="goals">Is driven by creating memorable experiences</li>
+							<li class="goals">Wants to make new friends</li>
+						</ul>
 	       </div>
 	        <div class="user-persona-mobile-goals">
 	          <h2 class="personasubtitle">Goals</h2>
 	          <ul>
-	            <li class="goals">Organize files between work and family</li>
-	            <li class="goals">Secure client files</li>
-	            <li class="goals">Share albums easilyy</li>
-	            <li class="goals">Search editable files for organization</li>
-	            <li class="goals">Use one platform for everything</li>
+	            <li class="goals">Avoid awkward hangouts by any means necessary</li>
+	            <li class="goals">Maximize amount of fun</li>
+	            <li class="goals">Improve Spanish at home and abroad</li>
+	            <li class="goals">Meet people to hang out with while abroad</li>
 	          </ul>
 	        </div>
 	        <div class="user-persona-mobile-frustrations">
 	          <h2 class="personasubtitle">Frustrations</h2>
 	          <ul>
-	            <li class="goals">No file editing offline</li>
-	            <li class="goals">Difficulty organizing files</li>
-	            <li class="goals">Using too many platforms</li>
+	            <li class="goals">When traveling, meeting people is hard to do</li>
+	            <li class="goals">Doesn't want to have to drink to meet people for the first time</li>
+	            <li class="goals">Doesn't have time to sit down and study a language</li>
+							<li class="goals">Meeting for an activity and not having expectations met</li>
 	          </ul>
 	        </div>
 	        <div class="user-persona-mobile-bio">
 	          <h2 class="personasubtitle">Biography</h2>
 	          <p class="content">
-	            Maggie is a mom of 3 that runs a private practice , and when she’s not working, she is raising her family.  She does all of her work from her cloud, and saves all of her family photos there as well.  She is an avid amateur photographer, and loves to share her photos with friends and family, and explore the photography of others.Running a business means she is at her office or on the go meeting clients.  Needing access to client files, to create and edit poses a problem with no internet.  She would love to be able to keep track of her business, and update client files anywhere she goes. She would also like access to other counselor’s organizational documents, but doesn’t know where to find them.
+							John lives in New York and works as an assistant at a video production company, and travels often for work and for pleasure. Earlier this year when traveling in South America John’s spanish improved greatly, so he likes to host Spanish speakers to improve his language.  He’s also a great cook, so he offers to cook for guests at his apartment in NY.
+
+When John travels, he ususally travels alone.  He typically takes long backpacking trips around the world, and he likes to get a feel for local flavor. He’s had many bad experiences with awkward meetups abroad, so he thinks meeting someone for an activity sets good pretense for their visit.  He’s a curious explorer, always ready for his next adventure.
 	          </p>
 	        </div>
 	    </div>
@@ -381,22 +337,22 @@
 				<!--SWOT Analysis Introduction-->
 				<h2 class="subtitle">COMPETITIVE ANALYSIS</h2>
 				<p class="content">Once I had narrowed down the problem through the first round of research, I was ready to take a look into the competition. I conducted a SWOT analysis to learn more about the ecosystem that FileWeave would be entering. Here are some of the major takeaways gleaned from the results:</p>
-				<p class="flowlink"><a href="https://docs.google.com/document/d/1d7limxppVNQmlqlDArya9anULHw6uOed39xcb0lVKUs/edit?usp=sharing">Click here to view the full competitive analysis</a></p>
+				<p class="flowlink"><a href="https://docs.google.com/document/d/14ZnettgjtyEwlLjY6y8XvZ-66QGXC9y4AxG97Dp99Vw/edit?usp=sharing">Click here to view the full competitive analysis</a></p>
 			</div>
 			<div class="analysisgrid slideanim">
 				<div class="gd">
-					<img alt="google drive image" class="swotimage" src="images/fileweave/gd1.png">
+					<img alt="google drive image" class="swotimage" src="images/activo/gd1.png">
 
-					<p class="content" id="squishtext98">Google Drive is a known favorite of most cloud storage users. Though Google Drive markets itself as a platform that is all inclusive, most users take notes and store photos elsewhere. On the outside, Google Drive looks as if it’s UI is simple and easy to use, but due to the bloated feel of the application, users are deterred from maximizing it’s functionality.</p>
+					<p class="content" id="squishtext98">Couch surfing is an application that connects travelers with hosts that offer them a free place to stay, and if you’re lucky a personal guide to the local city and culture.  This global community has more than 14 million members, in over 200,000 cities.</p>
 				</div>
 				<div class="db">
-					<img alt="dropbox image" class="swotimage" src="images/fileweave/db1.png">
+					<img alt="dropbox image" class="swotimage" src="images/activo/db1.png">
 
-					<p class="content" id="squishtext99">Dropbox positions itself as a backup and file sharing platform, centered around team collaboration and document storage. Dropbox is built for productivity as opposed to simply storage. Overall, Dropbox’s intuitive interface and organizational structure has a leg up on Google Drive, but is lacking the range of functions that Drive offers.</p>
+					<p class="content" id="squishtext99">Meetups can be for hobbies, professional development, special events, learning new skills, happy hours, or advertisement for larger events.</p>
 				</div>
 				<div class="tt">
-					<img alt="tresorit image" class="swotimage" src="images/fileweave/tt1.jpeg">
-					<p class="content" id="squishtext100">Tresorit is a Swiss made platform, that offers top of the line security encryption. Positions itself as a backup cloud storage site. Different than Drive and Dropbox, Tresorit is purely a content storage tool. The major downfall of Tresorit is the lack of organizational abilities once the data has been uploaded. Content can’t be reorganized from the dashboard itself, which has resulted in a major pinpoint for users.</p>
+					<img alt="tresorit image" class="swotimage" src="images/activo/tt1.png">
+					<p class="content" id="squishtext100">Travel Pal is used to meet people while traveling, find travel partners as well as hosts for activities and couch surfing.   They allow you to search hosts and travelers in different cities. As a user you are encouraged to be a host as well as a traveler. </p>
 			</div>
 		</div>
 	</div>
@@ -411,12 +367,18 @@
 		<!--User Stories -->
 		<h2 class="subtitle">USER STORIES</h2>
 		<p class="content">After creating the personas, I created user stories for new and returning users to determine what tasks were deemed as high importance, in order to decide what to include in the MVP.</p>
-		<p class="flowlink"><a href="https://docs.google.com/spreadsheets/d/120nc7ISCuUT7DSWpiHn20wGQ48swo2FAJQCsdtf0iOU/edit?usp=sharing">Click here to view more user stories</a></p>
+		<p class="flowlink"><a href="https://docs.google.com/spreadsheets/d/1m9byCYqQC-FL-ERPgDsDFZnS6UltdiIsqOGm1jHfbys/edit#gid=0">Click here to view more user stories</a></p>
 	</div>
 	<div class="stories slideanim">
-		<div class="story-table">
-			<span><strong>User Type</strong></span> <span><strong>Action to Perform</strong></span> <span><strong>Importance</strong></span> <span>As a new user I want</span> <span>to create a new account so that I can upload, organize and create files</span> <span>High</span> <span>As a new user I want</span> <span>to upload a document to a category so that I can easily keep my work files separate from my personal files</span> <span>High</span> <span>As a new user I want</span> <span>to share a document so that I can collaborate with another user</span> <span>High</span> <span>As a new user I want</span> <span>to search for an editable document to download so that I don't have to spend time creating my own spreadsheet</span> <span>Medium</span> <span>As a new user I want</span> <span>to explore files posted by other users so that I can easily learn from others</span> <span>Medium</span>
-		</div>
+	  <div class="story-table">
+	    <span><strong>User Type</strong></span> <span><strong>Action to Perform</strong></span> <span><strong>Importance</strong></span>
+	    <span>As a new user I want to</span> <span>create an account/profile so that I can be a host, and connect with hosts to engage in activities</span> <span>High</span>
+	    <span>As a new user I want to</span> <span>designate what I am interested in doing and what I can offer so that I'm more likely to find users with similar interests</span> <span>High</span>
+	    <span>As a new user I want to</span> <span>surf hosts for an upcoming trip so that I can request a meet up</span> <span>High</span>
+	    <span>As a new user I want to</span> <span>browse through the travelers that are currently in my location so that I can see if any of them may want to meet up</span> <span>Medium</span>
+	    <span>As a new user I want to</span> <span>read reviews of hosts to see if their activity and/or personality appeals to me</span> <span>Medium</span>
+	    <span>As a new user I want to</span> <span>enter a current upcoming trip so I am searchable to hosts, and I can easily search hosts with my trip information filtered</span> <span>Medium</span>
+	  </div>
 	</div>
 	<div class="flow">
 		<div class="layer">
@@ -424,23 +386,15 @@
 				<!--User Flows-->
 				<h2 class="subtitle">USER FLOWS</h2>
 				<p class="content">I created user flows to ensure the information was organized in a way that was intuitive. The high and medium user story tasks were turned into flows to build a path to creating the solution as an MVP.</p>
-				<p class="flowlink"><a href="https://drive.google.com/open?id=1hxIIszIu0dAe7KTCjvoOvbAsAvXIaaqX">Click here to view more flows</a></p>
+				<p class="flowlink"><a href="https://drive.google.com/open?id=1TlnXDOolnI7_kAkXzkKcBnD7LOjTiyah">Click here to view more flows</a></p>
 			</div>
 
 			<div>
 				<img  class="brandingimage slideanim" id="brandingimage10" src="images/fileweave/flowsketch.jpeg" alt="wireframe photo">
-				<img class="userflowpic slideanim" src="images/fileweave/userflows.png" alt="user flow photo">
+				<img class="userflowpic slideanim" src="images/activo/userflows.png" alt="user flow photo">
 			</div>
 		</div>
 	</div>
-	<div class="sitemap">
-		<div class="layer" id="sitemapimage">
-		<div class="textgrid slideanim">
-			<!--User Flows-->
-			<h2 class="subtitle">SITE MAPS</h2>
-			<p class="content">Where the user flows are to achieve intuitiveness, having good information architecture improves findability within the product to make it understandable. Here I created a sitemap to show the overarching structure of the site and relationship between all areas of site. Here you can see the sitemap labels pages and shows hierarchy, structure and page functionality.</p>
-			<p class="flowlink"><a href="https://drive.google.com/file/d/1DPHnrcdt3Fv_0CHpWBoNvJcRUimUC59R/view?usp=sharing">Click here to view the full sitemap</a></p>
-		</div><img class="userflowpic slideanim" src="images/fileweave/sitemap2.png" alt="sitemaps"></div></div>
 	<div class="dividegrid1" id="sketchtitle3">
 		<div class="dividegrid">
 			<div class="divideit" id="sketchtitle4">
@@ -451,22 +405,22 @@
 	<div class="branding">
 		<div class="textgrid slideanim">
 			<h2 class="subtitle">DEVELOPING AN IDENTITY</h2>
-			<p class="content">FileWeave is built for users with different motives, so my goal was to create a brand that is appealing to the weightless optimist, and the secure and stable pragmatist. When you bridge those two user characteristics you create a weave: something fun, stable, secure to enjoy and trust.</p>
+			<p class="content">At this point, I had a good understanding of what the user I was designing for was looking for in a product. Overall, the brand needed to illustrate something, modern, easy to use, and something that make users excited to expand their opportunities to meet new people abroad and have new experiences with interesting people.</p>
 		</div>
 		<div class="brandgrid slideanim">
 		  <h2 class="subtitle" id="squishtitle4">Name</h2>
-		  <p class="content" id="squishtext2">The name FileWeave emerged through exploring the meaning and intent behind the concept of a cloud storage platform. After exploring many related concepts, I was lead to the word, “weave.” A concept that evoked the ideas of security and stability while simple, and visually pleasing.</p>
-      <img class="brandingimage" id="brandingimage" src="images/fileweave/mindmap.png" alt="branding name">
+		  <p class="content" id="squishtext2">I had at least 5 different working sessions, attempting to come up with the perfect name for this application.  I referred to this app as “skillshare” before it had a name, so I knew it needed to have something to do with collaboration, memory making, and doing an activity. Activo, a play on “activity” clearly is associated with the concept of the app, and it rolls off the tongue, so it stuck.</p>
+      <img class="brandingimage" id="brandingimage" src="images/activo/mindmap.png" alt="branding name">
     </div>
-  	<div class="logogrid slideanim">
-  		<h2 class="subtitle" id="squishtitle5">Logo</h2>
-  		<p class="content" id="squishtext3">As for the logo, I began sketching with the concept of a weave in mind. After many attempts, I came upon one that I felt accurately represented the concept of the brand. The logo mark is critical in defining the brand identity, so I made sure to iterate and test until a satisfactory combination of color and design were chosen. Below you can see how the logo developed over time and testing.</p>
-			<img class="brandingimage" id="logosketchimage" src="images/fileweave/logosketch.jpeg" alt="logo sketch example">
-			<img class="brandingimage" src="images/fileweave/logofinal.png" alt="logo example">
+  	<div class="logogrid">
+  		<h2 class="subtitle slideanim" id="squishtitle5">Logo</h2>
+  		<p class="content slideanim" id="squishtext3">The logo concept was to be a paper airplane that also looked like an A.  I created many iterations playing around with the major color combination, as well as gradients, until I came up with the final logo iteration that is fun, and recognizable.</p>
+			<img class="brandingimage" id="logosketchimage" src="images/activo/logosketch.png" alt="logo sketch example">
+			<img class="brandingimage" src="images/activo/logofinal.png" alt="logo example">
     </div>
-  	<div class="colorgrid slideanim">
-  		<h2 class="subtitle" id="squishtitle6">Color</h2>
-  		<p class="content" id="squishtext4">The color palette for FileWeave was to be based in blues and greens to convey a sense of confidence and strength.</p>
+  	<div class="colorgrid">
+  		<h2 class="subtitle slideanim" id="squishtitle6">Color</h2>
+  		<p class="content slideanim" id="squishtext4">I chose the pink and purple as the primary color, to express a sense of fun and modernity. These colors allow the product to stand out, and easily be identified.</p>
 			<div class="colorpaletteimage">
 				<div class="palette">
 
@@ -478,37 +432,37 @@
 				      <ul>
 				        <li class="todo-wrap one">
 				          <div class="todo-content">
-				              #16A085
+				              #2E2E3B
 				          </div>
 				        </li>
 
 				        <li class="todo-wrap two">
 				          <div class="todo-content">
-				              #2ECC71
+				              #D3D4DF
 				          </div>
 				        </li>
 
 				        <li class="todo-wrap three">
 				          <div class="todo-content">
-				              #27AE60
+				              #FB2C90
 				          </div>
 				        </li>
 
 				        <li class="todo-wrap four">
 				          <div class="todo-content">
-				              #3498DB
+				              #FA92C4
 				          </div>
 				        </li>
 
 				        <li class="todo-wrap five">
 				          <div class="todo-content">
-				              #2980B9
+				              #200BDF
 				          </div>
 				        </li>
 
 				        <li class="todo-wrap six">
 				          <div class="todo-content">
-				              #9B59B6
+				              #8C81EC
 				          </div>
 				        </li>
 
@@ -522,11 +476,11 @@
   		<h2 class="subtitle" id="squishtitle7">Typography</h2>
   		<p class="content" id="squishtext5">For typography, I wanted to keep everything as simple as possible while still having a unique look. Signika was used for the logo font, and Monserrat and Source Sans Pro for type within the bulk of the design.</p>
       <div class="brandingimage" alt="font example">
-				<h7 class="typography1">Signika 31px : Logo </h7><br>
-				<h7 class="typography2">Montserrat 31px : H1 </h7><br>
-				<h7 class="typography3">Montserrat 16px : H3 </h7><br>
-				<h7 class="typography4">Montserrat 12px : P1 </h7><br>
-				<h7 class="typograhy5">Source Sans Pro : P2 </h7><br>
+				<h7 class="typography1">Lato Black 37px : H1 </h7><br>
+				<h7 class="typography2">Lato Bold 37px : H2 </h7><br>
+				<h7 class="typography3">Lato Bold 18px : H3 </h7><br>
+				<h7 class="typography4">Lato 14px : P1 </h7><br>
+				<h7 class="typograhy5">Lato Bold 14px : P2 </h7><br>
 			</div>
 		</div>
 	</div>
@@ -537,17 +491,31 @@
 			</div>
 		</div>
 	</div>
-	<div class="sketch slideanim">
-		<div class="squishgrid slideanim">
-			<h2 class="subtitle">SKETCHES</h2>
-			<p class="content">I began the visual design process by sketching out the different screens that I had named in my user flows.  Once the sketches by hand were completed, I developed them into lo-fi wireframes.</p>
+	<div class="sketch">
+		<div class="squishgrid">
+			<h2 class="subtitle slideanim">SKETCHES</h2>
+			<p class="content slideanim">Once I completed the user flows, and branding, I was able to begin sketching with paper.  Moving forward from here, I refined the sketches in hi-fidelity wireframes using Whimsical.</p>
 		</div>
-		<img class="flow-image" src="images/fileweave/sketch.jpeg" alt="sketch example">
-		<div class="wireframes slideanim">
+		<img class="flow-image" src="images/activo/sketches2.jpg" alt="sketch example">
+		<img class="flow-image" src="images/activo/sketches1.jpg" alt="sketch example">
+		<div class="wireframes">
 			<div class="squishgrid">
-				<h2 class="subtitle">LO-FI WIREFRAMES</h2>
-				<p class="content">From the first set of wireframes, I created a clickable prototype for the first round of usability testing. After multiple rounds of testing, I had a final set of wireframes to use moving forward. Here’s one example of the original dashboard and wireframe.</p>
-			</div><img  class="brandingimage" id="brandingimage5" src="images/fileweave/wf.png" alt="wireframe photo">
+				<h2 class="subtitle  slideanim">LO-FI WIREFRAMES</h2>
+				<p class="content  slideanim">From the first set of wireframes, I created a clickable prototype for the first round of usability testing. After multiple rounds of testing, I had a final set of wireframes to use moving forward. Here’s one example of the original dashboard and wireframe.</p>
+				<p class="flowlink  slideanim"><a href="https://whimsical.co/JeQsJVCAFn2YW26UyjME1s">Click here to view more wireframes</a></p>
+			</div>
+			<div class="wfwrapper" id="brandingimage5">
+			  <div class="scrolls">
+					<img class="wireframeunits" src="images/activo/wf1.png" alt="wireframe photo">
+					<img class="wireframeunits" src="images/activo/wf2.png" alt="wireframe photo">
+					<img class="wireframeunits" src="images/activo/wf3.png" alt="wireframe photo">
+					<img class="wireframeunits" src="images/activo/wf4.png" alt="wireframe photo">
+					<img class="wireframeunits" src="images/activo/wf5.png" alt="wireframe photo">
+					<img class="wireframeunits" src="images/activo/wf6.png" alt="wireframe photo">
+					<img class="wireframeunits" src="images/activo/wf7.png" alt="wireframe photo">
+					<img class="wireframeunits" src="images/activo/wf8.png" alt="wireframe photo">
+			  </div>
+			</div>
 		</div>
 	</div>
 	<div class="testing">
