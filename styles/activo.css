@@ -14,25 +14,31 @@
   }
 }
 
+.hero-section{
+    background-image: url('heroimage.png');
+}
 
 .hero-photo{
-  display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
-  grid-template-rows: auto 1fr;
-  grid-template-areas:
-  ". hro ."
-  ". lptp .";
-  justify-items: center;
-  align-items: center;
-  padding-bottom: 8em;
+
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('/images/activo/heroimage.png');
+
+  /* Set a specific height */
+  height: 1000px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .laptop{
-  width: 100px;
-  grid-area: lptp;
-  max-width: 500px;
-  height: auto;
   width: 100%;
+  height: auto;
 }
 
 .herotitle{
