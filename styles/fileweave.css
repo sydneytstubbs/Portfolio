@@ -38,7 +38,7 @@
 .herotitle{
   grid-area: hro;
   padding-top: 5em;
-  padding-bottom: 2em;
+  padding-bottom: .5em;
   text-align: center;
   font-family: "work sans";
   font-size: 3.6em;
@@ -1094,58 +1094,6 @@ max-width: 600px;
 }
 
 
-#sketchanim1, #sketchanim2, #sketchanim3  {
-  width: 100%;
-  height: 1px;
-  display: block;
-  position: relative;
-  margin-bottom: 0em;
-  padding: 2em 0;
-}
-
-#sketchanim:after, #sketchanim:before {
-  content: "";
-  position: absolute;
-  width: 90%;
-  height: 3px;
-  bottom: 50%;
-  left: 0;
-}
-
-#sketchanim:before{
-  background: linear-gradient(90deg, #f1f1f1 0%, #f1f1f1 50%, transparent 50%, transparent 100%);
-  background-size: 5px;
-  background-position: center;
-  z-index: 1;
-}
-
-#sketchanim:after{
-  transition: opacity 0.3s ease, -webkit-animation 0.3s ease;
-  transition: opacity 0.3s ease, animation 0.3s ease;
-  transition: opacity 0.3s ease, animation 0.3s ease, -webkit-animation 0.3s ease;
-  background: linear-gradient(to right, #62efab 5%, #F2EA7D 15%, #F2EA7D 25%, #FF8797 35%, #FF8797 45%, #e1a4f4 55%, #e1a4f4 65%, #82fff4 75%, #82fff4 85%, #62efab 95%);
-  background-size: 200%;
-  background-position: 0%;
-  -webkit-animation: bar 15s linear infinite;
-          animation: bar 15s linear infinite;
-}
-
-#sketchanim:before, #sketchanim3:before, #sketchanim1:before, #sketchanim2:before, #sketchanim8:before {
-  background: linear-gradient(90deg, #f1f1f1 0%, #f1f1f1 5%, transparent 5%, transparent 10%, #f1f1f1 10%, #f1f1f1 15%, transparent 15%, transparent 20%, #f1f1f1 20%, #f1f1f1 25%, transparent 25%, transparent 30%, #f1f1f1 30%, #f1f1f1 35%, transparent 35%, transparent 40%, #f1f1f1 40%, #f1f1f1 45%, transparent 45%, transparent 50%, #f1f1f1 50%, #f1f1f1 55%, transparent 55%, transparent 60%, #f1f1f1 60%, #f1f1f1 65%, transparent 65%, transparent 70%, #f1f1f1 70%, #f1f1f1 75%, transparent 75%, transparent 80%, #f1f1f1 80%, #f1f1f1 85%, transparent 85%, transparent 90%, #f1f1f1 90%, #f1f1f1 95%, transparent 95%, transparent 100%);
-  background-size: 150px;
-  background-position: center;
-  z-index: 1;
-  -webkit-animation: bar 120s linear infinite;
-          animation: bar 120s linear infinite;
-}
-#sketchanim:hover:before {
-  -webkit-animation-duration: 50s;
-          animation-duration: 50s;
-}
-#sketchanim:hover:after {
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
 
 .dividegrid1{
   display:grid;
@@ -1176,21 +1124,13 @@ max-width: 600px;
   bottom: 50%;
   left: 0;
 }
-.hr:before {
-  background: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 50%, transparent 50%, transparent 100%);
-  background-size: 05px;
-  background-position: center;
-  z-index: 1;
-}
+
 .hr:after {
-  transition: opacity 0.3s ease, -webkit-animation 0.3s ease;
-  transition: opacity 0.3s ease, animation 0.3s ease;
-  transition: opacity 0.3s ease, animation 0.3s ease, -webkit-animation 0.3s ease;
-  background: linear-gradient(to right, #62efab 5%, #F2EA7D 15%, #F2EA7D 25%, #FF8797 35%, #FF8797 45%, #e1a4f4 55%, #e1a4f4 65%, #82fff4 75%, #82fff4 85%, #62efab 95%);
+
+    background: linear-gradient(to right, #063A6B 5%, #389583 15%, #5AD993 25%, #8CE6B2 35%);
   background-size: 200%;
   background-position: 0%;
-  -webkit-animation: bar 15s linear infinite;
-          animation: bar 15s linear infinite;
+
 }
 @-webkit-keyframes bar {
   0% {
@@ -1209,21 +1149,12 @@ max-width: 600px;
   }
 }
 .hr.anim:before {
-  background: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 5%, transparent 5%, transparent 10%, #FFFFFF 10%, #FFFFFF 15%, transparent 15%, transparent 20%, #FFFFFF 20%, #FFFFFF 25%, transparent 25%, transparent 30%, #FFFFFF 30%, #FFFFFF 35%, transparent 35%, transparent 40%, #FFFFFF 40%, #FFFFFF 45%, transparent 45%, transparent 50%, #FFFFFF 50%, #FFFFFF 55%, transparent 55%, transparent 60%, #FFFFFF 60%, #FFFFFF 65%, transparent 65%, transparent 70%, #FFFFFF 70%, #FFFFFF 75%, transparent 75%, transparent 80%, #FFFFFF 80%, #FFFFFF 85%, transparent 85%, transparent 90%, #FFFFFF 90%, #FFFFFF 95%, transparent 95%, transparent 100%);
+
   background-size: 150px;
   background-position: center;
   z-index: 1;
-  -webkit-animation: bar 120s linear infinite;
-          animation: bar 120s linear infinite;
 }
-.hr.anim:hover:before {
-  -webkit-animation-duration: 20s;
-          animation-duration: 20s;
-}
-.hr.anim:hover:after {
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
+
 
 .divideit {
   grid-area: "separate";
@@ -1306,21 +1237,13 @@ max-width: 600px;
     bottom: 50%;
     left: 0;
   }
-  .hr:before {
-    background: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 50%, transparent 50%, transparent 100%);
-    background-size: 05px;
-    background-position: center;
-    z-index: 1;
-  }
+
   .hr:after {
-    transition: opacity 0.3s ease, -webkit-animation 0.3s ease;
-    transition: opacity 0.3s ease, animation 0.3s ease;
-    transition: opacity 0.3s ease, animation 0.3s ease, -webkit-animation 0.3s ease;
-    background: linear-gradient(to right, #62efab 5%, #F2EA7D 15%, #F2EA7D 25%, #FF8797 35%, #FF8797 45%, #e1a4f4 55%, #e1a4f4 65%, #82fff4 75%, #82fff4 85%, #62efab 95%);
+
+    background: linear-gradient(to right, #063A6B 5%, #389583 15%, #5AD993 25%, #8CE6B2 35%);
     background-size: 200%;
     background-position: 0%;
-    -webkit-animation: bar 15s linear infinite;
-            animation: bar 15s linear infinite;
+
   }
   @-webkit-keyframes bar {
     0% {
@@ -1339,21 +1262,12 @@ max-width: 600px;
     }
   }
   .hr.anim:before {
-    background: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 5%, transparent 5%, transparent 10%, #FFFFFF 10%, #FFFFFF 15%, transparent 15%, transparent 20%, #FFFFFF 20%, #FFFFFF 25%, transparent 25%, transparent 30%, #FFFFFF 30%, #FFFFFF 35%, transparent 35%, transparent 40%, #FFFFFF 40%, #FFFFFF 45%, transparent 45%, transparent 50%, #FFFFFF 50%, #FFFFFF 55%, transparent 55%, transparent 60%, #FFFFFF 60%, #FFFFFF 65%, transparent 65%, transparent 70%, #FFFFFF 70%, #FFFFFF 75%, transparent 75%, transparent 80%, #FFFFFF 80%, #FFFFFF 85%, transparent 85%, transparent 90%, #FFFFFF 90%, #FFFFFF 95%, transparent 95%, transparent 100%);
+
     background-size: 150px;
     background-position: center;
     z-index: 1;
-    -webkit-animation: bar 120s linear infinite;
-            animation: bar 120s linear infinite;
   }
-  .hr.anim:hover:before {
-    -webkit-animation-duration: 50s;
-            animation-duration: 50s;
-  }
-  .hr.anim:hover:after {
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-  }
+
 }
 
 .conclusionbackground{
@@ -1700,3 +1614,112 @@ background: #B3C1BF; }
 
 .seventeen.clouds {
 color: #BDC3C7; }
+
+.iteration1{
+  display: grid;
+  grid-template-columns: .1fr 1.5fr 1.5fr .1fr;
+  grid-gap: 20px;
+  grid-template-rows: 2(auto);
+  grid-template-areas:
+  ". iteration0 iteration1 ."
+  ". iteration2 iteration3 .";
+}
+
+.i0{
+  grid-area: iteration0;
+}
+
+.i1{
+  grid-area: iteration1;
+}
+
+.i2{
+  grid-area: iteration2;
+}
+
+.i3{
+  grid-area: iteration3;
+}
+
+.iterationimage{
+  justify-items: center;
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+.iteration2{
+  display: grid;
+  grid-template-columns: .1fr 1.5fr 1.5fr .1fr;
+  grid-gap: 20px;
+  grid-template-rows: auto;
+  grid-template-areas: ". iteration5 iteration6 .";
+}
+
+.i5{
+  grid-area: iteration5;
+}
+
+.i6{
+  grid-area: iteration6;
+}
+
+@media(max-width: 575px){
+  .iteration1{
+    display: grid;
+    grid-template-columns: .1fr 1fr .1fr;
+    grid-template-rows: 3(auto);
+    grid-template-areas:
+    ". iteration0 ."
+    ". iteration1 ."
+    ". iteration2 ."
+    ". iteration3 .";
+  }
+
+  .iteration2{
+    display: grid;
+    grid-template-columns: .1fr 1fr .1fr;
+    grid-template-rows: 3(auto);
+    grid-template-areas:
+    ". iteration5 ."
+    ". iteration6 .";
+  }
+
+  }
+
+
+
+  .phasegrid{
+    display: grid;
+    text-align: center;
+    grid-template-columns: .5fr 1fr 1fr .5fr;
+    grid-gap: 20px;
+    grid-template-rows: 2(auto);
+    grid-template-areas:
+    ". phase1 phase2 ."
+    ". phase3 phase4 .";
+    padding-bottom: 4em;
+  }
+
+  .phase1{
+    grid-area: phase1;
+    border-style: solid;
+    border: 1px solid #ff4b4c;
+    width: 100%;
+
+  }
+  .phase2{
+    grid-area: phase2;
+    border: 1px solid #ff4b4c;
+    width: 100%;
+  }
+  .phase3{
+    grid-area: phase3;
+    border: 1px solid #ff4b4c;
+    width: 100%;
+  }
+  .phase4{
+    grid-area: phase4;
+    border: 1px solid #ff4b4c;
+    width: 100%;
+  }
