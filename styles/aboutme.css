@@ -8,7 +8,7 @@ background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
 
 .abouttitle {
   text-align:center;
-  font-family:"work sans";
+  font-family:"nunito";
   font-size: 1.8rem;
   font-weight:300;
   padding: 2em 0em 2em 0em;
@@ -91,7 +91,7 @@ background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
 }
 
 .herosubtitle{
-  font-family: "work sans";
+  font-family: "nunito";
   font-size: 1.8rem;
   font-weight: 400;
   text-align: left;
@@ -100,7 +100,7 @@ background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
 
 .herocontent {
   text-align: left;
-  font-family: "work sans";
+  font-family: "nunito";
   font-size: 14px;
   font-weight: 300;
   line-height: 1.8em;
@@ -121,7 +121,7 @@ background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
   }
 
   .herosubtitle{
-    font-family: "work sans";
+    font-family: "nunito";
     font-size: 1.4rem;
     font-weight: 400;
     text-align: center;
@@ -131,7 +131,7 @@ background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
 
   .herocontent {
     text-align: center;
-    font-family: "work sans";
+    font-family: "nunito";
     font-size: 1.4em;
     line-height: 1.8em;
   }
@@ -154,7 +154,7 @@ background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
   }
 
   .herosubtitle{
-    font-family: "work sans";
+    font-family: "nunito";
     font-size: 1.4rem;
     font-weight: 400;
     text-align: center;
@@ -164,7 +164,7 @@ background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
 
   .herocontent {
     text-align: center;
-    font-family: "work sans";
+    font-family: "nunito";
     font-size: 1.4em;
     font-weight: 300;
     line-height: 1.8em;
@@ -186,7 +186,7 @@ background-image: linear-gradient(180deg,rgba(000,000,000,0) 50%, #C3E9E9 10%);
 
 .listitem {
 text-align:center;
-font-family:"work sans";
+font-family:"nunito";
 font-size:1.4em;
 font-weight:300;
 line-height:2em;
@@ -234,7 +234,7 @@ ul{
 
 .listtitle {
   text-align: center;
-  font-family: "work sans";
+  font-family: "nunito";
   font-size: 16px;
   line-height: 21px;
   FONT-WEIGHT: 300;
@@ -264,7 +264,7 @@ hr {
 }
 
 .bodyfont{
-  font-family: "work sans";
+  font-family: "nunito";
   font-weight: 200;
   font-size: 18px;
   line-height: 24px;
@@ -362,7 +362,7 @@ hr {
 /** Timeline**/
 
 .tlbody{
-  font-family: 'work sans';
+  font-family: 'nunito';
   color: #4F4F4F;
   line-height: 2EM;
   font-weight: 300;

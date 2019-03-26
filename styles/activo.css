@@ -15,10 +15,65 @@
   font-weight: 900;
 }
 
+.linkbutton {
+  border: none;
+  background: #200BDF;
+  color: #FFFFFF;
+  padding: 0px 6px 0px 6px;
+  text-transform: uppercase;
+  border-color: #200BDF;
+  border-radius: 6px;
+  border-width: medium;
+  border-style: solid;
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: 300;
+  text-decoration: none;
+  font-family: "nunito";
+  margin-top: 2em;
+  transition: all 0.3s ease 0s;
+}
+
+.linkbutton:hover {
+  font-weight: 700 !important;
+  letter-spacing: 3px;
+  color: #200BDF;
+  background: none;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+}
+
+@media(max-width: 575px){
+
+  .linkbutton {
+    padding: 0px 2px 0px 2px;
+    font-size: 1.3em;
+
+  }
+}
+
+
+/* unvisited link */
+.studybutton a:link {
+  color: #C87B84;
+  font-weight: 400;
+  text-decoration: none;
+}
+
 
 #solution{
   margin-top: -9em;
   padding-bottom: 5em;
+  grid-template-areas:
+  " . title ."
+  " . para ."
+  " . img . "
+  " . lnk . ";
+}
+
+#protobutton{
+  grid-area: lnk;
+  justify-items: center;
 }
 
 @media(max-width: 575px){
@@ -51,7 +106,7 @@
   padding-top: 5em;
   padding-bottom: 2em;
   text-align: center;
-  font-family: "work sans";
+  font-family: "nunito";
   font-size: 3.6em;
   font-weight: 300;
   max-width: 600px;
@@ -85,7 +140,7 @@
 .overview{
   margin-top: -1em;
   padding-top: 5em;
-  background-color: #f1f1f1;
+
 }
 
 #overviewtext{
@@ -108,7 +163,7 @@
 #protolink{
   grid-area: img;
   padding: 1em 0em 1em 0em;
-  font-family: 'work sans';
+  font-family: 'nunito';
   font-size: 1.8em;
   font-weight: 300;
   color: #C87B84;
@@ -118,7 +173,7 @@
 .flowlink{
   grid-area: img;
   padding: 1em 0em 1em 0em;
-  font-family: 'work sans';
+  font-family: 'nunito';
   font-size: 1.8em;
   font-weight: 300;
   color: #C87B84;
@@ -129,7 +184,7 @@
   .flowlink{
     grid-area: img;
     padding: 1em 0em 1em 0em;
-    font-family: 'work sans';
+    font-family: 'nunito';
     font-size: 1.4em;
     font-weight: 300;
     color: #C87B84;
@@ -203,7 +258,7 @@ margin: 1em 0;
 
 .research{
 text-align: center;
-  background-color: #f1f1f1;
+
 }
 
 .surveytitle{
@@ -230,7 +285,7 @@ justify-items:center;
 
 .personatitle{
   text-align:left;
-  font-family:"work sans";
+  font-family:"nunito";
   font-size:22px;
   font-weight:600;
   line-height:1.4em;
@@ -241,7 +296,7 @@ justify-items:center;
 
 .personasubtitle{
   text-align:left;
-  font-family:"work sans";
+  font-family:"nunito";
   font-size:18px;
   font-weight:600;
   line-height:1.4em;
@@ -252,7 +307,7 @@ justify-items:center;
 
 .goals{
   text-align:left;
-  font-family:"work sans";
+  font-family:"nunito";
   font-size:18px;
   font-weight:300;
   line-height:1.4em;
@@ -263,7 +318,7 @@ justify-items:center;
 @media(max-width: 575px){
 .personatitle{
   text-align:left;
-  font-family:"work sans";
+  font-family:"nunito";
   font-size:18px;
   line-height:1.5em;
   font-weight: 500;
@@ -271,7 +326,7 @@ justify-items:center;
 
 .personasubtitle{
   text-align:left;
-  font-family:"work sans";
+  font-family:"nunito";
   font-size:14px;
   font-weight:600;
   line-height:1.4em;
@@ -282,7 +337,7 @@ justify-items:center;
 
 .goals{
   text-align:left;
-  font-family:"work sans";
+  font-family:"nunito";
   font-size:14px;
   font-weight:300;
   line-height:1.4em;
@@ -293,13 +348,24 @@ justify-items:center;
 
 /**SWOT**/
 
-.competitiveanalysis{
-  padding-bottom: 5em;
-  background-color: #f1f1f1;
+
+#swotlink, #storylink, #flowlink, #wireframelink, #mockuplink{
+  padding-top:1em;
+  grid-template-areas:
+  " . title ."
+  " . para ."
+  " . img . "
+  " . lnk . ";
 }
 
-.flow{
-  background-color: #f1f1f1;
+#swotbutton, #storybutton, #flowbutton, #wireframebutton, #mockupbutton{
+  grid-area:lnk;
+}
+
+
+.competitiveanalysis{
+  padding-bottom: 5em;
+
 }
 
 .gd{
@@ -332,7 +398,7 @@ grid-template-areas:
 grid-gap: 2em;
 justify-items: center;
 padding-top: 5em;
-background-color: #f1f1f1;
+
 
 }
 
@@ -407,7 +473,7 @@ background-color: #f1f1f1;
     display: grid;
     grid-template-columns: 2fr 5fr 2fr;
     grid-gap:5px;
-    font-family: "work sans";
+    font-family: "nunito";
     font-size: 1.6em;
     line-height: 2em;
     margin: 5em 2em 5em 2em;
@@ -415,7 +481,8 @@ background-color: #f1f1f1;
 
 .story-table > span {
     padding: 8px 4px;
-    background-color:#f1f1f1;
+    background-color: #f4f4f4;
+
 }
 
 .stories{
@@ -431,14 +498,15 @@ background-color: #f1f1f1;
       display: grid;
       grid-template-columns: 2fr 5fr 2fr;
       grid-gap: 5px;
-      font-family: "work sans";
+      font-family: "nunito";
       font-size: 1.4em;
       line-height: 1.3em;
+
   }
 
   .story-table > span {
       padding: 8px 4px;
-      background-color:#f1f1f1;
+
   }
 
   .stories{
@@ -452,7 +520,7 @@ background-color: #f1f1f1;
 
 
 h6{
-  font-family: "work sans";
+  font-family: "nunito";
   font-size: 1.8em;
   font-weight: 300;
   line-height: 1.8em;
@@ -485,7 +553,7 @@ h6{
   }
 
   h6{
-    font-family: "work sans";
+    font-family: "nunito";
     font-size: 1.4em;
     font-weight: 300;
     line-height: 1.6em;
@@ -704,17 +772,17 @@ justify-items:left;
 }
 }
 
-
 .squishgrid {
 display:grid;
 grid-template-columns:1fr 600px 1fr;
-grid-template-rows:auto auto;
+grid-template-rows:auto auto auto;
 grid-template-areas:
 " . title ."
 " . para ."
 " . img . ";
 text-rendering:optimizeLegibility;
 padding-bottom: 1em;
+justify-items:left;
 }
 
 @media(max-width:750px){
@@ -832,7 +900,7 @@ padding-bottom: 0em 0em 0em 0em;
 /**sketches**/
 .sketch{
   padding-bottom: 2em;
-  background-color: #f1f1f1;
+
 }
 
 
@@ -844,7 +912,7 @@ padding-bottom: 0em 0em 0em 0em;
 }
 
 .testing{
-  background-color: #F1F1F1;
+
 }
 
 .testing1{
@@ -1106,7 +1174,7 @@ max-width: 600px;
 
 
 #sketchtitle, #sketchtitle7, #sketchtitle8, #sketchtitle9, #sketchtitle10, #sketchtitle10, #sketchtitle11, #sketchtitle12, #sketchtitle13{
-  background-color: #f1f1f1;
+
 }
 
 .dividegrid1{
@@ -1173,7 +1241,7 @@ max-width: 600px;
 .divideit {
   grid-area: "separate";
   background: #FFFFFF;
-  font-family: 'work sans';
+  font-family: 'nunito';
   font-weight:600;
   color: #000000;
   text-indent: 1em;
@@ -1191,7 +1259,6 @@ max-width: 600px;
     margin-bottom: -.2em;
 
 }
-
 
 .dividetext {
   margin-left: -.3em;
@@ -1223,7 +1290,7 @@ max-width: 600px;
   .divideit {
     grid-area: "separate";
     background: #FFFFFF;
-    font-family: 'work sans';
+    font-family: 'nunito';
     font-weight:600;
     color: #000000;
 
@@ -1284,7 +1351,7 @@ max-width: 600px;
 }
 
 .conclusionbackground{
-  background-color: #f1f1f1;
+
   padding-bottom: 10em;
 }
 
@@ -1400,17 +1467,10 @@ max-width: 600px;
 
 .percentage {
   fill: #666;
-  font-family: "work sans";
+  font-family: "nunito";
   font-size: 1em;
   text-anchor: middle;
 }
-
-
-
-
-
-
-
 
 #persona1, #persona2{
   text-align: center;
@@ -1460,7 +1520,12 @@ max-width: 600px;
 }
 
 #pgrid{
-  padding-top:3em;
+  padding-top:1em;
+  grid-template-areas:
+  " . title ."
+  " . para ."
+  " . img . "
+  " . lnk . ";
 }
 
 #josh1{
@@ -1470,8 +1535,6 @@ max-width: 600px;
 #bre1{
   grid-area: bre;
 }
-
-
 
 .user-persona-mobile {
   width: 100%;
@@ -1527,21 +1590,12 @@ max-width: 600px;
   margin-top: 4px;
 }
 
-
-
-
-
 .palette {
 color: #34495e;
-font: 14px/1.231 "Work Sans", sans-serif;
+font: 14px/1.231 "nunito", sans-serif;
 font-size: 24px;
 padding-top: 1em;
 }
-
-.span4{
-
-}
-
 
 .span4 {
 width: 350px; }
@@ -1702,13 +1756,13 @@ color: #BDC3C7; }
 
 .urtitle{
   grid-area: urtitle;
-  font-family: work sans;
+  font-family: nunito;
   margin-bottom: -10px;
 }
 
 .urtitle1{
   grid-area: urtitle1;
-  font-family: work sans;
+  font-family: nunito;
   margin-bottom: -10px;
 }
 
@@ -1774,7 +1828,7 @@ color: #BDC3C7; }
 }
 
 .mutitle1, .mutitle2, .mutitle3, .mutitle4, .mutitle5, .mutitle6, .mutitle7, .mutitle8 {
-  font-family: work sans;
+  font-family: nunito;
   margin-bottom: -10px;
 
 }
@@ -1891,7 +1945,7 @@ padding: 1em;
 
 
 .urexample1{
-  background-color: #f1f1f1;
+
 }
 
 .urexample{
@@ -1906,7 +1960,7 @@ text-align: center;
 
 .exsubtitle {
 grid-area:exampletitle;
-font-family:"work sans";
+font-family:"nunito";
 font-size:2.2em;
 font-style: italic;
 font-weight:400;
@@ -1925,8 +1979,8 @@ font-weight:400;
 }
 
 .mockupsection{
-  background-color: #f1f1f1;
+
 }
  #ab2{
-   background-color: #f1f1f1;
+
  }

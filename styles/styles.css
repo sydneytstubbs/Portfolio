@@ -35,17 +35,17 @@ margin:1em;
 
 .subtitle {
 grid-area:title;
-font-family:"work sans";
+font-family:"nunito";
 font-size:2.2em;
 font-weight:400;
 text-align:left;
-padding:1em 0;
+padding: 1em 0em .3em 0em;
 }
 
 .content {
 grid-area:para;
 text-align:left;
-font-family:"work sans";
+font-family:"nunito";
 font-size:18px;
 font-weight:300;
 line-height:1.4em;
@@ -61,14 +61,14 @@ padding-bottom:3em;
 ol {
 grid-area:para;
 text-align:left;
-font-family:"work sans";
+font-family:"nunito";
 font-size:16px;
 font-weight:lighter;
 }
 
 .large-content {
 text-align:center;
-font-family:"work sans";
+font-family:"nunito";
 font-size:1.8em;
 line-height:1.5em;
 font-weight:300;
@@ -76,7 +76,7 @@ font-weight:300;
 
 .med-title {
 text-align:center;
-font-family:"work sans";
+font-family:"nunito";
 font-size:2.6em;
 line-height:1.4em;
 font-weight:300;
@@ -89,7 +89,7 @@ height:4.5em;
 
 nav {
 display:table;
-font-family:"work sans";
+font-family:"nunito";
 overflow:hidden;
 position:fixed;
 top:0;
@@ -118,7 +118,7 @@ padding-top:1.2em;
 
 nav ul li {
 display:inline-block;
-font-family:"work sans";
+font-family:"nunito";
 font-size:2em;
 font-weight:200;
 list-style:none;
@@ -130,7 +130,7 @@ color:#C87B84;
 
 .sectiontitle {
 text-align:center;
-font-family:"work sans";
+font-family:"nunito";
 font-size:16px;
 font-weight:lighter;
 line-height:24px;
@@ -138,7 +138,7 @@ line-height:24px;
 
 .sectionbody {
 text-align:center;
-font-family:"work sans";
+font-family:"nunito";
 font-size:14px;
 font-weight:300;
 line-height:24px;
@@ -170,7 +170,7 @@ text-align:left;
 
 .minitype {
 display:grid;
-font-family:"work sans";
+font-family:"nunito";
 background-color:#F0F0F3;
 text-align:center;
 font-size:1em;
@@ -216,7 +216,7 @@ text-align:center;
 color: #4a4a4a;
 font-weight:300;
 text-align:center;
-font-family: "work sans";
+font-family: "nunito";
 font-size: 1.5em;
 line-height: 1.5em;
 font-weight: 300;
@@ -241,14 +241,14 @@ font-size:1.8em;
 
 .content {
 text-align:left;
-font-family:"work sans";
+font-family:"nunito";
 font-size:13px;
 line-height:1.5em;
 }
 
 .personatitle{
   text-align:left;
-  font-family:"work sans";
+  font-family:"nunito";
   font-size:13px;
   line-height:1.5em;
   font-weight: 500;
@@ -257,7 +257,7 @@ line-height:1.5em;
 ol {
 grid-area:para;
 text-align:left;
-font-family:"work sans";
+font-family:"nunito";
 font-size:13px;
 font-weight:lighter;
 }
@@ -289,7 +289,7 @@ font-size:12px;
 ol {
 grid-area:para;
 text-align:left;
-font-family:"work sans";
+font-family:"nunito";
 font-size:12px;
 font-weight:lighter;
 }
@@ -326,14 +326,14 @@ height:3.5em;
 @media(max-width:550px){
 .sectiontitle {
 text-align:center;
-font-family:"work sans";
+font-family:"nunito";
 font-size:16px;
 font-weight:100;
 }
 
 .sectionbody {
 text-align:center;
-font-family:"work sans";
+font-family:"nunito";
 font-size:14px;
 font-weight:300;
 }
@@ -346,23 +346,22 @@ font-weight:300;
 
 .studybutton {
   border: none;
-  background: #ffffff;
-  color: #C87B84;
-  font-weight: 100;
-  padding: 15px;
+  background: #C87B84;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 10px 15px 10px 15px;
   text-transform: uppercase;
   border-color: #C87B84;
   border-radius: 6px;
   border-width: medium;
   border-style: solid;
   display: inline-block;
-
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 1.5em;
   text-decoration: none;
-  font-family: "work sans";
-  margin-top: 2em;
+  font-family: "nunito";
+  margin-top: 1em;
   transition: all 0.3s ease 0s;
+  letter-spacing: 1px;
 }
 
 .studybutton:hover {

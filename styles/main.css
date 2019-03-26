@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  font-family: 'work sans';
+  font-family: 'nunito';
   font-weight: 100;
   font-size: 4.8em;
   color: #353535;
@@ -271,7 +271,7 @@ background-image: linear-gradient(rgba(000,000,000,0) 50%, #DCAEB3 10%);
 }
 
 .cstitle{
-  font-family: "work sans";
+  font-family: "nunito";
   font-size: 4.0em;
   font-weight: 400;
   line-height: 1.3em;
@@ -286,7 +286,7 @@ background-image: linear-gradient(rgba(000,000,000,0) 50%, #DCAEB3 10%);
 
 h1
 {
-  font-family: "work sans";
+  font-family: "nunito";
   font-size: 2em;
   font-weight: 400;
   line-height: 3em;
@@ -295,7 +295,7 @@ h1
 
 h2
 {
-  font-family: "work sans";
+  font-family: "nunito";
   font-size: 1.6em;
   line-height: 1.5em;
   font-weight: 300;
@@ -305,7 +305,7 @@ h2
 @media(max-width: 400px){
   h2
     {
-      font-family: "work sans";
+      font-family: "nunito";
       font-size: 1.8em;
       line-height: 1.5em;
       font-weight: 300;
@@ -368,7 +368,7 @@ h2
 
   h1
   {
-    font-family: "work sans";
+    font-family: "nunito";
     font-size: 1.5em;
     font-weight: 400;
     line-height: 3em;
@@ -377,7 +377,7 @@ h2
 
   h2
   {
-    font-family: "work sans";
+    font-family: "nunito";
     font-size: 1.8em;
     line-height: 1.5em;
     font-weight: 300;
@@ -554,7 +554,7 @@ h2
   justify-items: center;
   margin: 0;
   width: 100%;
-  font-family: "Work Sans", monospace;
+  font-family: "nunito", monospace;
   line-height: 1.5;
   font-weight: 400;
   font-style: normal;
@@ -618,9 +618,9 @@ h2
 }
 
 .mast__title {
-  font-family: "Work Sans", monospace;
-  font-size: 3.5em;
-  font-weight: 200;
+  font-family: "nunito", monospace;
+  font-size: 2.8em;
+  font-weight: 100;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   width: 100%;
@@ -756,7 +756,7 @@ h2
           animation-delay: 1.25s;
 }
 .mast__text {
-  font-family: "work Sans", monospace;
+  font-family: "nunito", monospace;
   font-size: 2em;
   font-weight: 300;
   margin: 0 0 0.5em;

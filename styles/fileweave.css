@@ -40,7 +40,7 @@
   padding-top: 5em;
   padding-bottom: .5em;
   text-align: center;
-  font-family: "work sans";
+  font-family: "nunito";
   font-size: 3.6em;
   font-weight: 300;
   max-width: 600px;
@@ -97,7 +97,7 @@
 #protolink{
   grid-area: img;
   padding: 1em 0em 1em 0em;
-  font-family: 'work sans';
+  font-family: 'nunito';
   font-size: 1.8em;
   font-weight: 300;
   color: #C87B84;
@@ -107,7 +107,7 @@
 .flowlink{
   grid-area: img;
   padding: 1em 0em 1em 0em;
-  font-family: 'work sans';
+  font-family: 'nunito';
   font-size: 1.8em;
   font-weight: 300;
   color: #C87B84;
@@ -118,7 +118,7 @@
   .flowlink{
     grid-area: img;
     padding: 1em 0em 1em 0em;
-    font-family: 'work sans';
+    font-family: 'nunito';
     font-size: 1.4em;
     font-weight: 300;
     color: #C87B84;
@@ -224,7 +224,7 @@ justify-items:center;
 
 .personatitle{
   text-align:left;
-  font-family:"work sans";
+  font-family:"nunito";
   font-size:22px;
   font-weight:600;
   line-height:1.4em;
@@ -235,7 +235,7 @@ justify-items:center;
 
 .personasubtitle{
   text-align:left;
-  font-family:"work sans";
+  font-family:"nunito";
   font-size:18px;
   font-weight:600;
   line-height:1.4em;
@@ -246,7 +246,7 @@ justify-items:center;
 
 .goals{
   text-align:left;
-  font-family:"work sans";
+  font-family:"nunito";
   font-size:18px;
   font-weight:300;
   line-height:1.4em;
@@ -257,7 +257,7 @@ justify-items:center;
 @media(max-width: 575px){
 .personatitle{
   text-align:left;
-  font-family:"work sans";
+  font-family:"nunito";
   font-size:18px;
   line-height:1.5em;
   font-weight: 500;
@@ -265,7 +265,7 @@ justify-items:center;
 
 .personasubtitle{
   text-align:left;
-  font-family:"work sans";
+  font-family:"nunito";
   font-size:14px;
   font-weight:600;
   line-height:1.4em;
@@ -276,7 +276,7 @@ justify-items:center;
 
 .goals{
   text-align:left;
-  font-family:"work sans";
+  font-family:"nunito";
   font-size:14px;
   font-weight:300;
   line-height:1.4em;
@@ -396,7 +396,7 @@ padding-top: 5em;
     display: grid;
     grid-template-columns: 2fr 5fr 2fr;
     grid-gap:5px;
-    font-family: "work sans";
+    font-family: "nunito";
     font-size: 1.6em;
     line-height: 2em;
     margin: 5em 2em 5em 2em;
@@ -420,7 +420,7 @@ padding-top: 5em;
       display: grid;
       grid-template-columns: 2fr 5fr 2fr;
       grid-gap: 5px;
-      font-family: "work sans";
+      font-family: "nunito";
       font-size: 1.4em;
       line-height: 1.3em;
   }
@@ -441,7 +441,7 @@ padding-top: 5em;
 
 
 h6{
-  font-family: "work sans";
+  font-family: "nunito";
   font-size: 1.8em;
   font-weight: 300;
   line-height: 1.8em;
@@ -474,7 +474,7 @@ h6{
   }
 
   h6{
-    font-family: "work sans";
+    font-family: "nunito";
     font-size: 1.4em;
     font-weight: 300;
     line-height: 1.6em;
@@ -1159,7 +1159,7 @@ max-width: 600px;
 .divideit {
   grid-area: "separate";
   background: #FFFFFF;
-  font-family: 'work sans';
+  font-family: 'nunito';
   font-weight:600;
   color: #000000;
   text-indent: 1em;
@@ -1209,7 +1209,7 @@ max-width: 600px;
   .divideit {
     grid-area: "separate";
     background: #FFFFFF;
-    font-family: 'work sans';
+    font-family: 'nunito';
     font-weight:600;
     color: #000000;
 
@@ -1388,7 +1388,7 @@ max-width: 600px;
 
 .percentage {
   fill: #666;
-  font-family: "work sans";
+  font-family: "nunito";
   font-size: 1em;
   text-anchor: middle;
 }
@@ -1521,7 +1521,7 @@ max-width: 600px;
 
 .palette {
 color: #34495e;
-font: 14px/1.231 "Work Sans", sans-serif;
+font: 14px/1.231 "nunito", sans-serif;
 font-size: 24px;
 padding-top: 1em;
 }
