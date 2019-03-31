@@ -32,14 +32,13 @@ z-align:10;
 margin:1em;
 }
 
-
 .subtitle {
 grid-area:title;
 font-family:"nunito";
 font-size:2.2em;
 font-weight:400;
 text-align:left;
-padding: 1em 0em .3em 0em;
+padding: 0em 0em .3em 0em;
 }
 
 .content {
@@ -217,7 +216,7 @@ color: #4a4a4a;
 font-weight:300;
 text-align:center;
 font-family: "nunito";
-font-size: 1.5em;
+font-size: 1.8em;
 line-height: 1.5em;
 font-weight: 300;
 }
@@ -237,6 +236,7 @@ color:#4a4a4a;
 @media(max-width:575px){
 .subtitle {
 font-size:1.8em;
+padding: .2em 0em .2em 0em;
 }
 
 .content {
@@ -283,7 +283,7 @@ font-weight:400;
 }
 
 .content {
-font-size:12px;
+font-size:14px;
 }
 
 ol {

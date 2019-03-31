@@ -14,7 +14,6 @@
   }
 }
 
-
 .hero-photo{
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
@@ -380,13 +379,13 @@ padding-top: 5em;
 
 @media(max-width: 575px){
   .swotimage{
-    height: 7em;
+    height: 13em;
   }
 }
 
 @media(max-width: 400px){
   .swotimage{
-    height: 5em;
+    height: 13em;
   }
 }
 
@@ -1272,7 +1271,7 @@ max-width: 600px;
 
 .conclusionbackground{
   background-color: #f1f1f1;
-  padding-bottom: 10em;
+  padding-bottom: 5em;
 }
 
 
@@ -1435,7 +1434,7 @@ max-width: 600px;
 @media(max-width: 475px){
   .personawrapper{
     display:grid;
-    grid-template-columns: .2fr minmax(285px, 1fr) .2fr;
+    grid-template-columns: .2fr minmax(250px, 1fr) .2fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
     ". josh ."
