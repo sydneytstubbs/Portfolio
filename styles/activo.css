@@ -81,6 +81,7 @@ h1{
 #protobutton{
   grid-area: lnk;
   justify-items: center;
+  margin-bottom: 3em;
 }
 
 @media(max-width: 575px){
@@ -108,6 +109,11 @@ h1{
   .parallax{
     width: 100%;
     min-height: 100px;
+    background-attachment: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   }
 }
 
@@ -1519,7 +1525,7 @@ max-width: 600px;
 
 .personaimage{
   display: flex;
-  max-width: 500%;
+  max-width: 100%;
   height: auto;
 }
 
