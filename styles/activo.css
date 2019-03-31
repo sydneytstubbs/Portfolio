@@ -104,6 +104,13 @@ h1{
   background-size: cover;
 }
 
+@media(max-width: 375px){
+  .parallax{
+    width: 100%;
+    min-height: 100px;
+  }
+}
+
 .laptop{
   width: 100%;
   height: auto;
