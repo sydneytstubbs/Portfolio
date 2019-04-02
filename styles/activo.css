@@ -56,7 +56,18 @@ h1{
     padding: 0px 2px 0px 2px;
     font-size: 1.3em;
 
+
   }
+
+}
+
+@media(max-width: 375px){
+
+  .linkbutton {
+    font-size: 1.2em;
+
+  }
+
 }
 
 

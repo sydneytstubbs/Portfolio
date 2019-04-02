@@ -10,8 +10,10 @@
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" type="text/css" href="styles/aboutme.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <script src="js/float-panel.js"></script>
+    <script src="js/slider.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Work+Sans:100,200,300,400,500,600,700,800,900');
     </style>
@@ -27,12 +29,12 @@
           </ul>
       </nav>
   </header>   <!-- hero begins -->
-    <section class="hero">
+    <section class="hero slideanim">
         <div class="portrait">
             <img src="images/aboutme/me.png" alt="photo of me">
         </div>
         <div class="herotext">
-            <h1 class="abouttitle slideanim" id="biotitle"> <span class="aquasplash">A little about me </span></h1>
+            <h1 class="abouttitle " id="biotitle"> <span class="aquasplash">A little about me </span></h1>
             <p class="herocontent"> At a young age, I took on the role of our family’s in-house tech support. Whenever my parents had an issue with technology, I was there to coach them through the task completion. Being witness to my parent's click patterns was often painful
                 because they weren’t conditioned to understand non-readable cues, or common UI patterns that were second nature to me. Their frustration was continuous, along with my patience and empathy for their experience as non-native tech users.
                 Today, after years of practice and interface innovation, they are both avid tech users who pull out their computers first thing in the morning.<br>
@@ -44,15 +46,15 @@
 
     <section class="lookingfor slideanim"><!-- what i'm looking for section begins -->
         <div class="centergrid">
-            <h1 class="abouttitle slideanim"><span class="aquasplash">This is what I'm looking for</span></h1>
-            <h3 class="sectionbody slideanim">I'm looking for a full-time UX/UI job that values the people that it serves and employs.
+            <h1 class="abouttitle "><span class="aquasplash">This is what I'm looking for</span></h1>
+            <h3 class="sectionbody ">I'm looking for a full-time UX/UI job that values the people that it serves and employs.
             </h3>
         </div>
     </section>
 
     <section class="cando slideanim"><!--what i can do section begins-->
         <div class="centergrid"><!--grid area = cando center title-->
-            <h1 class="abouttitle slideanim"><span class="aquasplash">This is what I can do</span></h1>
+            <h1 class="abouttitle "><span class="aquasplash">This is what I can do</span></h1>
         </div>
         <div class="candocontent">
             <div class="candolist1">
@@ -149,64 +151,127 @@
     <section class="liketodo slideanim">
         <!--what i like do section begins-->
         <div class="centergrid"><!--grid area = cando center title-->
-            <h1 class="abouttitle slideanim"><span class="aquasplash">This is what I like to do</span></h1>
+            <h1 class="abouttitle "><span class="aquasplash">This is what I like to do</span></h1>
         </div>
         <div class="likecontent">
-            <div class="element globe slideanim">
+            <div class="element globe ">
                 <!--globe image -->
                 <img src="images/aboutme/travel1.png " alt="globe">
             </div>
-            <div class="element hiking slideanim">
+            <div class="element hiking ">
                 <!--hiking image -->
                 <img src="images/aboutme/hiking1.png" alt="hiking">
             </div>
-            <div class="element camera slideanim">
+            <div class="element camera ">
                 <!--camera image -->
                 <img src="images/aboutme/camera1.png" alt="camera">
             </div>
-            <div class="element headphone slideanim">
+            <div class="element headphone ">
                 <!--headphone image -->
                 <img src="images/aboutme/headphones1.png" alt="headphone">
             </div>
-            <div class="element media slideanim">
+            <div class="element media ">
                 <!--movie image -->
                 <img src="images/aboutme/media1.png" alt="media">
             </div>
         </div>
+
     </section>
 
-    <section class="howigothere">
-      <div class="centergrid"><!--grid area = cando center title-->
-          <h1 class="abouttitle slideanim"><span class="aquasplash">This is how I got here</span></h1>
+    <section class="travel slideanim">
+      <div class="centergrid" id="travel"><!--grid area = cando center title-->
+          <h1 class="abouttitle "><span class="aquasplash">This is a collection of photos I've taken while traveling</span></h1>
       </div>
-        <div id="main-content">
-            <div class="container slideanim" id="casebody">
-                <div class="row">
-                    <a class="anchor" id="about"></a>
-                    <ol class="timeline">
-                        <li> <span class="timeline__number__odd"></span> <span class="timeline__title">2008</span>
-                            <p class="tlbody">Growing up I spent a lot of time making photos in the darkroom, and making art on InDesign. Ideating and creating has always been a priority of mine. <img src="images/aboutme/camera.png" alt=""> <span class="timeline__arc"></span> <span class="timeline__arc timeline__arc--bottom"></span></li>
-                        <li> <span class="timeline__number__even"></span> <span class="timeline__title">2010</span>
-                            <p class="tlbody">In college I studied how and why people do the things they do on a societal, cultural, and economic level.  <img src="images/aboutme/school.png" alt=""> <span class="timeline__arc"></span> <span class="timeline__arc timeline__arc--bottom"></span></li>
-                        <li> <span class="timeline__number__odd"></span> <span class="timeline__title">2013</span>
-                            <p class="tlbody">I spent time in China conducting qualitative research, such as in-depth interviews and focus groups.<img src="images/aboutme/research.png" alt=""> <span class="timeline__arc"></span> <span class="timeline__arc timeline__arc--bottom"></span></li>
-                        <li> <span class="timeline__number__even"></span> <span class="timeline__title">2014</span>
-                            <p class="tlbody">After I graduated, I took some time to travel around the world, where I satiated my need to explore and learn about how other people live their lives around the globe.</p> <img src="images/aboutme/travel.png" alt=""> <span class="timeline__arc"></span><span class="timeline__arc timeline__arc--bottom"></span></li>
-                        <li> <span class="timeline__number__odd"></span> <span class="timeline__title">2015</span>
-                            <p class="tlbody">I surrounded myself in design via architecture. Here I was <b>in charge of our company website</b> which was an important step on my path towards choosing to pursue UX.</p> <img src="images/aboutme/greece.png" alt=""> <span class="timeline__arc"></span><span class="timeline__arc timeline__arc--bottom"></span></li>
-                        <li> <span class="timeline__number__even"></span> <span class="timeline__title">2016</span>
-                            <p class="tlbody">With strong people skills and an <b>empathetic demeanor</b>, I excelled at counseling families, but wasn't content. I needed a job where I could be creating.</p> <img src="images/aboutme/plur.png" alt=""> <span class="timeline__arc"></span><span class="timeline__arc timeline__arc--bottom"></span></li>
-                        <li> <span class="timeline__number__odd"></span> <span class="timeline__title">2018</span>
-                            <p class="tlbody">Discovering a career that combines my <b>passion to create</b>, and my strength of <b>understanding people</b> felt like everything I had been searching for in one. Dec 2017 I started my path towards a career in UX!</p>
-                            <img src="Images/aboutme/sturdy.png" alt=""> <span class="timeline__arc"></span> <span class="timeline__arc timeline__arc--bottom"></span></li>
-                    </ol>
-                </div>
-            </div>
+
+    <div class="slider" id="slider1">
+        <!-- Slides -->
+        <div style="background-image:url(images/aboutme/wadirum.jpg)">
+          <span class="titleBar">
+              <h1 class="abouttitle">Wadi Rum, Jordan</h1>
+          </span>
         </div>
+        <div style="background-image:url(images/aboutme/kazbegi.jpg)">
+          <span class="titleBar">
+              <h1 class="abouttitle">Mt. Kazbegi, Georgia</h1>
+          </span>
+        </div>
+        <div style="background-image:url(images/aboutme/china-woman.jpg)">
+          <span class="titleBar">
+              <h1 class="abouttitle">Suichang County, Zhejiang Province, China</h1>
+          </span>
+        </div>
+        <div style="background-image:url(images/aboutme/morocco.jpg)">
+          <span class="titleBar">
+              <h1 class="abouttitle">Tangier, Morocco</h1>
+          </span>
+        </div>
+        <div style="background-image:url(images/aboutme/ramallah.jpg)">
+          <span class="titleBar">
+              <h1 class="abouttitle">Ramallah, Palestine</h1>
+          </span>
+        </div>
+        <div style="background-image:url(images/aboutme/china-student.jpg)">
+          <span class="titleBar">
+              <h1 class="abouttitle">Lanzhou, China</h1>
+          </span>
+        </div>
+        <div style="background-image:url(images/aboutme/croatia.jpg)">
+          <span class="titleBar">
+              <h1 class="abouttitle">Krka National Park, Croatia</h1>
+          </span>
+        </div>
+        <div style="background-image:url(images/aboutme/japan.jpg)">
+          <span class="titleBar">
+              <h1 class="abouttitle">Tokyo, Japan</h1>
+          </span>
+        </div>
+        <div style="background-image:url(images/aboutme/louvre.jpg)">
+          <span class="titleBar">
+              <h1 class="abouttitle">Paris, France</h1>
+          </span>
+        </div>
+        <div style="background-image:url(images/aboutme/vietnam.jpg)">
+          <span class="titleBar">
+              <h1 class="abouttitle">Hanoi, Vietnam</h1>
+          </span>
+        </div>
+        <div style="background-image:url(images/aboutme/montenegro.jpg)">
+          <span class="titleBar">
+              <h1 class="abouttitle">Kotor, Montenegro</h1>
+          </span>
+        </div>
+        <div style="background-image:url(images/aboutme/singapore.jpg)">
+          <span class="titleBar">
+              <h1 class="abouttitle">Singapore</h1>
+          </span>
+        </div>
+        <div style="background-image:url(images/aboutme/mostar.jpg)">
+          <span class="titleBar">
+              <h1 class="abouttitle">Mostar, Bosnia and Herzegovina</h1>
+          </span>
+        </div>
+        <div style="background-image:url(images/aboutme/israel.jpg)">
+          <span class="titleBar">
+              <h1 class="abouttitle">Tel Aviv, Israel</h1>
+          </span>
+        </div>
+        <div style="background-image:url(images/aboutme/phillie.jpg)">
+          <span class="titleBar">
+              <h1 class="abouttitle">Philadelphia, Pennsylvania</h1>
+          </span>
+        </div>
+        <!-- The Arrows -->
+        <i class="left" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path></svg></i>
+        <i class="right" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180) "></path></svg></i>
+        <!-- Title Bar -->
+
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script  src="js/slider.js"></script>
     </section>
 
     <section class="message">
-		  <div class="endmessage slideanim">
+		  <div class="endmessage ">
 		    <h2 class="end">Thanks for stopping by! If you like what you see, let's chat!</h2>
 		    <button class="studybutton" alt="contact me button"> <a href="contact.html"><h8 class="contactme">Contact Me</a>
 		  </div>
@@ -226,6 +291,7 @@
         </div>
         <p class=minitype>DESIGNED AND DEVELOPED BY © SYDNEY STUBBS 2019</p>
     </div>
+
 
     </body>
     </html>
