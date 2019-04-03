@@ -961,7 +961,7 @@ text-align:center;
     display: block;
     background: rgba(0,0,0,.5);
     position: absolute;
-    top: 0;
+    bottom: 0;
     color: #fff;
     text-align: center;
     padding: 0;
