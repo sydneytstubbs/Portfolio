@@ -116,22 +116,20 @@ h1{
   background-size: cover;
 }
 
-@media(max-width: 375px){
+@media(max-width: 715px){
   .parallax{
-    width: 100%;
-    min-height: 100px;
-    background-attachment: none;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url('/images/activo/heroimage2.png');
   }
   }
-}
 
-.laptop{
-  width: 100%;
-  height: auto;
-}
+  @media(max-width: 400px){
+    .parallax{
+    background-image: url('/images/activo/heroimage3.png');
+    }
+    }
+
+
+
 
 .herotitle{
   grid-area: hro;
